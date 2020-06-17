@@ -1,0 +1,127 @@
+\hypertarget{tasks__driver_8h}{}\section{inc/tasks\+\_\+driver.h File Reference}
+\label{tasks__driver_8h}\index{inc/tasks\_driver.h@{inc/tasks\_driver.h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i2c\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}clock\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}temperature\+\_\+task.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}light\+\_\+task.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}logger\+\_\+task.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}communication\+\_\+task.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}moisture\+\_\+task.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}uart\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}actuators.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}adc\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcd\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spi\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}drivers/pinout.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/gpio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/inc/hw\+\_\+memmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils/uartstdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tmp102.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}apds9301.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S\+Config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}task.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}queue.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}timers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}synchronization.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tasks__driver_8h_a6648e62be4309cd1cce4072a8a494765}{N\+U\+M\+\_\+\+O\+F\+\_\+\+T\+A\+S\+KS}}~(7)
+\item 
+\#define \mbox{\hyperlink{tasks__driver_8h_a0ddaac8a61d0fbdb74158b186baa6714}{x\+L\+O\+G\+G\+E\+R\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 2 )
+\item 
+\#define \mbox{\hyperlink{tasks__driver_8h_a040df697069a1aeabdb29312980d3caf}{x\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )
+\item 
+\#define \mbox{\hyperlink{tasks__driver_8h_a5f22d09c36e182f39eb3e3b01895fe98}{x\+L\+I\+G\+H\+T\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )
+\item 
+\#define \mbox{\hyperlink{tasks__driver_8h_ac32ed9ab3364319cfab7c80335bee980}{x\+M\+O\+I\+S\+T\+U\+R\+E\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )
+\item 
+\#define \mbox{\hyperlink{tasks__driver_8h_aa2232156a6811353fba8d29e3d298b51}{x\+H\+U\+M\+I\+D\+I\+T\+Y\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )
+\item 
+\#define \mbox{\hyperlink{tasks__driver_8h_a3524cf0935bfe82d17ac7256aa43c53e}{x\+A\+L\+E\+R\+T\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )
+\item 
+\#define \mbox{\hyperlink{tasks__driver_8h_aa55a751457e05dc3b2b3897df2215c00}{x\+C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tasks__driver_8h_a26ed84fe46d97d0bd0b6e61bcd26fd25}{Initialize\+Tasks}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Task\+Handle\+\_\+t \mbox{\hyperlink{tasks__driver_8h_afde9c953fb901024d393c1ce7f8b2a98}{x\+Handle\+Task}} \mbox{[}\mbox{\hyperlink{tasks__driver_8h_a6648e62be4309cd1cce4072a8a494765}{N\+U\+M\+\_\+\+O\+F\+\_\+\+T\+A\+S\+KS}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{tasks__driver_8h_a6648e62be4309cd1cce4072a8a494765}\label{tasks__driver_8h_a6648e62be4309cd1cce4072a8a494765}} 
+\index{tasks\_driver.h@{tasks\_driver.h}!NUM\_OF\_TASKS@{NUM\_OF\_TASKS}}
+\index{NUM\_OF\_TASKS@{NUM\_OF\_TASKS}!tasks\_driver.h@{tasks\_driver.h}}
+\subsubsection{\texorpdfstring{NUM\_OF\_TASKS}{NUM\_OF\_TASKS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+O\+F\+\_\+\+T\+A\+S\+KS~(7)}
+
+\mbox{\Hypertarget{tasks__driver_8h_a3524cf0935bfe82d17ac7256aa43c53e}\label{tasks__driver_8h_a3524cf0935bfe82d17ac7256aa43c53e}} 
+\index{tasks\_driver.h@{tasks\_driver.h}!xALERT\_TASK\_PRIORITY@{xALERT\_TASK\_PRIORITY}}
+\index{xALERT\_TASK\_PRIORITY@{xALERT\_TASK\_PRIORITY}!tasks\_driver.h@{tasks\_driver.h}}
+\subsubsection{\texorpdfstring{xALERT\_TASK\_PRIORITY}{xALERT\_TASK\_PRIORITY}}
+{\footnotesize\ttfamily \#define x\+A\+L\+E\+R\+T\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )}
+
+\mbox{\Hypertarget{tasks__driver_8h_aa55a751457e05dc3b2b3897df2215c00}\label{tasks__driver_8h_aa55a751457e05dc3b2b3897df2215c00}} 
+\index{tasks\_driver.h@{tasks\_driver.h}!xCOMMUNICATION\_TASK\_PRIORITY@{xCOMMUNICATION\_TASK\_PRIORITY}}
+\index{xCOMMUNICATION\_TASK\_PRIORITY@{xCOMMUNICATION\_TASK\_PRIORITY}!tasks\_driver.h@{tasks\_driver.h}}
+\subsubsection{\texorpdfstring{xCOMMUNICATION\_TASK\_PRIORITY}{xCOMMUNICATION\_TASK\_PRIORITY}}
+{\footnotesize\ttfamily \#define x\+C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )}
+
+\mbox{\Hypertarget{tasks__driver_8h_aa2232156a6811353fba8d29e3d298b51}\label{tasks__driver_8h_aa2232156a6811353fba8d29e3d298b51}} 
+\index{tasks\_driver.h@{tasks\_driver.h}!xHUMIDITY\_TASK\_PRIORITY@{xHUMIDITY\_TASK\_PRIORITY}}
+\index{xHUMIDITY\_TASK\_PRIORITY@{xHUMIDITY\_TASK\_PRIORITY}!tasks\_driver.h@{tasks\_driver.h}}
+\subsubsection{\texorpdfstring{xHUMIDITY\_TASK\_PRIORITY}{xHUMIDITY\_TASK\_PRIORITY}}
+{\footnotesize\ttfamily \#define x\+H\+U\+M\+I\+D\+I\+T\+Y\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )}
+
+\mbox{\Hypertarget{tasks__driver_8h_a5f22d09c36e182f39eb3e3b01895fe98}\label{tasks__driver_8h_a5f22d09c36e182f39eb3e3b01895fe98}} 
+\index{tasks\_driver.h@{tasks\_driver.h}!xLIGHT\_TASK\_PRIORITY@{xLIGHT\_TASK\_PRIORITY}}
+\index{xLIGHT\_TASK\_PRIORITY@{xLIGHT\_TASK\_PRIORITY}!tasks\_driver.h@{tasks\_driver.h}}
+\subsubsection{\texorpdfstring{xLIGHT\_TASK\_PRIORITY}{xLIGHT\_TASK\_PRIORITY}}
+{\footnotesize\ttfamily \#define x\+L\+I\+G\+H\+T\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )}
+
+\mbox{\Hypertarget{tasks__driver_8h_a0ddaac8a61d0fbdb74158b186baa6714}\label{tasks__driver_8h_a0ddaac8a61d0fbdb74158b186baa6714}} 
+\index{tasks\_driver.h@{tasks\_driver.h}!xLOGGER\_TASK\_PRIORITY@{xLOGGER\_TASK\_PRIORITY}}
+\index{xLOGGER\_TASK\_PRIORITY@{xLOGGER\_TASK\_PRIORITY}!tasks\_driver.h@{tasks\_driver.h}}
+\subsubsection{\texorpdfstring{xLOGGER\_TASK\_PRIORITY}{xLOGGER\_TASK\_PRIORITY}}
+{\footnotesize\ttfamily \#define x\+L\+O\+G\+G\+E\+R\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 2 )}
+
+\mbox{\Hypertarget{tasks__driver_8h_ac32ed9ab3364319cfab7c80335bee980}\label{tasks__driver_8h_ac32ed9ab3364319cfab7c80335bee980}} 
+\index{tasks\_driver.h@{tasks\_driver.h}!xMOISTURE\_TASK\_PRIORITY@{xMOISTURE\_TASK\_PRIORITY}}
+\index{xMOISTURE\_TASK\_PRIORITY@{xMOISTURE\_TASK\_PRIORITY}!tasks\_driver.h@{tasks\_driver.h}}
+\subsubsection{\texorpdfstring{xMOISTURE\_TASK\_PRIORITY}{xMOISTURE\_TASK\_PRIORITY}}
+{\footnotesize\ttfamily \#define x\+M\+O\+I\+S\+T\+U\+R\+E\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )}
+
+\mbox{\Hypertarget{tasks__driver_8h_a040df697069a1aeabdb29312980d3caf}\label{tasks__driver_8h_a040df697069a1aeabdb29312980d3caf}} 
+\index{tasks\_driver.h@{tasks\_driver.h}!xTEMPERATURE\_TASK\_PRIORITY@{xTEMPERATURE\_TASK\_PRIORITY}}
+\index{xTEMPERATURE\_TASK\_PRIORITY@{xTEMPERATURE\_TASK\_PRIORITY}!tasks\_driver.h@{tasks\_driver.h}}
+\subsubsection{\texorpdfstring{xTEMPERATURE\_TASK\_PRIORITY}{xTEMPERATURE\_TASK\_PRIORITY}}
+{\footnotesize\ttfamily \#define x\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY~( tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY + 1 )}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tasks__driver_8h_a26ed84fe46d97d0bd0b6e61bcd26fd25}\label{tasks__driver_8h_a26ed84fe46d97d0bd0b6e61bcd26fd25}} 
+\index{tasks\_driver.h@{tasks\_driver.h}!InitializeTasks@{InitializeTasks}}
+\index{InitializeTasks@{InitializeTasks}!tasks\_driver.h@{tasks\_driver.h}}
+\subsubsection{\texorpdfstring{InitializeTasks()}{InitializeTasks()}}
+{\footnotesize\ttfamily void Initialize\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{tasks__driver_8h_afde9c953fb901024d393c1ce7f8b2a98}\label{tasks__driver_8h_afde9c953fb901024d393c1ce7f8b2a98}} 
+\index{tasks\_driver.h@{tasks\_driver.h}!xHandleTask@{xHandleTask}}
+\index{xHandleTask@{xHandleTask}!tasks\_driver.h@{tasks\_driver.h}}
+\subsubsection{\texorpdfstring{xHandleTask}{xHandleTask}}
+{\footnotesize\ttfamily Task\+Handle\+\_\+t x\+Handle\+Task\mbox{[}\mbox{\hyperlink{tasks__driver_8h_a6648e62be4309cd1cce4072a8a494765}{N\+U\+M\+\_\+\+O\+F\+\_\+\+T\+A\+S\+KS}}\mbox{]}}
+

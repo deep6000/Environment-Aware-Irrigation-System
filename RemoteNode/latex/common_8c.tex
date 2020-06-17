@@ -1,0 +1,59 @@
+\hypertarget{common_8c}{}\section{src/common.c File Reference}
+\label{common_8c}\index{src/common.c@{src/common.c}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}clock\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}queue\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tasks\+\_\+driver.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{common_8h_a062ea6dfbd281c164781e3abb3252d47}{return\+\_\+status}} \mbox{\hyperlink{common_8c_a33a28c6e85b0a2b07205cc4b79d61667}{Send\+Packet}} (\mbox{\hyperlink{common_8h_a2ecddb2fd9540f571b3c439d77e2f48b}{Log\+Level\+\_\+t}} level, \mbox{\hyperlink{common_8h_a653ab69f9b23c1469af27af82d7ee4eb}{T\+I\+D\+\_\+t}} I\+D\+\_\+to, \mbox{\hyperlink{common_8h_a653ab69f9b23c1469af27af82d7ee4eb}{T\+I\+D\+\_\+t}} I\+D\+\_\+from, char $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em Send packet to Task ID from to Task ID to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_packet}{Packet}} \mbox{\hyperlink{common_8c_a736962e5a888922c72b219aab64ef653}{Receive\+Packet}} (\mbox{\hyperlink{common_8h_a653ab69f9b23c1469af27af82d7ee4eb}{T\+I\+D\+\_\+t}} ID)
+\begin{DoxyCompactList}\small\item\em Receive packet for task specified. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{common_8c_a736962e5a888922c72b219aab64ef653}\label{common_8c_a736962e5a888922c72b219aab64ef653}} 
+\index{common.c@{common.c}!ReceivePacket@{ReceivePacket}}
+\index{ReceivePacket@{ReceivePacket}!common.c@{common.c}}
+\subsubsection{\texorpdfstring{ReceivePacket()}{ReceivePacket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_packet}{Packet}} Receive\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_a653ab69f9b23c1469af27af82d7ee4eb}{T\+I\+D\+\_\+t}}}]{ID }\end{DoxyParamCaption})}
+
+
+
+Receive packet for task specified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_packet}{Packet}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{common_8c_a33a28c6e85b0a2b07205cc4b79d61667}\label{common_8c_a33a28c6e85b0a2b07205cc4b79d61667}} 
+\index{common.c@{common.c}!SendPacket@{SendPacket}}
+\index{SendPacket@{SendPacket}!common.c@{common.c}}
+\subsubsection{\texorpdfstring{SendPacket()}{SendPacket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_a062ea6dfbd281c164781e3abb3252d47}{return\+\_\+status}} Send\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_a2ecddb2fd9540f571b3c439d77e2f48b}{Log\+Level\+\_\+t}}}]{level,  }\item[{\mbox{\hyperlink{common_8h_a653ab69f9b23c1469af27af82d7ee4eb}{T\+I\+D\+\_\+t}}}]{I\+D\+\_\+to,  }\item[{\mbox{\hyperlink{common_8h_a653ab69f9b23c1469af27af82d7ee4eb}{T\+I\+D\+\_\+t}}}]{I\+D\+\_\+from,  }\item[{char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Send packet to Task ID from to Task ID to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \\
+\hline
+{\em I\+D\+\_\+to} & \\
+\hline
+{\em I\+D\+\_\+from} & \\
+\hline
+{\em format} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return status 
+\end{DoxyReturn}

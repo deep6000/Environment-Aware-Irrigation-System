@@ -1,0 +1,132 @@
+\hypertarget{communication__task_8h}{}\section{inc/communication\+\_\+task.h File Reference}
+\label{communication__task_8h}\index{inc/communication\_task.h@{inc/communication\_task.h}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint8\+\_\+t \mbox{\hyperlink{communication__task_8h_afe665b93eb194adeb80958dafb35c3bf}{heartbeat\+\_\+t}}
+\item 
+typedef uint8\+\_\+t \mbox{\hyperlink{communication__task_8h_a417cf0e94997ba2939dfa7807a137622}{Timerstatus}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{communication__task_8h_a94798c5abf9dea2109e0c411841a0551}{Communication\+Task}} (void $\ast$pv\+Parameters)
+\begin{DoxyCompactList}\small\item\em Communication task call back function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communication__task_8h_a7ce1edae16f8f5f4a26088d67128fe89}{v\+Communication\+Timer\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Timer callback function for comm task. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communication__task_8h_a60fcad64587993d77a7e8a4f2e32efe0}{v\+Heartbeat\+Timer\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Send packet to control node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communication__task_8h_ab6e1b15ab40c6971e60333aa9b5b574a}{Sendto\+Control}} (\mbox{\hyperlink{common_8h_a56033634e8479fec6b3dbc53913ceed8}{U\+A\+R\+T\+\_\+\+T\+X\+Packet\+\_\+t}} $\ast$p\+\_\+pkt)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{communication__task_8h_a56cca70f018adb56b47d9d028b641b46}{Receivefrom\+Control}} (\mbox{\hyperlink{common_8h_a7b7248080389c960a454a76456062821}{U\+A\+R\+T\+\_\+\+R\+X\+Packet\+\_\+t}} $\ast$p\+\_\+pkt)
+\begin{DoxyCompactList}\small\item\em Receive packet from control node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{communication__task_8h_afe665b93eb194adeb80958dafb35c3bf}{heartbeat\+\_\+t}} \mbox{\hyperlink{communication__task_8h_aa76e0043051d7e701d35036b99df3973}{heartbeat}}
+\item 
+\mbox{\hyperlink{communication__task_8h_a417cf0e94997ba2939dfa7807a137622}{Timerstatus}} \mbox{\hyperlink{communication__task_8h_a4595bc057deb0882bfd4445750fb4cb8}{Comm\+Timer\+Stop}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{communication__task_8h_afe665b93eb194adeb80958dafb35c3bf}\label{communication__task_8h_afe665b93eb194adeb80958dafb35c3bf}} 
+\index{communication\_task.h@{communication\_task.h}!heartbeat\_t@{heartbeat\_t}}
+\index{heartbeat\_t@{heartbeat\_t}!communication\_task.h@{communication\_task.h}}
+\subsubsection{\texorpdfstring{heartbeat\_t}{heartbeat\_t}}
+{\footnotesize\ttfamily typedef uint8\+\_\+t \mbox{\hyperlink{communication__task_8h_afe665b93eb194adeb80958dafb35c3bf}{heartbeat\+\_\+t}}}
+
+\mbox{\Hypertarget{communication__task_8h_a417cf0e94997ba2939dfa7807a137622}\label{communication__task_8h_a417cf0e94997ba2939dfa7807a137622}} 
+\index{communication\_task.h@{communication\_task.h}!Timerstatus@{Timerstatus}}
+\index{Timerstatus@{Timerstatus}!communication\_task.h@{communication\_task.h}}
+\subsubsection{\texorpdfstring{Timerstatus}{Timerstatus}}
+{\footnotesize\ttfamily typedef uint8\+\_\+t \mbox{\hyperlink{communication__task_8h_a417cf0e94997ba2939dfa7807a137622}{Timerstatus}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{communication__task_8h_a94798c5abf9dea2109e0c411841a0551}\label{communication__task_8h_a94798c5abf9dea2109e0c411841a0551}} 
+\index{communication\_task.h@{communication\_task.h}!CommunicationTask@{CommunicationTask}}
+\index{CommunicationTask@{CommunicationTask}!communication\_task.h@{communication\_task.h}}
+\subsubsection{\texorpdfstring{CommunicationTask()}{CommunicationTask()}}
+{\footnotesize\ttfamily void Communication\+Task (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv\+Parameters }\end{DoxyParamCaption})}
+
+
+
+Communication task call back function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pv\+Parameters} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communication__task_8h_a56cca70f018adb56b47d9d028b641b46}\label{communication__task_8h_a56cca70f018adb56b47d9d028b641b46}} 
+\index{communication\_task.h@{communication\_task.h}!ReceivefromControl@{ReceivefromControl}}
+\index{ReceivefromControl@{ReceivefromControl}!communication\_task.h@{communication\_task.h}}
+\subsubsection{\texorpdfstring{ReceivefromControl()}{ReceivefromControl()}}
+{\footnotesize\ttfamily uint8\+\_\+t Receivefrom\+Control (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_a7b7248080389c960a454a76456062821}{U\+A\+R\+T\+\_\+\+R\+X\+Packet\+\_\+t}} $\ast$}]{p\+\_\+pkt }\end{DoxyParamCaption})}
+
+
+
+Receive packet from control node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+pkt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{communication__task_8h_ab6e1b15ab40c6971e60333aa9b5b574a}\label{communication__task_8h_ab6e1b15ab40c6971e60333aa9b5b574a}} 
+\index{communication\_task.h@{communication\_task.h}!SendtoControl@{SendtoControl}}
+\index{SendtoControl@{SendtoControl}!communication\_task.h@{communication\_task.h}}
+\subsubsection{\texorpdfstring{SendtoControl()}{SendtoControl()}}
+{\footnotesize\ttfamily void Sendto\+Control (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_a56033634e8479fec6b3dbc53913ceed8}{U\+A\+R\+T\+\_\+\+T\+X\+Packet\+\_\+t}} $\ast$}]{p\+\_\+pkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{communication__task_8h_a7ce1edae16f8f5f4a26088d67128fe89}\label{communication__task_8h_a7ce1edae16f8f5f4a26088d67128fe89}} 
+\index{communication\_task.h@{communication\_task.h}!vCommunicationTimerHandler@{vCommunicationTimerHandler}}
+\index{vCommunicationTimerHandler@{vCommunicationTimerHandler}!communication\_task.h@{communication\_task.h}}
+\subsubsection{\texorpdfstring{vCommunicationTimerHandler()}{vCommunicationTimerHandler()}}
+{\footnotesize\ttfamily void v\+Communication\+Timer\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Timer callback function for comm task. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{communication__task_8h_a60fcad64587993d77a7e8a4f2e32efe0}\label{communication__task_8h_a60fcad64587993d77a7e8a4f2e32efe0}} 
+\index{communication\_task.h@{communication\_task.h}!vHeartbeatTimerHandler@{vHeartbeatTimerHandler}}
+\index{vHeartbeatTimerHandler@{vHeartbeatTimerHandler}!communication\_task.h@{communication\_task.h}}
+\subsubsection{\texorpdfstring{vHeartbeatTimerHandler()}{vHeartbeatTimerHandler()}}
+{\footnotesize\ttfamily void v\+Heartbeat\+Timer\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Send packet to control node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+pkt\+Heartbeat} & T\+Imer Handler sending Heartbeat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{communication__task_8h_a4595bc057deb0882bfd4445750fb4cb8}\label{communication__task_8h_a4595bc057deb0882bfd4445750fb4cb8}} 
+\index{communication\_task.h@{communication\_task.h}!CommTimerStop@{CommTimerStop}}
+\index{CommTimerStop@{CommTimerStop}!communication\_task.h@{communication\_task.h}}
+\subsubsection{\texorpdfstring{CommTimerStop}{CommTimerStop}}
+{\footnotesize\ttfamily \mbox{\hyperlink{communication__task_8h_a417cf0e94997ba2939dfa7807a137622}{Timerstatus}} Comm\+Timer\+Stop}
+
+\mbox{\Hypertarget{communication__task_8h_aa76e0043051d7e701d35036b99df3973}\label{communication__task_8h_aa76e0043051d7e701d35036b99df3973}} 
+\index{communication\_task.h@{communication\_task.h}!heartbeat@{heartbeat}}
+\index{heartbeat@{heartbeat}!communication\_task.h@{communication\_task.h}}
+\subsubsection{\texorpdfstring{heartbeat}{heartbeat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{communication__task_8h_afe665b93eb194adeb80958dafb35c3bf}{heartbeat\+\_\+t}} heartbeat}
+

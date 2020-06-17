@@ -1,0 +1,284 @@
+\hypertarget{lcd__driver_8h}{}\section{inc/lcd\+\_\+driver.h File Reference}
+\label{lcd__driver_8h}\index{inc/lcd\_driver.h@{inc/lcd\_driver.h}}
+{\ttfamily \#include \char`\"{}stdint.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tasks\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/gpio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}inc/hw\+\_\+memmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/pin\+\_\+map.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a221b02b65527a670a158a9b1387e877c}{C\+L\+E\+A\+R\+\_\+\+D\+I\+S\+P\+L\+AY}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a023de42e0dbfbb8012cbec254f38667a}{C\+U\+R\+S\+O\+R\+\_\+\+H\+O\+ME}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a7c67b7105bcd21f4bb1f978d0445dfe8}{E\+N\+T\+R\+Y\+\_\+\+M\+O\+DE}}~(0x06)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a5ae6b05b3e1559c97f0d1b2daaaa0ee4}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+ON}}~(0x0\+C)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_abf764a93ccecfc79fed90d889d820508}{C\+U\+R\+S\+O\+R\+\_\+\+ON}}~(0x0\+A)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a19a60efc213b940f3d1666c19decbad2}{C\+U\+R\+S\+O\+R\+\_\+\+B\+L\+I\+NK}}~(0x0\+F)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_ad2ec9831813c5e7069917aa4455af682}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+O\+FF}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a2effd0c71e0838b3526cda1967f39f0a}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+S\+H\+I\+FT}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_ae64acdff044d85bd8fca0099dd994890}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+ET}}~(0x38)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a0259ead71ede21c332ae61239e1b6f8a}{F\+I\+R\+S\+T\+\_\+\+L\+I\+NE}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a636f55b94023a083f23a93b51925d662}{S\+E\+C\+O\+N\+D\+\_\+\+L\+I\+NE}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a65a69c53b2e839061b07835d87e3965a}{T\+H\+I\+R\+D\+\_\+\+L\+I\+NE}}~(0x90)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a73afae21b0d2b9b74d78cf2afbfafcdf}{F\+O\+U\+R\+T\+H\+\_\+\+L\+I\+NE}}~(0x\+D0)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_adc8943608948e5822ef5bf7022079c33}{B\+I\+T\+\_\+\+M\+O\+D\+E\+\_\+8}}~(0x30)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a81ec3d9dbef1b22862b96654eaf3e636}{B\+I\+T\+\_\+\+M\+O\+D\+E\+\_\+4}}~(0x30)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a3a7306a88d8a7487b683e741c8e7f879}{M\+I\+C\+R\+O\+S\+E\+C\+O\+ND}}~(160000)
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_abb36d2a5ad8c6f7f52c8ce5ed07922d4}{R\+S\+\_\+1}}~G\+P\+I\+O\+Pin\+Write(G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+B\+\_\+\+B\+A\+SE, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+4, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+4);
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a5f494c8c0088bc512d7601768da7aeb7}{R\+S\+\_\+0}}~G\+P\+I\+O\+Pin\+Write(G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+B\+\_\+\+B\+A\+SE, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+4, 0);
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a41005ab9429182b141c4788a3cdbc06a}{Enable\+\_\+1}}~G\+P\+I\+O\+Pin\+Write(G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+B\+\_\+\+B\+A\+SE, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+5, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+5);
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_ace87cdbd698a8961dd7161dd4133e0b7}{Enable\+\_\+0}}~G\+P\+I\+O\+Pin\+Write(G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+B\+\_\+\+B\+A\+SE, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+5, 0);
+\item 
+\#define \mbox{\hyperlink{lcd__driver_8h_a0d7bf92e83d6d48a29c1064ba5cd9df2}{Write}}(data)~G\+P\+I\+O\+Pin\+Write(G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+K\+\_\+\+B\+A\+SE, /$\ast$G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+7 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+6 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+5 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+4 $\ast$/ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+3 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+2 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+1 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+0 ,data);
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{lcd__driver_8h_a0cde574cfed137247015748d95bd43f0}{Initialize\+L\+CD}} ()
+\begin{DoxyCompactList}\small\item\em Initialize L\+CD gpio pins. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd__driver_8h_a99ef3ecdee03facfa0b8582baef836d2}{L\+C\+D\+Write\+Char}} (char character)
+\item 
+void \mbox{\hyperlink{lcd__driver_8h_aee7391236ecad4d03d3d5d1248c1bbd9}{L\+C\+D\+Write\+Command}} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Write command to L\+CD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd__driver_8h_a23578ed686f72a95a95f24e3ddfb1411}{L\+C\+D\+Write\+Str}} (char $\ast$data, int line)
+\begin{DoxyCompactList}\small\item\em Write string to L\+CD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd__driver_8h_aaf06889a2ec37e049d4161f388a6bc96}{Turn\+On\+L\+CD}} ()
+\begin{DoxyCompactList}\small\item\em Turn on Display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd__driver_8h_abc94dbda4b8df7468d2703f754ac7bc2}{L\+C\+D\+Clear\+Display}} ()
+\begin{DoxyCompactList}\small\item\em Clear L\+Cd dislay. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{lcd__driver_8h_a81ec3d9dbef1b22862b96654eaf3e636}\label{lcd__driver_8h_a81ec3d9dbef1b22862b96654eaf3e636}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!BIT\_MODE\_4@{BIT\_MODE\_4}}
+\index{BIT\_MODE\_4@{BIT\_MODE\_4}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{BIT\_MODE\_4}{BIT\_MODE\_4}}
+{\footnotesize\ttfamily \#define B\+I\+T\+\_\+\+M\+O\+D\+E\+\_\+4~(0x30)}
+
+\mbox{\Hypertarget{lcd__driver_8h_adc8943608948e5822ef5bf7022079c33}\label{lcd__driver_8h_adc8943608948e5822ef5bf7022079c33}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!BIT\_MODE\_8@{BIT\_MODE\_8}}
+\index{BIT\_MODE\_8@{BIT\_MODE\_8}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{BIT\_MODE\_8}{BIT\_MODE\_8}}
+{\footnotesize\ttfamily \#define B\+I\+T\+\_\+\+M\+O\+D\+E\+\_\+8~(0x30)}
+
+\mbox{\Hypertarget{lcd__driver_8h_a221b02b65527a670a158a9b1387e877c}\label{lcd__driver_8h_a221b02b65527a670a158a9b1387e877c}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!CLEAR\_DISPLAY@{CLEAR\_DISPLAY}}
+\index{CLEAR\_DISPLAY@{CLEAR\_DISPLAY}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{CLEAR\_DISPLAY}{CLEAR\_DISPLAY}}
+{\footnotesize\ttfamily \#define C\+L\+E\+A\+R\+\_\+\+D\+I\+S\+P\+L\+AY~(0x01)}
+
+\mbox{\Hypertarget{lcd__driver_8h_a19a60efc213b940f3d1666c19decbad2}\label{lcd__driver_8h_a19a60efc213b940f3d1666c19decbad2}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!CURSOR\_BLINK@{CURSOR\_BLINK}}
+\index{CURSOR\_BLINK@{CURSOR\_BLINK}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{CURSOR\_BLINK}{CURSOR\_BLINK}}
+{\footnotesize\ttfamily \#define C\+U\+R\+S\+O\+R\+\_\+\+B\+L\+I\+NK~(0x0\+F)}
+
+\mbox{\Hypertarget{lcd__driver_8h_a023de42e0dbfbb8012cbec254f38667a}\label{lcd__driver_8h_a023de42e0dbfbb8012cbec254f38667a}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!CURSOR\_HOME@{CURSOR\_HOME}}
+\index{CURSOR\_HOME@{CURSOR\_HOME}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{CURSOR\_HOME}{CURSOR\_HOME}}
+{\footnotesize\ttfamily \#define C\+U\+R\+S\+O\+R\+\_\+\+H\+O\+ME~(0x02)}
+
+\mbox{\Hypertarget{lcd__driver_8h_abf764a93ccecfc79fed90d889d820508}\label{lcd__driver_8h_abf764a93ccecfc79fed90d889d820508}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!CURSOR\_ON@{CURSOR\_ON}}
+\index{CURSOR\_ON@{CURSOR\_ON}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{CURSOR\_ON}{CURSOR\_ON}}
+{\footnotesize\ttfamily \#define C\+U\+R\+S\+O\+R\+\_\+\+ON~(0x0\+A)}
+
+\mbox{\Hypertarget{lcd__driver_8h_ad2ec9831813c5e7069917aa4455af682}\label{lcd__driver_8h_ad2ec9831813c5e7069917aa4455af682}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!DISPLAY\_OFF@{DISPLAY\_OFF}}
+\index{DISPLAY\_OFF@{DISPLAY\_OFF}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{DISPLAY\_OFF}{DISPLAY\_OFF}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+A\+Y\+\_\+\+O\+FF~(0x08)}
+
+\mbox{\Hypertarget{lcd__driver_8h_a5ae6b05b3e1559c97f0d1b2daaaa0ee4}\label{lcd__driver_8h_a5ae6b05b3e1559c97f0d1b2daaaa0ee4}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!DISPLAY\_ON@{DISPLAY\_ON}}
+\index{DISPLAY\_ON@{DISPLAY\_ON}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{DISPLAY\_ON}{DISPLAY\_ON}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+A\+Y\+\_\+\+ON~(0x0\+C)}
+
+\mbox{\Hypertarget{lcd__driver_8h_a2effd0c71e0838b3526cda1967f39f0a}\label{lcd__driver_8h_a2effd0c71e0838b3526cda1967f39f0a}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!DISPLAY\_SHIFT@{DISPLAY\_SHIFT}}
+\index{DISPLAY\_SHIFT@{DISPLAY\_SHIFT}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{DISPLAY\_SHIFT}{DISPLAY\_SHIFT}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+A\+Y\+\_\+\+S\+H\+I\+FT~(0x10)}
+
+\mbox{\Hypertarget{lcd__driver_8h_ace87cdbd698a8961dd7161dd4133e0b7}\label{lcd__driver_8h_ace87cdbd698a8961dd7161dd4133e0b7}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!Enable\_0@{Enable\_0}}
+\index{Enable\_0@{Enable\_0}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{Enable\_0}{Enable\_0}}
+{\footnotesize\ttfamily \#define Enable\+\_\+0~G\+P\+I\+O\+Pin\+Write(G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+B\+\_\+\+B\+A\+SE, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+5, 0);}
+
+\mbox{\Hypertarget{lcd__driver_8h_a41005ab9429182b141c4788a3cdbc06a}\label{lcd__driver_8h_a41005ab9429182b141c4788a3cdbc06a}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!Enable\_1@{Enable\_1}}
+\index{Enable\_1@{Enable\_1}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{Enable\_1}{Enable\_1}}
+{\footnotesize\ttfamily \#define Enable\+\_\+1~G\+P\+I\+O\+Pin\+Write(G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+B\+\_\+\+B\+A\+SE, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+5, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+5);}
+
+\mbox{\Hypertarget{lcd__driver_8h_a7c67b7105bcd21f4bb1f978d0445dfe8}\label{lcd__driver_8h_a7c67b7105bcd21f4bb1f978d0445dfe8}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!ENTRY\_MODE@{ENTRY\_MODE}}
+\index{ENTRY\_MODE@{ENTRY\_MODE}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{ENTRY\_MODE}{ENTRY\_MODE}}
+{\footnotesize\ttfamily \#define E\+N\+T\+R\+Y\+\_\+\+M\+O\+DE~(0x06)}
+
+\mbox{\Hypertarget{lcd__driver_8h_a0259ead71ede21c332ae61239e1b6f8a}\label{lcd__driver_8h_a0259ead71ede21c332ae61239e1b6f8a}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!FIRST\_LINE@{FIRST\_LINE}}
+\index{FIRST\_LINE@{FIRST\_LINE}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{FIRST\_LINE}{FIRST\_LINE}}
+{\footnotesize\ttfamily \#define F\+I\+R\+S\+T\+\_\+\+L\+I\+NE~(0x80)}
+
+\mbox{\Hypertarget{lcd__driver_8h_a73afae21b0d2b9b74d78cf2afbfafcdf}\label{lcd__driver_8h_a73afae21b0d2b9b74d78cf2afbfafcdf}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!FOURTH\_LINE@{FOURTH\_LINE}}
+\index{FOURTH\_LINE@{FOURTH\_LINE}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{FOURTH\_LINE}{FOURTH\_LINE}}
+{\footnotesize\ttfamily \#define F\+O\+U\+R\+T\+H\+\_\+\+L\+I\+NE~(0x\+D0)}
+
+\mbox{\Hypertarget{lcd__driver_8h_a3a7306a88d8a7487b683e741c8e7f879}\label{lcd__driver_8h_a3a7306a88d8a7487b683e741c8e7f879}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!MICROSECOND@{MICROSECOND}}
+\index{MICROSECOND@{MICROSECOND}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{MICROSECOND}{MICROSECOND}}
+{\footnotesize\ttfamily \#define M\+I\+C\+R\+O\+S\+E\+C\+O\+ND~(160000)}
+
+\mbox{\Hypertarget{lcd__driver_8h_a5f494c8c0088bc512d7601768da7aeb7}\label{lcd__driver_8h_a5f494c8c0088bc512d7601768da7aeb7}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!RS\_0@{RS\_0}}
+\index{RS\_0@{RS\_0}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{RS\_0}{RS\_0}}
+{\footnotesize\ttfamily \#define R\+S\+\_\+0~G\+P\+I\+O\+Pin\+Write(G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+B\+\_\+\+B\+A\+SE, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+4, 0);}
+
+\mbox{\Hypertarget{lcd__driver_8h_abb36d2a5ad8c6f7f52c8ce5ed07922d4}\label{lcd__driver_8h_abb36d2a5ad8c6f7f52c8ce5ed07922d4}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!RS\_1@{RS\_1}}
+\index{RS\_1@{RS\_1}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{RS\_1}{RS\_1}}
+{\footnotesize\ttfamily \#define R\+S\+\_\+1~G\+P\+I\+O\+Pin\+Write(G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+B\+\_\+\+B\+A\+SE, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+4, G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+4);}
+
+\mbox{\Hypertarget{lcd__driver_8h_a636f55b94023a083f23a93b51925d662}\label{lcd__driver_8h_a636f55b94023a083f23a93b51925d662}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!SECOND\_LINE@{SECOND\_LINE}}
+\index{SECOND\_LINE@{SECOND\_LINE}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{SECOND\_LINE}{SECOND\_LINE}}
+{\footnotesize\ttfamily \#define S\+E\+C\+O\+N\+D\+\_\+\+L\+I\+NE~(0x\+C0)}
+
+\mbox{\Hypertarget{lcd__driver_8h_ae64acdff044d85bd8fca0099dd994890}\label{lcd__driver_8h_ae64acdff044d85bd8fca0099dd994890}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!SYSTEM\_SET@{SYSTEM\_SET}}
+\index{SYSTEM\_SET@{SYSTEM\_SET}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{SYSTEM\_SET}{SYSTEM\_SET}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+T\+E\+M\+\_\+\+S\+ET~(0x38)}
+
+\mbox{\Hypertarget{lcd__driver_8h_a65a69c53b2e839061b07835d87e3965a}\label{lcd__driver_8h_a65a69c53b2e839061b07835d87e3965a}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!THIRD\_LINE@{THIRD\_LINE}}
+\index{THIRD\_LINE@{THIRD\_LINE}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{THIRD\_LINE}{THIRD\_LINE}}
+{\footnotesize\ttfamily \#define T\+H\+I\+R\+D\+\_\+\+L\+I\+NE~(0x90)}
+
+\mbox{\Hypertarget{lcd__driver_8h_a0d7bf92e83d6d48a29c1064ba5cd9df2}\label{lcd__driver_8h_a0d7bf92e83d6d48a29c1064ba5cd9df2}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!Write@{Write}}
+\index{Write@{Write}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{Write}{Write}}
+{\footnotesize\ttfamily \#define Write(\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})~G\+P\+I\+O\+Pin\+Write(G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+K\+\_\+\+B\+A\+SE, /$\ast$G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+7 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+6 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+5 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+4 $\ast$/ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+3 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+2 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+1 $\vert$ G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+0 ,data);}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{lcd__driver_8h_a0cde574cfed137247015748d95bd43f0}\label{lcd__driver_8h_a0cde574cfed137247015748d95bd43f0}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!InitializeLCD@{InitializeLCD}}
+\index{InitializeLCD@{InitializeLCD}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{InitializeLCD()}{InitializeLCD()}}
+{\footnotesize\ttfamily void Initialize\+L\+CD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize L\+CD gpio pins. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lcd__driver_8h_abc94dbda4b8df7468d2703f754ac7bc2}\label{lcd__driver_8h_abc94dbda4b8df7468d2703f754ac7bc2}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!LCDClearDisplay@{LCDClearDisplay}}
+\index{LCDClearDisplay@{LCDClearDisplay}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{LCDClearDisplay()}{LCDClearDisplay()}}
+{\footnotesize\ttfamily void L\+C\+D\+Clear\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear L\+Cd dislay. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lcd__driver_8h_a99ef3ecdee03facfa0b8582baef836d2}\label{lcd__driver_8h_a99ef3ecdee03facfa0b8582baef836d2}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!LCDWriteChar@{LCDWriteChar}}
+\index{LCDWriteChar@{LCDWriteChar}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{LCDWriteChar()}{LCDWriteChar()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Char (\begin{DoxyParamCaption}\item[{char}]{character }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lcd__driver_8h_aee7391236ecad4d03d3d5d1248c1bbd9}\label{lcd__driver_8h_aee7391236ecad4d03d3d5d1248c1bbd9}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!LCDWriteCommand@{LCDWriteCommand}}
+\index{LCDWriteCommand@{LCDWriteCommand}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{LCDWriteCommand()}{LCDWriteCommand()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command }\end{DoxyParamCaption})}
+
+
+
+Write command to L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lcd__driver_8h_a23578ed686f72a95a95f24e3ddfb1411}\label{lcd__driver_8h_a23578ed686f72a95a95f24e3ddfb1411}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!LCDWriteStr@{LCDWriteStr}}
+\index{LCDWriteStr@{LCDWriteStr}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{LCDWriteStr()}{LCDWriteStr()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Str (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{int}]{line }\end{DoxyParamCaption})}
+
+
+
+Write string to L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+{\em line} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lcd__driver_8h_aaf06889a2ec37e049d4161f388a6bc96}\label{lcd__driver_8h_aaf06889a2ec37e049d4161f388a6bc96}} 
+\index{lcd\_driver.h@{lcd\_driver.h}!TurnOnLCD@{TurnOnLCD}}
+\index{TurnOnLCD@{TurnOnLCD}!lcd\_driver.h@{lcd\_driver.h}}
+\subsubsection{\texorpdfstring{TurnOnLCD()}{TurnOnLCD()}}
+{\footnotesize\ttfamily void Turn\+On\+L\+CD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Turn on Display. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

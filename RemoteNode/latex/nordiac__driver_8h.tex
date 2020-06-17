@@ -1,0 +1,1761 @@
+\hypertarget{nordiac__driver_8h}{}\section{inc/nordiac\+\_\+driver.h File Reference}
+\label{nordiac__driver_8h}\index{inc/nordiac\_driver.h@{inc/nordiac\_driver.h}}
+{\ttfamily \#include \char`\"{}P\+E\+\_\+\+Types.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a0b96ef9b201bfdc929eb2f55ca5713ab}{R\+F24\+\_\+\+C\+O\+N\+F\+IG}}~(0x00) /$\ast$ C\+O\+N\+F\+I\+G register $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ace6abafa371e6d157ac7e2add3656012}{R\+F24\+\_\+\+E\+N\+\_\+\+AA}}~(0x01) /$\ast$ E\+N\+\_\+\+A\+A register $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aef0c12d433716499562d142a54c6f7a3}{R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+DR}}~(0x02) /$\ast$ E\+N\+\_\+\+R\+X\+A\+D\+D\+R register $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a869f3e17230d6a8c48722d6777e3d0d6}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+AW}}~(0x03) /$\ast$ S\+E\+T\+U\+P\+\_\+\+A\+W register $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a9b6a30f717b9a7f695721ca36a7febd8}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+TR}}~(0x04)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a66d4ae84a9ee55dc1ab4661470cebc04}{R\+F24\+\_\+\+R\+F\+\_\+\+CH}}~(0x05)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a10ac45287da015a8dc7f6f6c367c9a0b}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+UP}}~(0x06) /$\ast$ S\+E\+T\+U\+P register $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ae8209e56cddd6eaeaab783325c534f3c}{R\+F24\+\_\+\+S\+T\+A\+T\+US}}~(0x07)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a89dfdb7318d54ec665df72ef92edf527}{R\+F24\+\_\+\+O\+B\+S\+E\+R\+V\+E\+\_\+\+TX}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aba1aa611372aa985c3667112f44ac5d3}{R\+F24\+\_\+\+R\+PD}}~(0x09)    /$\ast$ Mnemonic for n\+R\+F24\+L01+ $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aa68133f65d72061921001ac2b802ee62}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0}}~(0x0\+A)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a079b2555226f2c2e75bb81a2023d6157}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1}}~(0x0\+B)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_af2c06c1d3d759c69b1a63834ff7ddcb9}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P2}}~(0x0\+C)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_af0212fc9b145b0f743263c55c0161f2f}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P3}}~(0x0\+D)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a4d79b454843464fabe0d188c713b4671}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P4}}~(0x0\+E)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a2cae5287fd86670b3cddfa18d89c107c}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P5}}~(0x0\+F)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a69cce2df6eaa0387cf5ea43be3c3b11a}{R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+DR}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a47edaf5386fb83b1a0db77fe2d2ea9ab}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P0}}~(0x11)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a59b6a1204021b995215ec33a0ce86c19}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P1}}~(0x12)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aa91444722104eff83f6d051fa7f57220}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P2}}~(0x13)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a2ec7c04b033cb46bb32bc89baf54ecad}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P3}}~(0x14)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a04fae1d74fafe82182363f8df504bb28}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P4}}~(0x15)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ac8b8f9d9bb36ecc7ae300756326bc0ae}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P5}}~(0x16)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ae1a8e92ec068318fe3795c6b37c1dc4c}{R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+US}}~(0x17)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_abcf7c6b2481e8015b5284fec65f604a0}{R\+F24\+\_\+\+M\+A\+S\+K\+\_\+\+R\+X\+\_\+\+DR}}~(1$<$$<$6)  /$\ast$ Mask interrupt caused by R\+X\+\_\+\+D\+R\+: 1\+: interrupt masked. 0\+: interrupt enabled $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a34cb5449623df30e44069a15814a5e8a}{R\+F24\+\_\+\+M\+A\+S\+K\+\_\+\+T\+X\+\_\+\+DS}}~(1$<$$<$5)  /$\ast$ Mask interrupt caused by T\+X\+\_\+\+D\+S\+: 1\+: interrupt masked. 0\+: interrupt enabled $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a189e061d92d66af09c51520445ba9e19}{R\+F24\+\_\+\+M\+A\+S\+K\+\_\+\+M\+A\+X\+\_\+\+RT}}~(1$<$$<$4)  /$\ast$ Mask interrupt caused by M\+A\+X\+\_\+\+R\+T. 1\+: interrupt not reflected on I\+RQ pin. 0\+: reflect M\+A\+X\+\_\+\+RT as active low interrupt on I\+RQ pin $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ae1d057028813ff12551255bd1dab2a5f}{R\+F24\+\_\+\+E\+N\+\_\+\+C\+RC}}~(1$<$$<$3)  /$\ast$ Enable C\+R\+C. Forced high if on of the bits in E\+N\+\_\+\+AA is high $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aa8ba8500af64ad6fc479c9ee9ccf712c}{R\+F24\+\_\+\+C\+R\+CO}}~(1$<$$<$2)  /$\ast$ C\+RC encoding scheme, 0\+: 1 byte, 1\+: 2 bytes $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a6d8d98423a021ac84a9933111f4a9532}{R\+F24\+\_\+\+P\+W\+R\+\_\+\+UP}}~(1$<$$<$1)  /$\ast$ 1\+: Power up, 0\+: Power down $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ad37ea228b9d982adcbf82a3bf0b01153}{R\+F24\+\_\+\+P\+R\+I\+M\+\_\+\+RX}}~(1$<$$<$0)  /$\ast$ 1\+: P\+RX, 0\+: P\+TX $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a8121784548856ebb74a6ab42171cf4a7}{R\+F24\+\_\+\+P\+R\+I\+M\+\_\+\+TX}}~(0)     /$\ast$ 0\+: P\+TX $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a5b4b0a1d70c492ea1e9ebf7a2c08c05c}{R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P5}}~(5)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a596f44f679966c44f253e29627143876}{R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P4}}~(4)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_af2ef34747c070e51bf16b7707c265e78}{R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P3}}~(3)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a5b411a2a317ef8e828633b7a301247bc}{R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P2}}~(2)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aed478624f140af28dec87c4ad1b9902b}{R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P1}}~(1)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a5a0e5e50b0eb9cc3d5265f881b3f1e2d}{R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P0}}~(0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a0489a24ae47d6c8e4ef45d97d12e7f6e}{R\+F24\+\_\+\+E\+R\+X\+\_\+\+P5}}~(5)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a6d7551987dc401f37514e506ca64a407}{R\+F24\+\_\+\+E\+R\+X\+\_\+\+P4}}~(4)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a5d1727a35c594f0e63682e70926adefd}{R\+F24\+\_\+\+E\+R\+X\+\_\+\+P3}}~(3)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ad84038c32e570277dfeac417c30955e0}{R\+F24\+\_\+\+E\+R\+X\+\_\+\+P2}}~(2)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a45b51d20c1c9e7bfaacb7dd8d55e8e6c}{R\+F24\+\_\+\+E\+R\+X\+\_\+\+P1}}~(1)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a78ffd217a92910cd86082618c4ad3ab2}{R\+F24\+\_\+\+E\+R\+X\+\_\+\+P0}}~(0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a2696c81eb68da84ff838df42aa979fd7}{R\+F24\+\_\+\+AW}}~(0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_abdd19ae59655af18e9d89fecf1416c55}{R\+F24\+\_\+\+A\+RD}}~(4)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a46cfec9982acd85e66e94274af1882be}{R\+F24\+\_\+\+A\+RC}}~(0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a8700512119a75b54de9989952b4b3c73}{R\+F24\+\_\+\+P\+L\+L\+\_\+\+L\+O\+CK}}~(4)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a7cfd571b91693e83387bd41ff700d3e4}{R\+F24\+\_\+\+R\+F\+\_\+\+D\+R\+\_\+\+H\+I\+GH}}~(3)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a77a15bf298027b0f2768db0bb569c99d}{R\+F24\+\_\+\+R\+F\+\_\+\+D\+R\+\_\+\+L\+OW}}~(5)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a3cf4fa3a87c910bc76e3dc435c22d44d}{R\+F24\+\_\+\+R\+F\+\_\+\+P\+WR}}~(1)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ae4486f523b036b96248fa9a6d9252659}{R\+F24\+\_\+\+L\+N\+A\+\_\+\+H\+C\+U\+RR}}~(0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a9777580af1bef5bd6260315e65330010}{R\+F24\+\_\+\+R\+X\+\_\+\+DR}}~(6)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a5d4d7a1a08460f811058e992dcbdadd7}{R\+F24\+\_\+\+T\+X\+\_\+\+DS}}~(5)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a343d652ad336782a01199ea88cc8defb}{R\+F24\+\_\+\+M\+A\+X\+\_\+\+RT}}~(4)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a52e5fab2acb7da867fb4576735dc89c9}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+\_\+\+NO}}~(1)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab478e6d2cbb84e044eec742962389ec3}{R\+F24\+\_\+\+T\+X\+\_\+\+F\+U\+LL}}~(0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aa78a4fc8717da946c9269f6cdd4720c1}{R\+F24\+\_\+\+P\+L\+O\+S\+\_\+\+C\+NT}}~(4)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ae8f110bd8cfb4021b1f521c56f60c061}{R\+F24\+\_\+\+A\+R\+C\+\_\+\+C\+NT}}~(0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aa4fdcbfe96acb2ec584d80321de500b2}{R\+F24\+\_\+\+T\+X\+\_\+\+R\+E\+U\+SE}}~(6)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aa556f9c68392bf982fee692328d187d7}{R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+F\+U\+LL}}~(5)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a8658aa3036e895ddb34ac6602d5e0f45}{R\+F24\+\_\+\+T\+X\+\_\+\+E\+M\+P\+TY}}~(4)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a3643f3b3a634bcbe63c6f0241d877f93}{R\+F24\+\_\+\+R\+X\+\_\+\+F\+U\+LL}}~(1)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a3c45b781d9d672f274ffbcde10781d8b}{R\+F24\+\_\+\+R\+X\+\_\+\+E\+M\+P\+TY}}~(0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a1b144cdfc856581cee54e31d2084c347}{R\+F24\+\_\+\+R\+\_\+\+R\+E\+G\+I\+S\+T\+ER}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_af68da92dd0c41879cc0a2b3673d9e68e}{R\+F24\+\_\+\+W\+\_\+\+R\+E\+G\+I\+S\+T\+ER}}~(0x20)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a711a90f05a0255e1bf95f40b5be9db19}{R\+F24\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+SK}}~(0x1\+F)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_acaad37cb969ae85c9590a8fd5486db22}{R\+F24\+\_\+\+R\+\_\+\+R\+X\+\_\+\+P\+A\+Y\+L\+O\+AD}}~(0x61)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a264382afeb57f241e73141fd5f9d05e4}{R\+F24\+\_\+\+W\+\_\+\+T\+X\+\_\+\+P\+A\+Y\+L\+O\+AD}}~(0x\+A0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ae49f5bc30dc5d051907ed4803dbbe4fe}{R\+F24\+\_\+\+F\+L\+U\+S\+H\+\_\+\+TX}}~(0x\+E1)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_acd18ad67dfb3c02987f3b844384e3785}{R\+F24\+\_\+\+F\+L\+U\+S\+H\+\_\+\+RX}}~(0x\+E2)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_af3f6882b01f763c0a4f683e6778b44ad}{R\+F24\+\_\+\+R\+E\+U\+S\+E\+\_\+\+T\+X\+\_\+\+PL}}~(0x\+E3)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a4924d732f99c6ec5f872a286852d0d94}{R\+F24\+\_\+\+N\+OP}}~(0x\+F\+F)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a4eaeeb19ed665ed3bc159fbacb9165ad}{R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a5dfec78343dde3417884c473086b3a61}{R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x3\+F)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_af2f84400fb05074a26b8322d80fc2c7a}{R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x03)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a71c3a60430d87230a9915bcaf5518bb5}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x03)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a60d297f5dec92120798634a312f7e0ec}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x03)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a8a4ee5bcbeaf6b8f9c835cd2b8ebf48c}{R\+F24\+\_\+\+R\+F\+\_\+\+C\+H\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a17fb712bb55fe7e35f7a243760a22057}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x0\+F)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a89008e8b64642e86975d31dfb12ea2e0}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x0\+E)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a867981c62ce749528d702a59e678f647}{R\+F24\+\_\+\+O\+B\+S\+E\+R\+V\+E\+\_\+\+T\+X\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab170e25a4306589e76e5b5a4e419496d}{R\+F24\+\_\+\+C\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a6437e46e05bd19bf8b8df986560e5066}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0\+\_\+\+B0\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+E7)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a303ab8689ff1ec0869660a127a31bf3e}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0\+\_\+\+B1\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+E7)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a96ffabe18b71e5eaa3af76793f09371b}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0\+\_\+\+B2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+E7)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab7744ba3b0ed48bda4ec962b6b74d6e4}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0\+\_\+\+B3\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+E7)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a61553fabd87cb089f02300e6366477f7}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0\+\_\+\+B4\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+E7)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a577c5c9a3d09c4f673fc21ba534e2c49}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1\+\_\+\+B0\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+C2)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a86ed9ce422aac0292b6e01f150e97ab7}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1\+\_\+\+B1\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+C2)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a02f9d7ef1b53ae55f3807b5ca581a664}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1\+\_\+\+B2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+C2)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a4ecda544a829feb96ccc10322dfa4d4e}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1\+\_\+\+B3\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+C2)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ad712ca8f672a6d2aa1afa4571354bf7e}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1\+\_\+\+B4\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+C2)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ac75b189e15d7b69c859a09a9eda8ba75}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+C3)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a1700909a9a1933a2b32c7dca6d6a52c0}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P3\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+C4)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab58c583d4e479f2cc20f43af44a5d63a}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P4\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+C5)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a904b0518fc5c014d4af80ab4abf819e5}{R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P5\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+C6)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aebfdf791b1573b66214bf80a7eb074b6}{R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+D\+R\+\_\+\+B0\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+E7)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a6a40bbd4fdf8a1467d0cb0dc10d496a3}{R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+D\+R\+\_\+\+B1\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+E7)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a5196c05504d4efd74c10d236d8fbe835}{R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+D\+R\+\_\+\+B2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+E7)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aed9660bf1a227e937e4582dbe363af26}{R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+D\+R\+\_\+\+B3\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+E7)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a8be85d438e378e622d43f62377b9af07}{R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+D\+R\+\_\+\+B4\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x\+E7)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a75c675b02b739186d4775ff654325b84}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P0\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a435c89babb690a616c458d6a2be4177b}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P1\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a4fe4a49e6fdd09a13b46ca389c50d4a1}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_abaa890abf07764d0e0a29981ba81b1c3}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P3\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ae8534ed9886cc082dfb744d1760eae0f}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P4\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a1193089e9cdf754131eebb23440622bf}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P5\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aa4dbfeb069bbeb089f9a786880e8f179}{R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL}}~(0x11)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab7ba025bb8f43f898c1b3bae7f220f07}{R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a4772ea5fbcef02fadcc8cdf630491eb7}{R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+S\+K\+\_\+\+R\+X\+\_\+\+DR}}~(0x40)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a83708d2bb20ee693c3627cfa6e40e557}{R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+S\+K\+\_\+\+T\+X\+\_\+\+DS}}~(0x20)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a3575ebd9e91f8113f360ceabc4ae65ed}{R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+S\+K\+\_\+\+M\+A\+X\+\_\+\+RT}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ad44cca75372933df4d402c076ec7af3c}{R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+E\+N\+\_\+\+C\+RC}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a17fd2c576c175a4bd6763d8086ff1434}{R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+C\+R\+CO}}~(0x04)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a2562795c0cd955658859437f6b9b04c3}{R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+W\+R\+\_\+\+UP}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a1dcd0e43204d5b17438731d58b04f6d7}{R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+R\+I\+M\+\_\+\+RX}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_acd736b0a5fa64f488e63de5f0b1cec85}{R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aed4579f043eb76137a24d9ec018185d5}{R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+A\+LL}}~(0x3\+F)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a08c7e6ee47a9d56e3eebfd6541fde81a}{R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P5}}~(0x20)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a91edeceb4fd40c0a6c6372ea7128e4c3}{R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P4}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ae2a34198bfa0783ef472abd725138b0e}{R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P3}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a691dcb088934f7a2b0eec019dc50d53d}{R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P2}}~(0x04)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a33c62e1887f8898c38641613c14931fb}{R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P1}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ae7fae72eb7f9cb85457b82c49cec5ad6}{R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P0}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a2e8c58c8c735d125e3406ef63216722b}{R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+N\+O\+NE}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a0736ca9bf07cac4c772125d2be3a2ca4}{R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ad4aeced80a38f44914aa2b9d57bb8f73}{R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+A\+LL}}~(0x3\+F)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab0bcd1391f178d52800c3526e1f85f99}{R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P5}}~(0x20)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a0befb6f7faf7b1d7b26680b1d9b0a84f}{R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P4}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a87dba2530cb1833728ba7018169d6a5b}{R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P3}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a3bbc8f4db665c838fea918b14d41e4e9}{R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P2}}~(0x04)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a872e0ede2c2c5404dcb1159703effcc4}{R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P1}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a4cc446bb435ddcb5bb5ac835b4e031ca}{R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P0}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ac39756dd58c340e134cde7ea27540ad3}{R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+N\+O\+NE}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab2b5d89b4edfe6053b4dc481ed9fe4c7}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+F\+C)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a869f3e17230d6a8c48722d6777e3d0d6}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+AW}}~(0x03)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a29005ee738e38583f5b37a4f45b52882}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+5\+B\+Y\+T\+ES}}~(0x03)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a1a1b5051bccf423843b9f648083abf95}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+4\+B\+Y\+T\+ES}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a7a8ca92a3c67735cc6a8f8aeb3194479}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+3\+B\+Y\+T\+ES}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ad78f239cf0ffe082dcbf276e46f4dfcd}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+\+I\+L\+L\+E\+G\+AL}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a9a6bfb164f66e0609c1291da138ae74a}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+RD}}~(0x\+F0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ae533bf3cfbfec6d83978d2c342df3e5d}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+4000}}~(0x\+F0) /$\ast$ 4400 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a8487e17fcf94c068328d4dd446d10093}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+3750}}~(0x\+E0) /$\ast$ 3750 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a148c93ed86213092aa7b5addff744af6}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+3500}}~(0x\+D0) /$\ast$ 3500 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a7e49c54330cc68533fc0b56e202a041e}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+3250}}~(0x\+C0) /$\ast$ 3250 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a0d2afc9f03264870333f776b1805b9a2}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+3000}}~(0x\+B0) /$\ast$ 3000 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_acd05725cdd5d9e65c471e5969cd3a7ee}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+2750}}~(0x\+A0) /$\ast$ 2750 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a794ec944f3e6ac5759bd05f065bf457a}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+2500}}~(0x90) /$\ast$ 2500 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a44f9f71e442b230b54877b10dd330297}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+2250}}~(0x80) /$\ast$ 2250 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a2f916dace9f590a781576ca7e979c892}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+2000}}~(0x70) /$\ast$ 2000 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a5e04d4ba1cd7d5280f2099bbdbb18342}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+1750}}~(0x60) /$\ast$ 1750 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a02c587ae400cbdbc1c6d47a2dae0312d}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+1500}}~(0x50) /$\ast$ 1500 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a62718704b38bff1b2806d3b840b43242}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+1250}}~(0x40) /$\ast$ 1250 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_adf278d8e858fd1671d576843a1f1c06e}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+1000}}~(0x30) /$\ast$ 1000 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a0dda06bddbc6a252922cf29d29841888}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+750}}~(0x20) /$\ast$ 750 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ad6312f1edce0e254514d5ab9f534bda1}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+500}}~(0x10) /$\ast$ 500 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab26ae630b1c3b3fa18a02b1d1356f401}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+250}}~(0x00) /$\ast$ 250 us retry delay $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a2a843d4d6dbe605446ed64a2722fb106}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+RC}}~(0x0\+F)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_afa9610ade9c96d7a7f0e80cf8464ba3b}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+15}}~(0x0\+F) /$\ast$ 15 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aa612a8421942b54eb4ec98abb7f1c7c0}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+14}}~(0x0\+E) /$\ast$ 14 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a9ca348c7501f861ccd83cce434659b4d}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+13}}~(0x0\+D) /$\ast$ 13 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ad2a7e70fb2b624d2fac83368ba6321fc}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+12}}~(0x0\+C) /$\ast$ 12 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a573f8cf6abab3ac803328cd750f8ed8e}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+11}}~(0x0\+B) /$\ast$ 11 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a03f9a4d3ea91b2036b25d778975e4aa4}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+10}}~(0x0\+A) /$\ast$ 10 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_afa8c352161edc325380509e41591c0b8}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+9}}~(0x09) /$\ast$ 9 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a231da311bb8d35b50e6177230a07f302}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+8}}~(0x08) /$\ast$ 8 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a1d6bf1d90270b17b33d6a1e8b287e40e}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+7}}~(0x07) /$\ast$ 7 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aeb51fc8145a5d50125eb90081af608fb}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+6}}~(0x06) /$\ast$ 6 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_af4d5227e70eaf810f2620e74eff3eed4}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+5}}~(0x05) /$\ast$ 5 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a7e9e86672fb0586e1bd186631ed80eaf}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+4}}~(0x04) /$\ast$ 4 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a32c5d676504bcdc067fbfdcbd60e77e3}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+3}}~(0x03) /$\ast$ 3 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ad496cc8ff8c69d665be73eb539cb5888}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+2}}~(0x02) /$\ast$ 2 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a1bcd10ad2614cbead728a7dabfbf9c47}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+1}}~(0x01) /$\ast$ 1 retry count $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aa826e67e377f8a8f03a3288818029f0e}{R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+0}}~(0x00) /$\ast$ 0 retry count, retry disabled $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a15f7e743b643acdb516e9bf0b0fbc71d}{R\+F24\+\_\+\+R\+F\+\_\+\+C\+H\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aff2381bc298294a16f0499e2c0c07ad1}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+E0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_acfc4f05ef65a4e169b0bb257f54ecadd}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+P\+L\+L\+\_\+\+L\+O\+CK}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a1bf2f418c16cb472ddacda98304058a4}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+DR}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a2fa1125e1b325522b933456f27a48ea0}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+D\+R\+\_\+250}}~(0x20)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab8490c2dec9d52884671c27955ef906d}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+D\+R\+\_\+1000}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a69d6603a5c33060e0f10b7e53a5b631f}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+D\+R\+\_\+2000}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a4ebdc556d81743c9380a4fa28d9036ae}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+P\+WR}}~(0x06)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a9e83f5f3e41b163e901c3bfc73505412}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+P\+W\+R\+\_\+0}}~(0x06)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a35e33f5ac736900d1413f4130108b2c7}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+P\+W\+R\+\_\+6}}~(0x04)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a8163605de97bea087b38914461e2c12d}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+P\+W\+R\+\_\+12}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aa9d9986138273c0411c46e40d0d14fe2}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+P\+W\+R\+\_\+18}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a06191aedb5aa948041f677efbedb5501}{R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+L\+N\+A\+\_\+\+H\+C\+U\+RR}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ac257ed5330c2135cf4c15fbd51999788}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x80)   /$\ast$ bit 1xxx xxxx\+: This bit is reserved $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab75b90c42fc47bff64c33ac0751871b2}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+DR}}~(0x40)   /$\ast$ bit x1xx xxxx\+: Data ready R\+X F\+I\+F\+O interrupt. Asserted when new data arrives R\+X F\+I\+F\+O $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a365a7c7dab58a75bdbbe0b46e36438a0}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+X\+\_\+\+DS}}~(0x20)   /$\ast$ bit xx1x xxxx\+: Data sent T\+X F\+I\+F\+O interrupt. Asserted when packet transmitted on T\+X. $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a1829985c1712ba7832f76f9e8550632b}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+X\+\_\+\+RT}}~(0x10)   /$\ast$ bit xxx1 xxxx\+: maximum number of T\+X retransmit interrupts $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a8960ffba4bcaee18c29502aabca9c5ba}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+NO}}~(0x0\+E)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab48f55595da7629b56cd73787ffe1015}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+\+R\+X\+\_\+\+F\+I\+F\+O\+\_\+\+N\+O\+T\+\_\+\+E\+M\+P\+TY}}~(0x0\+E)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_aefa69e4bd18db947eef0b05674632a07}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+\+U\+N\+U\+S\+ED}}~(0x0\+C)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a4be5b28b936d9b14a64828c5259f418f}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+5}}~(0x0\+A)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a10a157c41a49c77816dca5d738964b67}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+4}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ac964bcf42fbb442d08c88c1229a7209d}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+3}}~(0x06)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a9717419057369fea43a264a60bb3b517}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+2}}~(0x04)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a5b4613356aa8796e5f31346ce73f7a99}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+1}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a8eed8878c7b78130dd4f0285377ca1ef}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+0}}~(0x00)   /$\ast$ bit xxxx 111x\+: pipe number for payload $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a0245e0d921676696d02d1cf06a3f6863}{R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+X\+\_\+\+F\+U\+LL}}~(0x01)   /$\ast$ bit xxxx xxx1\+: if bit set, then T\+X F\+I\+F\+O is full $\ast$/
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a114a150860f2d0219084485f875b23e2}{R\+F24\+\_\+\+O\+B\+S\+E\+R\+V\+E\+\_\+\+T\+X\+\_\+\+P\+L\+O\+S\+\_\+\+C\+NT}}~(0x\+F0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ab6ac770eddad41b8a0634a387aa7eb3b}{R\+F24\+\_\+\+O\+B\+S\+E\+R\+V\+E\+\_\+\+T\+X\+\_\+\+A\+R\+C\+\_\+\+C\+NT}}~(0x0\+F)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_ad241cdc2281f45a4acdbd95ea219757b}{R\+F24\+\_\+\+R\+P\+D\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+F\+E)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a2703c8b6de53376f7a85dde039a859d8}{R\+F24\+\_\+\+R\+P\+D\+\_\+\+R\+PD}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a79a46797ae7a1935239ddb6c1275b654}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P0\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a79a46797ae7a1935239ddb6c1275b654}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P0\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a1327b59fb21cb0e555cef6312538fab9}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P1\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a642034fd2134b503255d36bf25f55f75}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P2\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a8a29b024f871908951078af864aedd29}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P3\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a3a7cd5dbe0e043ecad4df757a277ddee}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P4\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a2e408e8598f2aed7a76d21020b006dc0}{R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P5\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x\+C0)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a35b215a864722f6fbf5ae1cd016a6997}{R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+S\+E\+R\+V\+ED}}~(0x8\+C)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a7fc29d17aa8da6b64ad8055c1d206642}{R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+X\+\_\+\+R\+E\+U\+SE}}~(0x40)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a521210d811d01c880765fbcee0525ab2}{R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+X\+\_\+\+F\+U\+LL}}~(0x20)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a72622f42150259a17694f8f04dbe1e69}{R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+X\+\_\+\+E\+M\+P\+TY}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a7d2fee44f5866170e1fe5d034674d7a7}{R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+F\+U\+LL}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{nordiac__driver_8h_a9d118c06e7032739ae936fcbb3d335ef}{R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+E\+M\+P\+TY}}~(0x01)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{nordiac__driver_8h_a46cfec9982acd85e66e94274af1882be}\label{nordiac__driver_8h_a46cfec9982acd85e66e94274af1882be}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ARC@{RF24\_ARC}}
+\index{RF24\_ARC@{RF24\_ARC}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ARC}{RF24\_ARC}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+A\+RC~(0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ae8f110bd8cfb4021b1f521c56f60c061}\label{nordiac__driver_8h_ae8f110bd8cfb4021b1f521c56f60c061}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ARC\_CNT@{RF24\_ARC\_CNT}}
+\index{RF24\_ARC\_CNT@{RF24\_ARC\_CNT}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ARC\_CNT}{RF24\_ARC\_CNT}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+A\+R\+C\+\_\+\+C\+NT~(0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_abdd19ae59655af18e9d89fecf1416c55}\label{nordiac__driver_8h_abdd19ae59655af18e9d89fecf1416c55}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ARD@{RF24\_ARD}}
+\index{RF24\_ARD@{RF24\_ARD}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ARD}{RF24\_ARD}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+A\+RD~(4)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a2696c81eb68da84ff838df42aa979fd7}\label{nordiac__driver_8h_a2696c81eb68da84ff838df42aa979fd7}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_AW@{RF24\_AW}}
+\index{RF24\_AW@{RF24\_AW}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_AW}{RF24\_AW}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+AW~(0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab170e25a4306589e76e5b5a4e419496d}\label{nordiac__driver_8h_ab170e25a4306589e76e5b5a4e419496d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CD\_DEFAULT\_VAL@{RF24\_CD\_DEFAULT\_VAL}}
+\index{RF24\_CD\_DEFAULT\_VAL@{RF24\_CD\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CD\_DEFAULT\_VAL}{RF24\_CD\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a0b96ef9b201bfdc929eb2f55ca5713ab}\label{nordiac__driver_8h_a0b96ef9b201bfdc929eb2f55ca5713ab}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CONFIG@{RF24\_CONFIG}}
+\index{RF24\_CONFIG@{RF24\_CONFIG}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CONFIG}{RF24\_CONFIG}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+O\+N\+F\+IG~(0x00) /$\ast$ C\+O\+N\+F\+I\+G register $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a17fd2c576c175a4bd6763d8086ff1434}\label{nordiac__driver_8h_a17fd2c576c175a4bd6763d8086ff1434}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CONFIG\_CRCO@{RF24\_CONFIG\_CRCO}}
+\index{RF24\_CONFIG\_CRCO@{RF24\_CONFIG\_CRCO}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CONFIG\_CRCO}{RF24\_CONFIG\_CRCO}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+C\+R\+CO~(0x04)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a4eaeeb19ed665ed3bc159fbacb9165ad}\label{nordiac__driver_8h_a4eaeeb19ed665ed3bc159fbacb9165ad}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CONFIG\_DEFAULT\_VAL@{RF24\_CONFIG\_DEFAULT\_VAL}}
+\index{RF24\_CONFIG\_DEFAULT\_VAL@{RF24\_CONFIG\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CONFIG\_DEFAULT\_VAL}{RF24\_CONFIG\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x08)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ad44cca75372933df4d402c076ec7af3c}\label{nordiac__driver_8h_ad44cca75372933df4d402c076ec7af3c}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CONFIG\_EN\_CRC@{RF24\_CONFIG\_EN\_CRC}}
+\index{RF24\_CONFIG\_EN\_CRC@{RF24\_CONFIG\_EN\_CRC}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CONFIG\_EN\_CRC}{RF24\_CONFIG\_EN\_CRC}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+E\+N\+\_\+\+C\+RC~(0x08)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a3575ebd9e91f8113f360ceabc4ae65ed}\label{nordiac__driver_8h_a3575ebd9e91f8113f360ceabc4ae65ed}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CONFIG\_MASK\_MAX\_RT@{RF24\_CONFIG\_MASK\_MAX\_RT}}
+\index{RF24\_CONFIG\_MASK\_MAX\_RT@{RF24\_CONFIG\_MASK\_MAX\_RT}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CONFIG\_MASK\_MAX\_RT}{RF24\_CONFIG\_MASK\_MAX\_RT}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+S\+K\+\_\+\+M\+A\+X\+\_\+\+RT~(0x10)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a4772ea5fbcef02fadcc8cdf630491eb7}\label{nordiac__driver_8h_a4772ea5fbcef02fadcc8cdf630491eb7}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CONFIG\_MASK\_RX\_DR@{RF24\_CONFIG\_MASK\_RX\_DR}}
+\index{RF24\_CONFIG\_MASK\_RX\_DR@{RF24\_CONFIG\_MASK\_RX\_DR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CONFIG\_MASK\_RX\_DR}{RF24\_CONFIG\_MASK\_RX\_DR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+S\+K\+\_\+\+R\+X\+\_\+\+DR~(0x40)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a83708d2bb20ee693c3627cfa6e40e557}\label{nordiac__driver_8h_a83708d2bb20ee693c3627cfa6e40e557}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CONFIG\_MASK\_TX\_DS@{RF24\_CONFIG\_MASK\_TX\_DS}}
+\index{RF24\_CONFIG\_MASK\_TX\_DS@{RF24\_CONFIG\_MASK\_TX\_DS}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CONFIG\_MASK\_TX\_DS}{RF24\_CONFIG\_MASK\_TX\_DS}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+S\+K\+\_\+\+T\+X\+\_\+\+DS~(0x20)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a1dcd0e43204d5b17438731d58b04f6d7}\label{nordiac__driver_8h_a1dcd0e43204d5b17438731d58b04f6d7}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CONFIG\_PRIM\_RX@{RF24\_CONFIG\_PRIM\_RX}}
+\index{RF24\_CONFIG\_PRIM\_RX@{RF24\_CONFIG\_PRIM\_RX}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CONFIG\_PRIM\_RX}{RF24\_CONFIG\_PRIM\_RX}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+R\+I\+M\+\_\+\+RX~(0x01)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a2562795c0cd955658859437f6b9b04c3}\label{nordiac__driver_8h_a2562795c0cd955658859437f6b9b04c3}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CONFIG\_PWR\_UP@{RF24\_CONFIG\_PWR\_UP}}
+\index{RF24\_CONFIG\_PWR\_UP@{RF24\_CONFIG\_PWR\_UP}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CONFIG\_PWR\_UP}{RF24\_CONFIG\_PWR\_UP}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+W\+R\+\_\+\+UP~(0x02)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab7ba025bb8f43f898c1b3bae7f220f07}\label{nordiac__driver_8h_ab7ba025bb8f43f898c1b3bae7f220f07}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CONFIG\_RESERVED@{RF24\_CONFIG\_RESERVED}}
+\index{RF24\_CONFIG\_RESERVED@{RF24\_CONFIG\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CONFIG\_RESERVED}{RF24\_CONFIG\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x80)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aa8ba8500af64ad6fc479c9ee9ccf712c}\label{nordiac__driver_8h_aa8ba8500af64ad6fc479c9ee9ccf712c}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_CRCO@{RF24\_CRCO}}
+\index{RF24\_CRCO@{RF24\_CRCO}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_CRCO}{RF24\_CRCO}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+C\+R\+CO~(1$<$$<$2)  /$\ast$ C\+RC encoding scheme, 0\+: 1 byte, 1\+: 2 bytes $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ace6abafa371e6d157ac7e2add3656012}\label{nordiac__driver_8h_ace6abafa371e6d157ac7e2add3656012}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_AA@{RF24\_EN\_AA}}
+\index{RF24\_EN\_AA@{RF24\_EN\_AA}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_AA}{RF24\_EN\_AA}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+AA~(0x01) /$\ast$ E\+N\+\_\+\+A\+A register $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a5dfec78343dde3417884c473086b3a61}\label{nordiac__driver_8h_a5dfec78343dde3417884c473086b3a61}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_AA\_DEFAULT\_VAL@{RF24\_EN\_AA\_DEFAULT\_VAL}}
+\index{RF24\_EN\_AA\_DEFAULT\_VAL@{RF24\_EN\_AA\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_AA\_DEFAULT\_VAL}{RF24\_EN\_AA\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x3\+F)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aed4579f043eb76137a24d9ec018185d5}\label{nordiac__driver_8h_aed4579f043eb76137a24d9ec018185d5}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_AA\_ENAA\_ALL@{RF24\_EN\_AA\_ENAA\_ALL}}
+\index{RF24\_EN\_AA\_ENAA\_ALL@{RF24\_EN\_AA\_ENAA\_ALL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_AA\_ENAA\_ALL}{RF24\_EN\_AA\_ENAA\_ALL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+A\+LL~(0x3\+F)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a2e8c58c8c735d125e3406ef63216722b}\label{nordiac__driver_8h_a2e8c58c8c735d125e3406ef63216722b}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_AA\_ENAA\_NONE@{RF24\_EN\_AA\_ENAA\_NONE}}
+\index{RF24\_EN\_AA\_ENAA\_NONE@{RF24\_EN\_AA\_ENAA\_NONE}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_AA\_ENAA\_NONE}{RF24\_EN\_AA\_ENAA\_NONE}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+N\+O\+NE~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ae7fae72eb7f9cb85457b82c49cec5ad6}\label{nordiac__driver_8h_ae7fae72eb7f9cb85457b82c49cec5ad6}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_AA\_ENAA\_P0@{RF24\_EN\_AA\_ENAA\_P0}}
+\index{RF24\_EN\_AA\_ENAA\_P0@{RF24\_EN\_AA\_ENAA\_P0}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_AA\_ENAA\_P0}{RF24\_EN\_AA\_ENAA\_P0}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P0~(0x01)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a33c62e1887f8898c38641613c14931fb}\label{nordiac__driver_8h_a33c62e1887f8898c38641613c14931fb}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_AA\_ENAA\_P1@{RF24\_EN\_AA\_ENAA\_P1}}
+\index{RF24\_EN\_AA\_ENAA\_P1@{RF24\_EN\_AA\_ENAA\_P1}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_AA\_ENAA\_P1}{RF24\_EN\_AA\_ENAA\_P1}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P1~(0x02)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a691dcb088934f7a2b0eec019dc50d53d}\label{nordiac__driver_8h_a691dcb088934f7a2b0eec019dc50d53d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_AA\_ENAA\_P2@{RF24\_EN\_AA\_ENAA\_P2}}
+\index{RF24\_EN\_AA\_ENAA\_P2@{RF24\_EN\_AA\_ENAA\_P2}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_AA\_ENAA\_P2}{RF24\_EN\_AA\_ENAA\_P2}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P2~(0x04)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ae2a34198bfa0783ef472abd725138b0e}\label{nordiac__driver_8h_ae2a34198bfa0783ef472abd725138b0e}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_AA\_ENAA\_P3@{RF24\_EN\_AA\_ENAA\_P3}}
+\index{RF24\_EN\_AA\_ENAA\_P3@{RF24\_EN\_AA\_ENAA\_P3}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_AA\_ENAA\_P3}{RF24\_EN\_AA\_ENAA\_P3}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P3~(0x08)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a91edeceb4fd40c0a6c6372ea7128e4c3}\label{nordiac__driver_8h_a91edeceb4fd40c0a6c6372ea7128e4c3}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_AA\_ENAA\_P4@{RF24\_EN\_AA\_ENAA\_P4}}
+\index{RF24\_EN\_AA\_ENAA\_P4@{RF24\_EN\_AA\_ENAA\_P4}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_AA\_ENAA\_P4}{RF24\_EN\_AA\_ENAA\_P4}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P4~(0x10)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a08c7e6ee47a9d56e3eebfd6541fde81a}\label{nordiac__driver_8h_a08c7e6ee47a9d56e3eebfd6541fde81a}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_AA\_ENAA\_P5@{RF24\_EN\_AA\_ENAA\_P5}}
+\index{RF24\_EN\_AA\_ENAA\_P5@{RF24\_EN\_AA\_ENAA\_P5}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_AA\_ENAA\_P5}{RF24\_EN\_AA\_ENAA\_P5}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+E\+N\+A\+A\+\_\+\+P5~(0x20)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_acd736b0a5fa64f488e63de5f0b1cec85}\label{nordiac__driver_8h_acd736b0a5fa64f488e63de5f0b1cec85}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_AA\_RESERVED@{RF24\_EN\_AA\_RESERVED}}
+\index{RF24\_EN\_AA\_RESERVED@{RF24\_EN\_AA\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_AA\_RESERVED}{RF24\_EN\_AA\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+A\+A\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+C0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ae1d057028813ff12551255bd1dab2a5f}\label{nordiac__driver_8h_ae1d057028813ff12551255bd1dab2a5f}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_CRC@{RF24\_EN\_CRC}}
+\index{RF24\_EN\_CRC@{RF24\_EN\_CRC}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_CRC}{RF24\_EN\_CRC}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+C\+RC~(1$<$$<$3)  /$\ast$ Enable C\+R\+C. Forced high if on of the bits in E\+N\+\_\+\+AA is high $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aef0c12d433716499562d142a54c6f7a3}\label{nordiac__driver_8h_aef0c12d433716499562d142a54c6f7a3}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_RXADDR@{RF24\_EN\_RXADDR}}
+\index{RF24\_EN\_RXADDR@{RF24\_EN\_RXADDR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_RXADDR}{RF24\_EN\_RXADDR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+DR~(0x02) /$\ast$ E\+N\+\_\+\+R\+X\+A\+D\+D\+R register $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_af2f84400fb05074a26b8322d80fc2c7a}\label{nordiac__driver_8h_af2f84400fb05074a26b8322d80fc2c7a}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_RXADDR\_DEFAULT\_VAL@{RF24\_EN\_RXADDR\_DEFAULT\_VAL}}
+\index{RF24\_EN\_RXADDR\_DEFAULT\_VAL@{RF24\_EN\_RXADDR\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_RXADDR\_DEFAULT\_VAL}{RF24\_EN\_RXADDR\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x03)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ad4aeced80a38f44914aa2b9d57bb8f73}\label{nordiac__driver_8h_ad4aeced80a38f44914aa2b9d57bb8f73}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_RXADDR\_ERX\_ALL@{RF24\_EN\_RXADDR\_ERX\_ALL}}
+\index{RF24\_EN\_RXADDR\_ERX\_ALL@{RF24\_EN\_RXADDR\_ERX\_ALL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_RXADDR\_ERX\_ALL}{RF24\_EN\_RXADDR\_ERX\_ALL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+A\+LL~(0x3\+F)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ac39756dd58c340e134cde7ea27540ad3}\label{nordiac__driver_8h_ac39756dd58c340e134cde7ea27540ad3}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_RXADDR\_ERX\_NONE@{RF24\_EN\_RXADDR\_ERX\_NONE}}
+\index{RF24\_EN\_RXADDR\_ERX\_NONE@{RF24\_EN\_RXADDR\_ERX\_NONE}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_RXADDR\_ERX\_NONE}{RF24\_EN\_RXADDR\_ERX\_NONE}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+N\+O\+NE~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a4cc446bb435ddcb5bb5ac835b4e031ca}\label{nordiac__driver_8h_a4cc446bb435ddcb5bb5ac835b4e031ca}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_RXADDR\_ERX\_P0@{RF24\_EN\_RXADDR\_ERX\_P0}}
+\index{RF24\_EN\_RXADDR\_ERX\_P0@{RF24\_EN\_RXADDR\_ERX\_P0}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_RXADDR\_ERX\_P0}{RF24\_EN\_RXADDR\_ERX\_P0}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P0~(0x01)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a872e0ede2c2c5404dcb1159703effcc4}\label{nordiac__driver_8h_a872e0ede2c2c5404dcb1159703effcc4}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_RXADDR\_ERX\_P1@{RF24\_EN\_RXADDR\_ERX\_P1}}
+\index{RF24\_EN\_RXADDR\_ERX\_P1@{RF24\_EN\_RXADDR\_ERX\_P1}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_RXADDR\_ERX\_P1}{RF24\_EN\_RXADDR\_ERX\_P1}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P1~(0x02)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a3bbc8f4db665c838fea918b14d41e4e9}\label{nordiac__driver_8h_a3bbc8f4db665c838fea918b14d41e4e9}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_RXADDR\_ERX\_P2@{RF24\_EN\_RXADDR\_ERX\_P2}}
+\index{RF24\_EN\_RXADDR\_ERX\_P2@{RF24\_EN\_RXADDR\_ERX\_P2}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_RXADDR\_ERX\_P2}{RF24\_EN\_RXADDR\_ERX\_P2}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P2~(0x04)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a87dba2530cb1833728ba7018169d6a5b}\label{nordiac__driver_8h_a87dba2530cb1833728ba7018169d6a5b}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_RXADDR\_ERX\_P3@{RF24\_EN\_RXADDR\_ERX\_P3}}
+\index{RF24\_EN\_RXADDR\_ERX\_P3@{RF24\_EN\_RXADDR\_ERX\_P3}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_RXADDR\_ERX\_P3}{RF24\_EN\_RXADDR\_ERX\_P3}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P3~(0x08)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a0befb6f7faf7b1d7b26680b1d9b0a84f}\label{nordiac__driver_8h_a0befb6f7faf7b1d7b26680b1d9b0a84f}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_RXADDR\_ERX\_P4@{RF24\_EN\_RXADDR\_ERX\_P4}}
+\index{RF24\_EN\_RXADDR\_ERX\_P4@{RF24\_EN\_RXADDR\_ERX\_P4}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_RXADDR\_ERX\_P4}{RF24\_EN\_RXADDR\_ERX\_P4}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P4~(0x10)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab0bcd1391f178d52800c3526e1f85f99}\label{nordiac__driver_8h_ab0bcd1391f178d52800c3526e1f85f99}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_RXADDR\_ERX\_P5@{RF24\_EN\_RXADDR\_ERX\_P5}}
+\index{RF24\_EN\_RXADDR\_ERX\_P5@{RF24\_EN\_RXADDR\_ERX\_P5}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_RXADDR\_ERX\_P5}{RF24\_EN\_RXADDR\_ERX\_P5}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+E\+R\+X\+\_\+\+P5~(0x20)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a0736ca9bf07cac4c772125d2be3a2ca4}\label{nordiac__driver_8h_a0736ca9bf07cac4c772125d2be3a2ca4}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_EN\_RXADDR\_RESERVED@{RF24\_EN\_RXADDR\_RESERVED}}
+\index{RF24\_EN\_RXADDR\_RESERVED@{RF24\_EN\_RXADDR\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_EN\_RXADDR\_RESERVED}{RF24\_EN\_RXADDR\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+\_\+\+R\+X\+A\+D\+D\+R\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+C0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a5a0e5e50b0eb9cc3d5265f881b3f1e2d}\label{nordiac__driver_8h_a5a0e5e50b0eb9cc3d5265f881b3f1e2d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ENAA\_P0@{RF24\_ENAA\_P0}}
+\index{RF24\_ENAA\_P0@{RF24\_ENAA\_P0}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ENAA\_P0}{RF24\_ENAA\_P0}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P0~(0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aed478624f140af28dec87c4ad1b9902b}\label{nordiac__driver_8h_aed478624f140af28dec87c4ad1b9902b}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ENAA\_P1@{RF24\_ENAA\_P1}}
+\index{RF24\_ENAA\_P1@{RF24\_ENAA\_P1}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ENAA\_P1}{RF24\_ENAA\_P1}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P1~(1)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a5b411a2a317ef8e828633b7a301247bc}\label{nordiac__driver_8h_a5b411a2a317ef8e828633b7a301247bc}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ENAA\_P2@{RF24\_ENAA\_P2}}
+\index{RF24\_ENAA\_P2@{RF24\_ENAA\_P2}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ENAA\_P2}{RF24\_ENAA\_P2}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P2~(2)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_af2ef34747c070e51bf16b7707c265e78}\label{nordiac__driver_8h_af2ef34747c070e51bf16b7707c265e78}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ENAA\_P3@{RF24\_ENAA\_P3}}
+\index{RF24\_ENAA\_P3@{RF24\_ENAA\_P3}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ENAA\_P3}{RF24\_ENAA\_P3}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P3~(3)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a596f44f679966c44f253e29627143876}\label{nordiac__driver_8h_a596f44f679966c44f253e29627143876}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ENAA\_P4@{RF24\_ENAA\_P4}}
+\index{RF24\_ENAA\_P4@{RF24\_ENAA\_P4}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ENAA\_P4}{RF24\_ENAA\_P4}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P4~(4)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a5b4b0a1d70c492ea1e9ebf7a2c08c05c}\label{nordiac__driver_8h_a5b4b0a1d70c492ea1e9ebf7a2c08c05c}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ENAA\_P5@{RF24\_ENAA\_P5}}
+\index{RF24\_ENAA\_P5@{RF24\_ENAA\_P5}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ENAA\_P5}{RF24\_ENAA\_P5}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+N\+A\+A\+\_\+\+P5~(5)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a78ffd217a92910cd86082618c4ad3ab2}\label{nordiac__driver_8h_a78ffd217a92910cd86082618c4ad3ab2}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ERX\_P0@{RF24\_ERX\_P0}}
+\index{RF24\_ERX\_P0@{RF24\_ERX\_P0}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ERX\_P0}{RF24\_ERX\_P0}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+R\+X\+\_\+\+P0~(0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a45b51d20c1c9e7bfaacb7dd8d55e8e6c}\label{nordiac__driver_8h_a45b51d20c1c9e7bfaacb7dd8d55e8e6c}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ERX\_P1@{RF24\_ERX\_P1}}
+\index{RF24\_ERX\_P1@{RF24\_ERX\_P1}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ERX\_P1}{RF24\_ERX\_P1}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+R\+X\+\_\+\+P1~(1)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ad84038c32e570277dfeac417c30955e0}\label{nordiac__driver_8h_ad84038c32e570277dfeac417c30955e0}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ERX\_P2@{RF24\_ERX\_P2}}
+\index{RF24\_ERX\_P2@{RF24\_ERX\_P2}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ERX\_P2}{RF24\_ERX\_P2}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+R\+X\+\_\+\+P2~(2)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a5d1727a35c594f0e63682e70926adefd}\label{nordiac__driver_8h_a5d1727a35c594f0e63682e70926adefd}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ERX\_P3@{RF24\_ERX\_P3}}
+\index{RF24\_ERX\_P3@{RF24\_ERX\_P3}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ERX\_P3}{RF24\_ERX\_P3}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+R\+X\+\_\+\+P3~(3)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a6d7551987dc401f37514e506ca64a407}\label{nordiac__driver_8h_a6d7551987dc401f37514e506ca64a407}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ERX\_P4@{RF24\_ERX\_P4}}
+\index{RF24\_ERX\_P4@{RF24\_ERX\_P4}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ERX\_P4}{RF24\_ERX\_P4}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+R\+X\+\_\+\+P4~(4)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a0489a24ae47d6c8e4ef45d97d12e7f6e}\label{nordiac__driver_8h_a0489a24ae47d6c8e4ef45d97d12e7f6e}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_ERX\_P5@{RF24\_ERX\_P5}}
+\index{RF24\_ERX\_P5@{RF24\_ERX\_P5}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_ERX\_P5}{RF24\_ERX\_P5}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+E\+R\+X\+\_\+\+P5~(5)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aa556f9c68392bf982fee692328d187d7}\label{nordiac__driver_8h_aa556f9c68392bf982fee692328d187d7}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_FIFO\_FULL@{RF24\_FIFO\_FULL}}
+\index{RF24\_FIFO\_FULL@{RF24\_FIFO\_FULL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_FIFO\_FULL}{RF24\_FIFO\_FULL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+F\+U\+LL~(5)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ae1a8e92ec068318fe3795c6b37c1dc4c}\label{nordiac__driver_8h_ae1a8e92ec068318fe3795c6b37c1dc4c}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_FIFO\_STATUS@{RF24\_FIFO\_STATUS}}
+\index{RF24\_FIFO\_STATUS@{RF24\_FIFO\_STATUS}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_FIFO\_STATUS}{RF24\_FIFO\_STATUS}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+US~(0x17)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aa4dbfeb069bbeb089f9a786880e8f179}\label{nordiac__driver_8h_aa4dbfeb069bbeb089f9a786880e8f179}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_FIFO\_STATUS\_DEFAULT\_VAL@{RF24\_FIFO\_STATUS\_DEFAULT\_VAL}}
+\index{RF24\_FIFO\_STATUS\_DEFAULT\_VAL@{RF24\_FIFO\_STATUS\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_FIFO\_STATUS\_DEFAULT\_VAL}{RF24\_FIFO\_STATUS\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x11)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a35b215a864722f6fbf5ae1cd016a6997}\label{nordiac__driver_8h_a35b215a864722f6fbf5ae1cd016a6997}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_FIFO\_STATUS\_RESERVED@{RF24\_FIFO\_STATUS\_RESERVED}}
+\index{RF24\_FIFO\_STATUS\_RESERVED@{RF24\_FIFO\_STATUS\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_FIFO\_STATUS\_RESERVED}{RF24\_FIFO\_STATUS\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x8\+C)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a9d118c06e7032739ae936fcbb3d335ef}\label{nordiac__driver_8h_a9d118c06e7032739ae936fcbb3d335ef}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_FIFO\_STATUS\_RX\_EMPTY@{RF24\_FIFO\_STATUS\_RX\_EMPTY}}
+\index{RF24\_FIFO\_STATUS\_RX\_EMPTY@{RF24\_FIFO\_STATUS\_RX\_EMPTY}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_FIFO\_STATUS\_RX\_EMPTY}{RF24\_FIFO\_STATUS\_RX\_EMPTY}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+E\+M\+P\+TY~(0x01)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a7d2fee44f5866170e1fe5d034674d7a7}\label{nordiac__driver_8h_a7d2fee44f5866170e1fe5d034674d7a7}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_FIFO\_STATUS\_RX\_FULL@{RF24\_FIFO\_STATUS\_RX\_FULL}}
+\index{RF24\_FIFO\_STATUS\_RX\_FULL@{RF24\_FIFO\_STATUS\_RX\_FULL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_FIFO\_STATUS\_RX\_FULL}{RF24\_FIFO\_STATUS\_RX\_FULL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+F\+U\+LL~(0x02)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a72622f42150259a17694f8f04dbe1e69}\label{nordiac__driver_8h_a72622f42150259a17694f8f04dbe1e69}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_FIFO\_STATUS\_TX\_EMPTY@{RF24\_FIFO\_STATUS\_TX\_EMPTY}}
+\index{RF24\_FIFO\_STATUS\_TX\_EMPTY@{RF24\_FIFO\_STATUS\_TX\_EMPTY}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_FIFO\_STATUS\_TX\_EMPTY}{RF24\_FIFO\_STATUS\_TX\_EMPTY}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+X\+\_\+\+E\+M\+P\+TY~(0x10)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a521210d811d01c880765fbcee0525ab2}\label{nordiac__driver_8h_a521210d811d01c880765fbcee0525ab2}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_FIFO\_STATUS\_TX\_FULL@{RF24\_FIFO\_STATUS\_TX\_FULL}}
+\index{RF24\_FIFO\_STATUS\_TX\_FULL@{RF24\_FIFO\_STATUS\_TX\_FULL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_FIFO\_STATUS\_TX\_FULL}{RF24\_FIFO\_STATUS\_TX\_FULL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+X\+\_\+\+F\+U\+LL~(0x20)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a7fc29d17aa8da6b64ad8055c1d206642}\label{nordiac__driver_8h_a7fc29d17aa8da6b64ad8055c1d206642}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_FIFO\_STATUS\_TX\_REUSE@{RF24\_FIFO\_STATUS\_TX\_REUSE}}
+\index{RF24\_FIFO\_STATUS\_TX\_REUSE@{RF24\_FIFO\_STATUS\_TX\_REUSE}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_FIFO\_STATUS\_TX\_REUSE}{RF24\_FIFO\_STATUS\_TX\_REUSE}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+F\+I\+F\+O\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+X\+\_\+\+R\+E\+U\+SE~(0x40)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_acd18ad67dfb3c02987f3b844384e3785}\label{nordiac__driver_8h_acd18ad67dfb3c02987f3b844384e3785}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_FLUSH\_RX@{RF24\_FLUSH\_RX}}
+\index{RF24\_FLUSH\_RX@{RF24\_FLUSH\_RX}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_FLUSH\_RX}{RF24\_FLUSH\_RX}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+F\+L\+U\+S\+H\+\_\+\+RX~(0x\+E2)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ae49f5bc30dc5d051907ed4803dbbe4fe}\label{nordiac__driver_8h_ae49f5bc30dc5d051907ed4803dbbe4fe}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_FLUSH\_TX@{RF24\_FLUSH\_TX}}
+\index{RF24\_FLUSH\_TX@{RF24\_FLUSH\_TX}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_FLUSH\_TX}{RF24\_FLUSH\_TX}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+F\+L\+U\+S\+H\+\_\+\+TX~(0x\+E1)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ae4486f523b036b96248fa9a6d9252659}\label{nordiac__driver_8h_ae4486f523b036b96248fa9a6d9252659}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_LNA\_HCURR@{RF24\_LNA\_HCURR}}
+\index{RF24\_LNA\_HCURR@{RF24\_LNA\_HCURR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_LNA\_HCURR}{RF24\_LNA\_HCURR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+L\+N\+A\+\_\+\+H\+C\+U\+RR~(0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a189e061d92d66af09c51520445ba9e19}\label{nordiac__driver_8h_a189e061d92d66af09c51520445ba9e19}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_MASK\_MAX\_RT@{RF24\_MASK\_MAX\_RT}}
+\index{RF24\_MASK\_MAX\_RT@{RF24\_MASK\_MAX\_RT}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_MASK\_MAX\_RT}{RF24\_MASK\_MAX\_RT}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+M\+A\+S\+K\+\_\+\+M\+A\+X\+\_\+\+RT~(1$<$$<$4)  /$\ast$ Mask interrupt caused by M\+A\+X\+\_\+\+R\+T. 1\+: interrupt not reflected on I\+RQ pin. 0\+: reflect M\+A\+X\+\_\+\+RT as active low interrupt on I\+RQ pin $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_abcf7c6b2481e8015b5284fec65f604a0}\label{nordiac__driver_8h_abcf7c6b2481e8015b5284fec65f604a0}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_MASK\_RX\_DR@{RF24\_MASK\_RX\_DR}}
+\index{RF24\_MASK\_RX\_DR@{RF24\_MASK\_RX\_DR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_MASK\_RX\_DR}{RF24\_MASK\_RX\_DR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+M\+A\+S\+K\+\_\+\+R\+X\+\_\+\+DR~(1$<$$<$6)  /$\ast$ Mask interrupt caused by R\+X\+\_\+\+D\+R\+: 1\+: interrupt masked. 0\+: interrupt enabled $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a34cb5449623df30e44069a15814a5e8a}\label{nordiac__driver_8h_a34cb5449623df30e44069a15814a5e8a}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_MASK\_TX\_DS@{RF24\_MASK\_TX\_DS}}
+\index{RF24\_MASK\_TX\_DS@{RF24\_MASK\_TX\_DS}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_MASK\_TX\_DS}{RF24\_MASK\_TX\_DS}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+M\+A\+S\+K\+\_\+\+T\+X\+\_\+\+DS~(1$<$$<$5)  /$\ast$ Mask interrupt caused by T\+X\+\_\+\+D\+S\+: 1\+: interrupt masked. 0\+: interrupt enabled $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a343d652ad336782a01199ea88cc8defb}\label{nordiac__driver_8h_a343d652ad336782a01199ea88cc8defb}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_MAX\_RT@{RF24\_MAX\_RT}}
+\index{RF24\_MAX\_RT@{RF24\_MAX\_RT}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_MAX\_RT}{RF24\_MAX\_RT}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+M\+A\+X\+\_\+\+RT~(4)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a4924d732f99c6ec5f872a286852d0d94}\label{nordiac__driver_8h_a4924d732f99c6ec5f872a286852d0d94}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_NOP@{RF24\_NOP}}
+\index{RF24\_NOP@{RF24\_NOP}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_NOP}{RF24\_NOP}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+N\+OP~(0x\+F\+F)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a89dfdb7318d54ec665df72ef92edf527}\label{nordiac__driver_8h_a89dfdb7318d54ec665df72ef92edf527}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_OBSERVE\_TX@{RF24\_OBSERVE\_TX}}
+\index{RF24\_OBSERVE\_TX@{RF24\_OBSERVE\_TX}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_OBSERVE\_TX}{RF24\_OBSERVE\_TX}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+O\+B\+S\+E\+R\+V\+E\+\_\+\+TX~(0x08)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab6ac770eddad41b8a0634a387aa7eb3b}\label{nordiac__driver_8h_ab6ac770eddad41b8a0634a387aa7eb3b}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_OBSERVE\_TX\_ARC\_CNT@{RF24\_OBSERVE\_TX\_ARC\_CNT}}
+\index{RF24\_OBSERVE\_TX\_ARC\_CNT@{RF24\_OBSERVE\_TX\_ARC\_CNT}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_OBSERVE\_TX\_ARC\_CNT}{RF24\_OBSERVE\_TX\_ARC\_CNT}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+O\+B\+S\+E\+R\+V\+E\+\_\+\+T\+X\+\_\+\+A\+R\+C\+\_\+\+C\+NT~(0x0\+F)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a867981c62ce749528d702a59e678f647}\label{nordiac__driver_8h_a867981c62ce749528d702a59e678f647}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_OBSERVE\_TX\_DEFAULT\_VAL@{RF24\_OBSERVE\_TX\_DEFAULT\_VAL}}
+\index{RF24\_OBSERVE\_TX\_DEFAULT\_VAL@{RF24\_OBSERVE\_TX\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_OBSERVE\_TX\_DEFAULT\_VAL}{RF24\_OBSERVE\_TX\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+O\+B\+S\+E\+R\+V\+E\+\_\+\+T\+X\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a114a150860f2d0219084485f875b23e2}\label{nordiac__driver_8h_a114a150860f2d0219084485f875b23e2}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_OBSERVE\_TX\_PLOS\_CNT@{RF24\_OBSERVE\_TX\_PLOS\_CNT}}
+\index{RF24\_OBSERVE\_TX\_PLOS\_CNT@{RF24\_OBSERVE\_TX\_PLOS\_CNT}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_OBSERVE\_TX\_PLOS\_CNT}{RF24\_OBSERVE\_TX\_PLOS\_CNT}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+O\+B\+S\+E\+R\+V\+E\+\_\+\+T\+X\+\_\+\+P\+L\+O\+S\+\_\+\+C\+NT~(0x\+F0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a8700512119a75b54de9989952b4b3c73}\label{nordiac__driver_8h_a8700512119a75b54de9989952b4b3c73}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_PLL\_LOCK@{RF24\_PLL\_LOCK}}
+\index{RF24\_PLL\_LOCK@{RF24\_PLL\_LOCK}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_PLL\_LOCK}{RF24\_PLL\_LOCK}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+P\+L\+L\+\_\+\+L\+O\+CK~(4)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aa78a4fc8717da946c9269f6cdd4720c1}\label{nordiac__driver_8h_aa78a4fc8717da946c9269f6cdd4720c1}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_PLOS\_CNT@{RF24\_PLOS\_CNT}}
+\index{RF24\_PLOS\_CNT@{RF24\_PLOS\_CNT}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_PLOS\_CNT}{RF24\_PLOS\_CNT}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+P\+L\+O\+S\+\_\+\+C\+NT~(4)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ad37ea228b9d982adcbf82a3bf0b01153}\label{nordiac__driver_8h_ad37ea228b9d982adcbf82a3bf0b01153}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_PRIM\_RX@{RF24\_PRIM\_RX}}
+\index{RF24\_PRIM\_RX@{RF24\_PRIM\_RX}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_PRIM\_RX}{RF24\_PRIM\_RX}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+P\+R\+I\+M\+\_\+\+RX~(1$<$$<$0)  /$\ast$ 1\+: P\+RX, 0\+: P\+TX $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a8121784548856ebb74a6ab42171cf4a7}\label{nordiac__driver_8h_a8121784548856ebb74a6ab42171cf4a7}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_PRIM\_TX@{RF24\_PRIM\_TX}}
+\index{RF24\_PRIM\_TX@{RF24\_PRIM\_TX}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_PRIM\_TX}{RF24\_PRIM\_TX}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+P\+R\+I\+M\+\_\+\+TX~(0)     /$\ast$ 0\+: P\+TX $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a6d8d98423a021ac84a9933111f4a9532}\label{nordiac__driver_8h_a6d8d98423a021ac84a9933111f4a9532}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_PWR\_UP@{RF24\_PWR\_UP}}
+\index{RF24\_PWR\_UP@{RF24\_PWR\_UP}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_PWR\_UP}{RF24\_PWR\_UP}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+P\+W\+R\+\_\+\+UP~(1$<$$<$1)  /$\ast$ 1\+: Power up, 0\+: Power down $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a1b144cdfc856581cee54e31d2084c347}\label{nordiac__driver_8h_a1b144cdfc856581cee54e31d2084c347}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_R\_REGISTER@{RF24\_R\_REGISTER}}
+\index{RF24\_R\_REGISTER@{RF24\_R\_REGISTER}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_R\_REGISTER}{RF24\_R\_REGISTER}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+\_\+\+R\+E\+G\+I\+S\+T\+ER~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_acaad37cb969ae85c9590a8fd5486db22}\label{nordiac__driver_8h_acaad37cb969ae85c9590a8fd5486db22}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_R\_RX\_PAYLOAD@{RF24\_R\_RX\_PAYLOAD}}
+\index{RF24\_R\_RX\_PAYLOAD@{RF24\_R\_RX\_PAYLOAD}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_R\_RX\_PAYLOAD}{RF24\_R\_RX\_PAYLOAD}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+\_\+\+R\+X\+\_\+\+P\+A\+Y\+L\+O\+AD~(0x61)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a711a90f05a0255e1bf95f40b5be9db19}\label{nordiac__driver_8h_a711a90f05a0255e1bf95f40b5be9db19}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_REGISTER\_MASK@{RF24\_REGISTER\_MASK}}
+\index{RF24\_REGISTER\_MASK@{RF24\_REGISTER\_MASK}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_REGISTER\_MASK}{RF24\_REGISTER\_MASK}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+SK~(0x1\+F)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_af3f6882b01f763c0a4f683e6778b44ad}\label{nordiac__driver_8h_af3f6882b01f763c0a4f683e6778b44ad}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_REUSE\_TX\_PL@{RF24\_REUSE\_TX\_PL}}
+\index{RF24\_REUSE\_TX\_PL@{RF24\_REUSE\_TX\_PL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_REUSE\_TX\_PL}{RF24\_REUSE\_TX\_PL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+E\+U\+S\+E\+\_\+\+T\+X\+\_\+\+PL~(0x\+E3)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a66d4ae84a9ee55dc1ab4661470cebc04}\label{nordiac__driver_8h_a66d4ae84a9ee55dc1ab4661470cebc04}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_CH@{RF24\_RF\_CH}}
+\index{RF24\_RF\_CH@{RF24\_RF\_CH}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_CH}{RF24\_RF\_CH}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+CH~(0x05)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a8a4ee5bcbeaf6b8f9c835cd2b8ebf48c}\label{nordiac__driver_8h_a8a4ee5bcbeaf6b8f9c835cd2b8ebf48c}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_CH\_DEFAULT\_VAL@{RF24\_RF\_CH\_DEFAULT\_VAL}}
+\index{RF24\_RF\_CH\_DEFAULT\_VAL@{RF24\_RF\_CH\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_CH\_DEFAULT\_VAL}{RF24\_RF\_CH\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+C\+H\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x02)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a15f7e743b643acdb516e9bf0b0fbc71d}\label{nordiac__driver_8h_a15f7e743b643acdb516e9bf0b0fbc71d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_CH\_RESERVED@{RF24\_RF\_CH\_RESERVED}}
+\index{RF24\_RF\_CH\_RESERVED@{RF24\_RF\_CH\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_CH\_RESERVED}{RF24\_RF\_CH\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+C\+H\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x80)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a7cfd571b91693e83387bd41ff700d3e4}\label{nordiac__driver_8h_a7cfd571b91693e83387bd41ff700d3e4}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_DR\_HIGH@{RF24\_RF\_DR\_HIGH}}
+\index{RF24\_RF\_DR\_HIGH@{RF24\_RF\_DR\_HIGH}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_DR\_HIGH}{RF24\_RF\_DR\_HIGH}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+D\+R\+\_\+\+H\+I\+GH~(3)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a77a15bf298027b0f2768db0bb569c99d}\label{nordiac__driver_8h_a77a15bf298027b0f2768db0bb569c99d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_DR\_LOW@{RF24\_RF\_DR\_LOW}}
+\index{RF24\_RF\_DR\_LOW@{RF24\_RF\_DR\_LOW}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_DR\_LOW}{RF24\_RF\_DR\_LOW}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+D\+R\+\_\+\+L\+OW~(5)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a3cf4fa3a87c910bc76e3dc435c22d44d}\label{nordiac__driver_8h_a3cf4fa3a87c910bc76e3dc435c22d44d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_PWR@{RF24\_RF\_PWR}}
+\index{RF24\_RF\_PWR@{RF24\_RF\_PWR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_PWR}{RF24\_RF\_PWR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+P\+WR~(1)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a10ac45287da015a8dc7f6f6c367c9a0b}\label{nordiac__driver_8h_a10ac45287da015a8dc7f6f6c367c9a0b}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP@{RF24\_RF\_SETUP}}
+\index{RF24\_RF\_SETUP@{RF24\_RF\_SETUP}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP}{RF24\_RF\_SETUP}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+UP~(0x06) /$\ast$ S\+E\+T\+U\+P register $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a17fb712bb55fe7e35f7a243760a22057}\label{nordiac__driver_8h_a17fb712bb55fe7e35f7a243760a22057}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_DEFAULT\_VAL@{RF24\_RF\_SETUP\_DEFAULT\_VAL}}
+\index{RF24\_RF\_SETUP\_DEFAULT\_VAL@{RF24\_RF\_SETUP\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_DEFAULT\_VAL}{RF24\_RF\_SETUP\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x0\+F)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a06191aedb5aa948041f677efbedb5501}\label{nordiac__driver_8h_a06191aedb5aa948041f677efbedb5501}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_LNA\_HCURR@{RF24\_RF\_SETUP\_LNA\_HCURR}}
+\index{RF24\_RF\_SETUP\_LNA\_HCURR@{RF24\_RF\_SETUP\_LNA\_HCURR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_LNA\_HCURR}{RF24\_RF\_SETUP\_LNA\_HCURR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+L\+N\+A\+\_\+\+H\+C\+U\+RR~(0x01)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_acfc4f05ef65a4e169b0bb257f54ecadd}\label{nordiac__driver_8h_acfc4f05ef65a4e169b0bb257f54ecadd}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_PLL\_LOCK@{RF24\_RF\_SETUP\_PLL\_LOCK}}
+\index{RF24\_RF\_SETUP\_PLL\_LOCK@{RF24\_RF\_SETUP\_PLL\_LOCK}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_PLL\_LOCK}{RF24\_RF\_SETUP\_PLL\_LOCK}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+P\+L\+L\+\_\+\+L\+O\+CK~(0x10)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aff2381bc298294a16f0499e2c0c07ad1}\label{nordiac__driver_8h_aff2381bc298294a16f0499e2c0c07ad1}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_RESERVED@{RF24\_RF\_SETUP\_RESERVED}}
+\index{RF24\_RF\_SETUP\_RESERVED@{RF24\_RF\_SETUP\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_RESERVED}{RF24\_RF\_SETUP\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+E0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a1bf2f418c16cb472ddacda98304058a4}\label{nordiac__driver_8h_a1bf2f418c16cb472ddacda98304058a4}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_RF\_DR@{RF24\_RF\_SETUP\_RF\_DR}}
+\index{RF24\_RF\_SETUP\_RF\_DR@{RF24\_RF\_SETUP\_RF\_DR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_RF\_DR}{RF24\_RF\_SETUP\_RF\_DR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+DR~(0x08)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab8490c2dec9d52884671c27955ef906d}\label{nordiac__driver_8h_ab8490c2dec9d52884671c27955ef906d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_RF\_DR\_1000@{RF24\_RF\_SETUP\_RF\_DR\_1000}}
+\index{RF24\_RF\_SETUP\_RF\_DR\_1000@{RF24\_RF\_SETUP\_RF\_DR\_1000}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_RF\_DR\_1000}{RF24\_RF\_SETUP\_RF\_DR\_1000}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+D\+R\+\_\+1000~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a69d6603a5c33060e0f10b7e53a5b631f}\label{nordiac__driver_8h_a69d6603a5c33060e0f10b7e53a5b631f}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_RF\_DR\_2000@{RF24\_RF\_SETUP\_RF\_DR\_2000}}
+\index{RF24\_RF\_SETUP\_RF\_DR\_2000@{RF24\_RF\_SETUP\_RF\_DR\_2000}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_RF\_DR\_2000}{RF24\_RF\_SETUP\_RF\_DR\_2000}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+D\+R\+\_\+2000~(0x08)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a2fa1125e1b325522b933456f27a48ea0}\label{nordiac__driver_8h_a2fa1125e1b325522b933456f27a48ea0}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_RF\_DR\_250@{RF24\_RF\_SETUP\_RF\_DR\_250}}
+\index{RF24\_RF\_SETUP\_RF\_DR\_250@{RF24\_RF\_SETUP\_RF\_DR\_250}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_RF\_DR\_250}{RF24\_RF\_SETUP\_RF\_DR\_250}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+D\+R\+\_\+250~(0x20)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a4ebdc556d81743c9380a4fa28d9036ae}\label{nordiac__driver_8h_a4ebdc556d81743c9380a4fa28d9036ae}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_RF\_PWR@{RF24\_RF\_SETUP\_RF\_PWR}}
+\index{RF24\_RF\_SETUP\_RF\_PWR@{RF24\_RF\_SETUP\_RF\_PWR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_RF\_PWR}{RF24\_RF\_SETUP\_RF\_PWR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+P\+WR~(0x06)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a9e83f5f3e41b163e901c3bfc73505412}\label{nordiac__driver_8h_a9e83f5f3e41b163e901c3bfc73505412}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_RF\_PWR\_0@{RF24\_RF\_SETUP\_RF\_PWR\_0}}
+\index{RF24\_RF\_SETUP\_RF\_PWR\_0@{RF24\_RF\_SETUP\_RF\_PWR\_0}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_RF\_PWR\_0}{RF24\_RF\_SETUP\_RF\_PWR\_0}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+P\+W\+R\+\_\+0~(0x06)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a8163605de97bea087b38914461e2c12d}\label{nordiac__driver_8h_a8163605de97bea087b38914461e2c12d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_RF\_PWR\_12@{RF24\_RF\_SETUP\_RF\_PWR\_12}}
+\index{RF24\_RF\_SETUP\_RF\_PWR\_12@{RF24\_RF\_SETUP\_RF\_PWR\_12}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_RF\_PWR\_12}{RF24\_RF\_SETUP\_RF\_PWR\_12}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+P\+W\+R\+\_\+12~(0x02)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aa9d9986138273c0411c46e40d0d14fe2}\label{nordiac__driver_8h_aa9d9986138273c0411c46e40d0d14fe2}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_RF\_PWR\_18@{RF24\_RF\_SETUP\_RF\_PWR\_18}}
+\index{RF24\_RF\_SETUP\_RF\_PWR\_18@{RF24\_RF\_SETUP\_RF\_PWR\_18}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_RF\_PWR\_18}{RF24\_RF\_SETUP\_RF\_PWR\_18}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+P\+W\+R\+\_\+18~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a35e33f5ac736900d1413f4130108b2c7}\label{nordiac__driver_8h_a35e33f5ac736900d1413f4130108b2c7}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RF\_SETUP\_RF\_PWR\_6@{RF24\_RF\_SETUP\_RF\_PWR\_6}}
+\index{RF24\_RF\_SETUP\_RF\_PWR\_6@{RF24\_RF\_SETUP\_RF\_PWR\_6}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RF\_SETUP\_RF\_PWR\_6}{RF24\_RF\_SETUP\_RF\_PWR\_6}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+F\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+F\+\_\+\+P\+W\+R\+\_\+6~(0x04)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aba1aa611372aa985c3667112f44ac5d3}\label{nordiac__driver_8h_aba1aa611372aa985c3667112f44ac5d3}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RPD@{RF24\_RPD}}
+\index{RF24\_RPD@{RF24\_RPD}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RPD}{RF24\_RPD}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+PD~(0x09)    /$\ast$ Mnemonic for n\+R\+F24\+L01+ $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ad241cdc2281f45a4acdbd95ea219757b}\label{nordiac__driver_8h_ad241cdc2281f45a4acdbd95ea219757b}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RPD\_RESERVED@{RF24\_RPD\_RESERVED}}
+\index{RF24\_RPD\_RESERVED@{RF24\_RPD\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RPD\_RESERVED}{RF24\_RPD\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+P\+D\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+F\+E)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a2703c8b6de53376f7a85dde039a859d8}\label{nordiac__driver_8h_a2703c8b6de53376f7a85dde039a859d8}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RPD\_RPD@{RF24\_RPD\_RPD}}
+\index{RF24\_RPD\_RPD@{RF24\_RPD\_RPD}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RPD\_RPD}{RF24\_RPD\_RPD}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+P\+D\+\_\+\+R\+PD~(0x01)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aa68133f65d72061921001ac2b802ee62}\label{nordiac__driver_8h_aa68133f65d72061921001ac2b802ee62}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P0@{RF24\_RX\_ADDR\_P0}}
+\index{RF24\_RX\_ADDR\_P0@{RF24\_RX\_ADDR\_P0}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P0}{RF24\_RX\_ADDR\_P0}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0~(0x0\+A)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a6437e46e05bd19bf8b8df986560e5066}\label{nordiac__driver_8h_a6437e46e05bd19bf8b8df986560e5066}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P0\_B0\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P0\_B0\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P0\_B0\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P0\_B0\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P0\_B0\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P0\_B0\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0\+\_\+\+B0\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+E7)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a303ab8689ff1ec0869660a127a31bf3e}\label{nordiac__driver_8h_a303ab8689ff1ec0869660a127a31bf3e}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P0\_B1\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P0\_B1\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P0\_B1\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P0\_B1\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P0\_B1\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P0\_B1\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0\+\_\+\+B1\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+E7)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a96ffabe18b71e5eaa3af76793f09371b}\label{nordiac__driver_8h_a96ffabe18b71e5eaa3af76793f09371b}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P0\_B2\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P0\_B2\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P0\_B2\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P0\_B2\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P0\_B2\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P0\_B2\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0\+\_\+\+B2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+E7)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab7744ba3b0ed48bda4ec962b6b74d6e4}\label{nordiac__driver_8h_ab7744ba3b0ed48bda4ec962b6b74d6e4}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P0\_B3\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P0\_B3\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P0\_B3\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P0\_B3\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P0\_B3\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P0\_B3\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0\+\_\+\+B3\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+E7)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a61553fabd87cb089f02300e6366477f7}\label{nordiac__driver_8h_a61553fabd87cb089f02300e6366477f7}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P0\_B4\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P0\_B4\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P0\_B4\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P0\_B4\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P0\_B4\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P0\_B4\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P0\+\_\+\+B4\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+E7)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a079b2555226f2c2e75bb81a2023d6157}\label{nordiac__driver_8h_a079b2555226f2c2e75bb81a2023d6157}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P1@{RF24\_RX\_ADDR\_P1}}
+\index{RF24\_RX\_ADDR\_P1@{RF24\_RX\_ADDR\_P1}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P1}{RF24\_RX\_ADDR\_P1}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1~(0x0\+B)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a577c5c9a3d09c4f673fc21ba534e2c49}\label{nordiac__driver_8h_a577c5c9a3d09c4f673fc21ba534e2c49}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P1\_B0\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P1\_B0\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P1\_B0\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P1\_B0\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P1\_B0\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P1\_B0\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1\+\_\+\+B0\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+C2)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a86ed9ce422aac0292b6e01f150e97ab7}\label{nordiac__driver_8h_a86ed9ce422aac0292b6e01f150e97ab7}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P1\_B1\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P1\_B1\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P1\_B1\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P1\_B1\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P1\_B1\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P1\_B1\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1\+\_\+\+B1\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+C2)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a02f9d7ef1b53ae55f3807b5ca581a664}\label{nordiac__driver_8h_a02f9d7ef1b53ae55f3807b5ca581a664}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P1\_B2\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P1\_B2\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P1\_B2\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P1\_B2\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P1\_B2\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P1\_B2\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1\+\_\+\+B2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+C2)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a4ecda544a829feb96ccc10322dfa4d4e}\label{nordiac__driver_8h_a4ecda544a829feb96ccc10322dfa4d4e}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P1\_B3\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P1\_B3\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P1\_B3\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P1\_B3\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P1\_B3\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P1\_B3\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1\+\_\+\+B3\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+C2)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ad712ca8f672a6d2aa1afa4571354bf7e}\label{nordiac__driver_8h_ad712ca8f672a6d2aa1afa4571354bf7e}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P1\_B4\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P1\_B4\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P1\_B4\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P1\_B4\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P1\_B4\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P1\_B4\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P1\+\_\+\+B4\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+C2)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_af2c06c1d3d759c69b1a63834ff7ddcb9}\label{nordiac__driver_8h_af2c06c1d3d759c69b1a63834ff7ddcb9}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P2@{RF24\_RX\_ADDR\_P2}}
+\index{RF24\_RX\_ADDR\_P2@{RF24\_RX\_ADDR\_P2}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P2}{RF24\_RX\_ADDR\_P2}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P2~(0x0\+C)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ac75b189e15d7b69c859a09a9eda8ba75}\label{nordiac__driver_8h_ac75b189e15d7b69c859a09a9eda8ba75}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P2\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P2\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P2\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P2\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P2\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P2\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+C3)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_af0212fc9b145b0f743263c55c0161f2f}\label{nordiac__driver_8h_af0212fc9b145b0f743263c55c0161f2f}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P3@{RF24\_RX\_ADDR\_P3}}
+\index{RF24\_RX\_ADDR\_P3@{RF24\_RX\_ADDR\_P3}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P3}{RF24\_RX\_ADDR\_P3}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P3~(0x0\+D)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a1700909a9a1933a2b32c7dca6d6a52c0}\label{nordiac__driver_8h_a1700909a9a1933a2b32c7dca6d6a52c0}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P3\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P3\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P3\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P3\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P3\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P3\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P3\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+C4)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a4d79b454843464fabe0d188c713b4671}\label{nordiac__driver_8h_a4d79b454843464fabe0d188c713b4671}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P4@{RF24\_RX\_ADDR\_P4}}
+\index{RF24\_RX\_ADDR\_P4@{RF24\_RX\_ADDR\_P4}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P4}{RF24\_RX\_ADDR\_P4}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P4~(0x0\+E)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab58c583d4e479f2cc20f43af44a5d63a}\label{nordiac__driver_8h_ab58c583d4e479f2cc20f43af44a5d63a}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P4\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P4\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P4\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P4\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P4\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P4\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P4\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+C5)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a2cae5287fd86670b3cddfa18d89c107c}\label{nordiac__driver_8h_a2cae5287fd86670b3cddfa18d89c107c}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P5@{RF24\_RX\_ADDR\_P5}}
+\index{RF24\_RX\_ADDR\_P5@{RF24\_RX\_ADDR\_P5}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P5}{RF24\_RX\_ADDR\_P5}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P5~(0x0\+F)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a904b0518fc5c014d4af80ab4abf819e5}\label{nordiac__driver_8h_a904b0518fc5c014d4af80ab4abf819e5}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_ADDR\_P5\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P5\_DEFAULT\_VAL}}
+\index{RF24\_RX\_ADDR\_P5\_DEFAULT\_VAL@{RF24\_RX\_ADDR\_P5\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_ADDR\_P5\_DEFAULT\_VAL}{RF24\_RX\_ADDR\_P5\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+A\+D\+D\+R\+\_\+\+P5\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+C6)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a9777580af1bef5bd6260315e65330010}\label{nordiac__driver_8h_a9777580af1bef5bd6260315e65330010}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_DR@{RF24\_RX\_DR}}
+\index{RF24\_RX\_DR@{RF24\_RX\_DR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_DR}{RF24\_RX\_DR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+DR~(6)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a3c45b781d9d672f274ffbcde10781d8b}\label{nordiac__driver_8h_a3c45b781d9d672f274ffbcde10781d8b}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_EMPTY@{RF24\_RX\_EMPTY}}
+\index{RF24\_RX\_EMPTY@{RF24\_RX\_EMPTY}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_EMPTY}{RF24\_RX\_EMPTY}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+E\+M\+P\+TY~(0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a3643f3b3a634bcbe63c6f0241d877f93}\label{nordiac__driver_8h_a3643f3b3a634bcbe63c6f0241d877f93}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_FULL@{RF24\_RX\_FULL}}
+\index{RF24\_RX\_FULL@{RF24\_RX\_FULL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_FULL}{RF24\_RX\_FULL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+F\+U\+LL~(1)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a52e5fab2acb7da867fb4576735dc89c9}\label{nordiac__driver_8h_a52e5fab2acb7da867fb4576735dc89c9}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_P\_NO@{RF24\_RX\_P\_NO}}
+\index{RF24\_RX\_P\_NO@{RF24\_RX\_P\_NO}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_P\_NO}{RF24\_RX\_P\_NO}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+\_\+\+NO~(1)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a47edaf5386fb83b1a0db77fe2d2ea9ab}\label{nordiac__driver_8h_a47edaf5386fb83b1a0db77fe2d2ea9ab}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P0@{RF24\_RX\_PW\_P0}}
+\index{RF24\_RX\_PW\_P0@{RF24\_RX\_PW\_P0}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P0}{RF24\_RX\_PW\_P0}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P0~(0x11)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a75c675b02b739186d4775ff654325b84}\label{nordiac__driver_8h_a75c675b02b739186d4775ff654325b84}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P0\_DEFAULT\_VAL@{RF24\_RX\_PW\_P0\_DEFAULT\_VAL}}
+\index{RF24\_RX\_PW\_P0\_DEFAULT\_VAL@{RF24\_RX\_PW\_P0\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P0\_DEFAULT\_VAL}{RF24\_RX\_PW\_P0\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P0\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a79a46797ae7a1935239ddb6c1275b654}\label{nordiac__driver_8h_a79a46797ae7a1935239ddb6c1275b654}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P0\_RESERVED@{RF24\_RX\_PW\_P0\_RESERVED}}
+\index{RF24\_RX\_PW\_P0\_RESERVED@{RF24\_RX\_PW\_P0\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P0\_RESERVED}{RF24\_RX\_PW\_P0\_RESERVED}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P0\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+C0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a79a46797ae7a1935239ddb6c1275b654}\label{nordiac__driver_8h_a79a46797ae7a1935239ddb6c1275b654}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P0\_RESERVED@{RF24\_RX\_PW\_P0\_RESERVED}}
+\index{RF24\_RX\_PW\_P0\_RESERVED@{RF24\_RX\_PW\_P0\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P0\_RESERVED}{RF24\_RX\_PW\_P0\_RESERVED}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P0\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+C0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a59b6a1204021b995215ec33a0ce86c19}\label{nordiac__driver_8h_a59b6a1204021b995215ec33a0ce86c19}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P1@{RF24\_RX\_PW\_P1}}
+\index{RF24\_RX\_PW\_P1@{RF24\_RX\_PW\_P1}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P1}{RF24\_RX\_PW\_P1}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P1~(0x12)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a435c89babb690a616c458d6a2be4177b}\label{nordiac__driver_8h_a435c89babb690a616c458d6a2be4177b}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P1\_DEFAULT\_VAL@{RF24\_RX\_PW\_P1\_DEFAULT\_VAL}}
+\index{RF24\_RX\_PW\_P1\_DEFAULT\_VAL@{RF24\_RX\_PW\_P1\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P1\_DEFAULT\_VAL}{RF24\_RX\_PW\_P1\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P1\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a1327b59fb21cb0e555cef6312538fab9}\label{nordiac__driver_8h_a1327b59fb21cb0e555cef6312538fab9}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P1\_RESERVED@{RF24\_RX\_PW\_P1\_RESERVED}}
+\index{RF24\_RX\_PW\_P1\_RESERVED@{RF24\_RX\_PW\_P1\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P1\_RESERVED}{RF24\_RX\_PW\_P1\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P1\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+C0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aa91444722104eff83f6d051fa7f57220}\label{nordiac__driver_8h_aa91444722104eff83f6d051fa7f57220}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P2@{RF24\_RX\_PW\_P2}}
+\index{RF24\_RX\_PW\_P2@{RF24\_RX\_PW\_P2}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P2}{RF24\_RX\_PW\_P2}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P2~(0x13)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a4fe4a49e6fdd09a13b46ca389c50d4a1}\label{nordiac__driver_8h_a4fe4a49e6fdd09a13b46ca389c50d4a1}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P2\_DEFAULT\_VAL@{RF24\_RX\_PW\_P2\_DEFAULT\_VAL}}
+\index{RF24\_RX\_PW\_P2\_DEFAULT\_VAL@{RF24\_RX\_PW\_P2\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P2\_DEFAULT\_VAL}{RF24\_RX\_PW\_P2\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a642034fd2134b503255d36bf25f55f75}\label{nordiac__driver_8h_a642034fd2134b503255d36bf25f55f75}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P2\_RESERVED@{RF24\_RX\_PW\_P2\_RESERVED}}
+\index{RF24\_RX\_PW\_P2\_RESERVED@{RF24\_RX\_PW\_P2\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P2\_RESERVED}{RF24\_RX\_PW\_P2\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P2\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+C0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a2ec7c04b033cb46bb32bc89baf54ecad}\label{nordiac__driver_8h_a2ec7c04b033cb46bb32bc89baf54ecad}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P3@{RF24\_RX\_PW\_P3}}
+\index{RF24\_RX\_PW\_P3@{RF24\_RX\_PW\_P3}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P3}{RF24\_RX\_PW\_P3}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P3~(0x14)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_abaa890abf07764d0e0a29981ba81b1c3}\label{nordiac__driver_8h_abaa890abf07764d0e0a29981ba81b1c3}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P3\_DEFAULT\_VAL@{RF24\_RX\_PW\_P3\_DEFAULT\_VAL}}
+\index{RF24\_RX\_PW\_P3\_DEFAULT\_VAL@{RF24\_RX\_PW\_P3\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P3\_DEFAULT\_VAL}{RF24\_RX\_PW\_P3\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P3\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a8a29b024f871908951078af864aedd29}\label{nordiac__driver_8h_a8a29b024f871908951078af864aedd29}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P3\_RESERVED@{RF24\_RX\_PW\_P3\_RESERVED}}
+\index{RF24\_RX\_PW\_P3\_RESERVED@{RF24\_RX\_PW\_P3\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P3\_RESERVED}{RF24\_RX\_PW\_P3\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P3\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+C0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a04fae1d74fafe82182363f8df504bb28}\label{nordiac__driver_8h_a04fae1d74fafe82182363f8df504bb28}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P4@{RF24\_RX\_PW\_P4}}
+\index{RF24\_RX\_PW\_P4@{RF24\_RX\_PW\_P4}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P4}{RF24\_RX\_PW\_P4}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P4~(0x15)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ae8534ed9886cc082dfb744d1760eae0f}\label{nordiac__driver_8h_ae8534ed9886cc082dfb744d1760eae0f}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P4\_DEFAULT\_VAL@{RF24\_RX\_PW\_P4\_DEFAULT\_VAL}}
+\index{RF24\_RX\_PW\_P4\_DEFAULT\_VAL@{RF24\_RX\_PW\_P4\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P4\_DEFAULT\_VAL}{RF24\_RX\_PW\_P4\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P4\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a3a7cd5dbe0e043ecad4df757a277ddee}\label{nordiac__driver_8h_a3a7cd5dbe0e043ecad4df757a277ddee}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P4\_RESERVED@{RF24\_RX\_PW\_P4\_RESERVED}}
+\index{RF24\_RX\_PW\_P4\_RESERVED@{RF24\_RX\_PW\_P4\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P4\_RESERVED}{RF24\_RX\_PW\_P4\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P4\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+C0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ac8b8f9d9bb36ecc7ae300756326bc0ae}\label{nordiac__driver_8h_ac8b8f9d9bb36ecc7ae300756326bc0ae}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P5@{RF24\_RX\_PW\_P5}}
+\index{RF24\_RX\_PW\_P5@{RF24\_RX\_PW\_P5}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P5}{RF24\_RX\_PW\_P5}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P5~(0x16)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a1193089e9cdf754131eebb23440622bf}\label{nordiac__driver_8h_a1193089e9cdf754131eebb23440622bf}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P5\_DEFAULT\_VAL@{RF24\_RX\_PW\_P5\_DEFAULT\_VAL}}
+\index{RF24\_RX\_PW\_P5\_DEFAULT\_VAL@{RF24\_RX\_PW\_P5\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P5\_DEFAULT\_VAL}{RF24\_RX\_PW\_P5\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P5\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a2e408e8598f2aed7a76d21020b006dc0}\label{nordiac__driver_8h_a2e408e8598f2aed7a76d21020b006dc0}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_RX\_PW\_P5\_RESERVED@{RF24\_RX\_PW\_P5\_RESERVED}}
+\index{RF24\_RX\_PW\_P5\_RESERVED@{RF24\_RX\_PW\_P5\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_RX\_PW\_P5\_RESERVED}{RF24\_RX\_PW\_P5\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+R\+X\+\_\+\+P\+W\+\_\+\+P5\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+C0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a869f3e17230d6a8c48722d6777e3d0d6}\label{nordiac__driver_8h_a869f3e17230d6a8c48722d6777e3d0d6}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_AW@{RF24\_SETUP\_AW}}
+\index{RF24\_SETUP\_AW@{RF24\_SETUP\_AW}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_AW}{RF24\_SETUP\_AW}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+AW~(0x03) /$\ast$ S\+E\+T\+U\+P\+\_\+\+A\+W register $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a869f3e17230d6a8c48722d6777e3d0d6}\label{nordiac__driver_8h_a869f3e17230d6a8c48722d6777e3d0d6}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_AW@{RF24\_SETUP\_AW}}
+\index{RF24\_SETUP\_AW@{RF24\_SETUP\_AW}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_AW}{RF24\_SETUP\_AW}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+AW~(0x03)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a7a8ca92a3c67735cc6a8f8aeb3194479}\label{nordiac__driver_8h_a7a8ca92a3c67735cc6a8f8aeb3194479}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_AW\_3BYTES@{RF24\_SETUP\_AW\_3BYTES}}
+\index{RF24\_SETUP\_AW\_3BYTES@{RF24\_SETUP\_AW\_3BYTES}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_AW\_3BYTES}{RF24\_SETUP\_AW\_3BYTES}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+3\+B\+Y\+T\+ES~(0x01)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a1a1b5051bccf423843b9f648083abf95}\label{nordiac__driver_8h_a1a1b5051bccf423843b9f648083abf95}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_AW\_4BYTES@{RF24\_SETUP\_AW\_4BYTES}}
+\index{RF24\_SETUP\_AW\_4BYTES@{RF24\_SETUP\_AW\_4BYTES}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_AW\_4BYTES}{RF24\_SETUP\_AW\_4BYTES}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+4\+B\+Y\+T\+ES~(0x02)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a29005ee738e38583f5b37a4f45b52882}\label{nordiac__driver_8h_a29005ee738e38583f5b37a4f45b52882}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_AW\_5BYTES@{RF24\_SETUP\_AW\_5BYTES}}
+\index{RF24\_SETUP\_AW\_5BYTES@{RF24\_SETUP\_AW\_5BYTES}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_AW\_5BYTES}{RF24\_SETUP\_AW\_5BYTES}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+5\+B\+Y\+T\+ES~(0x03)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a71c3a60430d87230a9915bcaf5518bb5}\label{nordiac__driver_8h_a71c3a60430d87230a9915bcaf5518bb5}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_AW\_DEFAULT\_VAL@{RF24\_SETUP\_AW\_DEFAULT\_VAL}}
+\index{RF24\_SETUP\_AW\_DEFAULT\_VAL@{RF24\_SETUP\_AW\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_AW\_DEFAULT\_VAL}{RF24\_SETUP\_AW\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x03)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ad78f239cf0ffe082dcbf276e46f4dfcd}\label{nordiac__driver_8h_ad78f239cf0ffe082dcbf276e46f4dfcd}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_AW\_ILLEGAL@{RF24\_SETUP\_AW\_ILLEGAL}}
+\index{RF24\_SETUP\_AW\_ILLEGAL@{RF24\_SETUP\_AW\_ILLEGAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_AW\_ILLEGAL}{RF24\_SETUP\_AW\_ILLEGAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+\+I\+L\+L\+E\+G\+AL~(0x00)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab2b5d89b4edfe6053b4dc481ed9fe4c7}\label{nordiac__driver_8h_ab2b5d89b4edfe6053b4dc481ed9fe4c7}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_AW\_RESERVED@{RF24\_SETUP\_AW\_RESERVED}}
+\index{RF24\_SETUP\_AW\_RESERVED@{RF24\_SETUP\_AW\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_AW\_RESERVED}{RF24\_SETUP\_AW\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+A\+W\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x\+F\+C)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a9b6a30f717b9a7f695721ca36a7febd8}\label{nordiac__driver_8h_a9b6a30f717b9a7f695721ca36a7febd8}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR@{RF24\_SETUP\_RETR}}
+\index{RF24\_SETUP\_RETR@{RF24\_SETUP\_RETR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR}{RF24\_SETUP\_RETR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+TR~(0x04)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a2a843d4d6dbe605446ed64a2722fb106}\label{nordiac__driver_8h_a2a843d4d6dbe605446ed64a2722fb106}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC@{RF24\_SETUP\_RETR\_ARC}}
+\index{RF24\_SETUP\_RETR\_ARC@{RF24\_SETUP\_RETR\_ARC}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC}{RF24\_SETUP\_RETR\_ARC}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+RC~(0x0\+F)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aa826e67e377f8a8f03a3288818029f0e}\label{nordiac__driver_8h_aa826e67e377f8a8f03a3288818029f0e}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_0@{RF24\_SETUP\_RETR\_ARC\_0}}
+\index{RF24\_SETUP\_RETR\_ARC\_0@{RF24\_SETUP\_RETR\_ARC\_0}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_0}{RF24\_SETUP\_RETR\_ARC\_0}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+0~(0x00) /$\ast$ 0 retry count, retry disabled $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a1bcd10ad2614cbead728a7dabfbf9c47}\label{nordiac__driver_8h_a1bcd10ad2614cbead728a7dabfbf9c47}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_1@{RF24\_SETUP\_RETR\_ARC\_1}}
+\index{RF24\_SETUP\_RETR\_ARC\_1@{RF24\_SETUP\_RETR\_ARC\_1}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_1}{RF24\_SETUP\_RETR\_ARC\_1}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+1~(0x01) /$\ast$ 1 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a03f9a4d3ea91b2036b25d778975e4aa4}\label{nordiac__driver_8h_a03f9a4d3ea91b2036b25d778975e4aa4}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_10@{RF24\_SETUP\_RETR\_ARC\_10}}
+\index{RF24\_SETUP\_RETR\_ARC\_10@{RF24\_SETUP\_RETR\_ARC\_10}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_10}{RF24\_SETUP\_RETR\_ARC\_10}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+10~(0x0\+A) /$\ast$ 10 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a573f8cf6abab3ac803328cd750f8ed8e}\label{nordiac__driver_8h_a573f8cf6abab3ac803328cd750f8ed8e}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_11@{RF24\_SETUP\_RETR\_ARC\_11}}
+\index{RF24\_SETUP\_RETR\_ARC\_11@{RF24\_SETUP\_RETR\_ARC\_11}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_11}{RF24\_SETUP\_RETR\_ARC\_11}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+11~(0x0\+B) /$\ast$ 11 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ad2a7e70fb2b624d2fac83368ba6321fc}\label{nordiac__driver_8h_ad2a7e70fb2b624d2fac83368ba6321fc}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_12@{RF24\_SETUP\_RETR\_ARC\_12}}
+\index{RF24\_SETUP\_RETR\_ARC\_12@{RF24\_SETUP\_RETR\_ARC\_12}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_12}{RF24\_SETUP\_RETR\_ARC\_12}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+12~(0x0\+C) /$\ast$ 12 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a9ca348c7501f861ccd83cce434659b4d}\label{nordiac__driver_8h_a9ca348c7501f861ccd83cce434659b4d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_13@{RF24\_SETUP\_RETR\_ARC\_13}}
+\index{RF24\_SETUP\_RETR\_ARC\_13@{RF24\_SETUP\_RETR\_ARC\_13}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_13}{RF24\_SETUP\_RETR\_ARC\_13}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+13~(0x0\+D) /$\ast$ 13 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aa612a8421942b54eb4ec98abb7f1c7c0}\label{nordiac__driver_8h_aa612a8421942b54eb4ec98abb7f1c7c0}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_14@{RF24\_SETUP\_RETR\_ARC\_14}}
+\index{RF24\_SETUP\_RETR\_ARC\_14@{RF24\_SETUP\_RETR\_ARC\_14}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_14}{RF24\_SETUP\_RETR\_ARC\_14}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+14~(0x0\+E) /$\ast$ 14 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_afa9610ade9c96d7a7f0e80cf8464ba3b}\label{nordiac__driver_8h_afa9610ade9c96d7a7f0e80cf8464ba3b}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_15@{RF24\_SETUP\_RETR\_ARC\_15}}
+\index{RF24\_SETUP\_RETR\_ARC\_15@{RF24\_SETUP\_RETR\_ARC\_15}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_15}{RF24\_SETUP\_RETR\_ARC\_15}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+15~(0x0\+F) /$\ast$ 15 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ad496cc8ff8c69d665be73eb539cb5888}\label{nordiac__driver_8h_ad496cc8ff8c69d665be73eb539cb5888}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_2@{RF24\_SETUP\_RETR\_ARC\_2}}
+\index{RF24\_SETUP\_RETR\_ARC\_2@{RF24\_SETUP\_RETR\_ARC\_2}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_2}{RF24\_SETUP\_RETR\_ARC\_2}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+2~(0x02) /$\ast$ 2 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a32c5d676504bcdc067fbfdcbd60e77e3}\label{nordiac__driver_8h_a32c5d676504bcdc067fbfdcbd60e77e3}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_3@{RF24\_SETUP\_RETR\_ARC\_3}}
+\index{RF24\_SETUP\_RETR\_ARC\_3@{RF24\_SETUP\_RETR\_ARC\_3}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_3}{RF24\_SETUP\_RETR\_ARC\_3}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+3~(0x03) /$\ast$ 3 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a7e9e86672fb0586e1bd186631ed80eaf}\label{nordiac__driver_8h_a7e9e86672fb0586e1bd186631ed80eaf}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_4@{RF24\_SETUP\_RETR\_ARC\_4}}
+\index{RF24\_SETUP\_RETR\_ARC\_4@{RF24\_SETUP\_RETR\_ARC\_4}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_4}{RF24\_SETUP\_RETR\_ARC\_4}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+4~(0x04) /$\ast$ 4 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_af4d5227e70eaf810f2620e74eff3eed4}\label{nordiac__driver_8h_af4d5227e70eaf810f2620e74eff3eed4}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_5@{RF24\_SETUP\_RETR\_ARC\_5}}
+\index{RF24\_SETUP\_RETR\_ARC\_5@{RF24\_SETUP\_RETR\_ARC\_5}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_5}{RF24\_SETUP\_RETR\_ARC\_5}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+5~(0x05) /$\ast$ 5 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aeb51fc8145a5d50125eb90081af608fb}\label{nordiac__driver_8h_aeb51fc8145a5d50125eb90081af608fb}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_6@{RF24\_SETUP\_RETR\_ARC\_6}}
+\index{RF24\_SETUP\_RETR\_ARC\_6@{RF24\_SETUP\_RETR\_ARC\_6}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_6}{RF24\_SETUP\_RETR\_ARC\_6}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+6~(0x06) /$\ast$ 6 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a1d6bf1d90270b17b33d6a1e8b287e40e}\label{nordiac__driver_8h_a1d6bf1d90270b17b33d6a1e8b287e40e}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_7@{RF24\_SETUP\_RETR\_ARC\_7}}
+\index{RF24\_SETUP\_RETR\_ARC\_7@{RF24\_SETUP\_RETR\_ARC\_7}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_7}{RF24\_SETUP\_RETR\_ARC\_7}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+7~(0x07) /$\ast$ 7 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a231da311bb8d35b50e6177230a07f302}\label{nordiac__driver_8h_a231da311bb8d35b50e6177230a07f302}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_8@{RF24\_SETUP\_RETR\_ARC\_8}}
+\index{RF24\_SETUP\_RETR\_ARC\_8@{RF24\_SETUP\_RETR\_ARC\_8}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_8}{RF24\_SETUP\_RETR\_ARC\_8}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+8~(0x08) /$\ast$ 8 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_afa8c352161edc325380509e41591c0b8}\label{nordiac__driver_8h_afa8c352161edc325380509e41591c0b8}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARC\_9@{RF24\_SETUP\_RETR\_ARC\_9}}
+\index{RF24\_SETUP\_RETR\_ARC\_9@{RF24\_SETUP\_RETR\_ARC\_9}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARC\_9}{RF24\_SETUP\_RETR\_ARC\_9}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+C\+\_\+9~(0x09) /$\ast$ 9 retry count $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a9a6bfb164f66e0609c1291da138ae74a}\label{nordiac__driver_8h_a9a6bfb164f66e0609c1291da138ae74a}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD@{RF24\_SETUP\_RETR\_ARD}}
+\index{RF24\_SETUP\_RETR\_ARD@{RF24\_SETUP\_RETR\_ARD}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD}{RF24\_SETUP\_RETR\_ARD}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+RD~(0x\+F0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_adf278d8e858fd1671d576843a1f1c06e}\label{nordiac__driver_8h_adf278d8e858fd1671d576843a1f1c06e}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_1000@{RF24\_SETUP\_RETR\_ARD\_1000}}
+\index{RF24\_SETUP\_RETR\_ARD\_1000@{RF24\_SETUP\_RETR\_ARD\_1000}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_1000}{RF24\_SETUP\_RETR\_ARD\_1000}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+1000~(0x30) /$\ast$ 1000 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a62718704b38bff1b2806d3b840b43242}\label{nordiac__driver_8h_a62718704b38bff1b2806d3b840b43242}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_1250@{RF24\_SETUP\_RETR\_ARD\_1250}}
+\index{RF24\_SETUP\_RETR\_ARD\_1250@{RF24\_SETUP\_RETR\_ARD\_1250}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_1250}{RF24\_SETUP\_RETR\_ARD\_1250}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+1250~(0x40) /$\ast$ 1250 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a02c587ae400cbdbc1c6d47a2dae0312d}\label{nordiac__driver_8h_a02c587ae400cbdbc1c6d47a2dae0312d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_1500@{RF24\_SETUP\_RETR\_ARD\_1500}}
+\index{RF24\_SETUP\_RETR\_ARD\_1500@{RF24\_SETUP\_RETR\_ARD\_1500}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_1500}{RF24\_SETUP\_RETR\_ARD\_1500}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+1500~(0x50) /$\ast$ 1500 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a5e04d4ba1cd7d5280f2099bbdbb18342}\label{nordiac__driver_8h_a5e04d4ba1cd7d5280f2099bbdbb18342}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_1750@{RF24\_SETUP\_RETR\_ARD\_1750}}
+\index{RF24\_SETUP\_RETR\_ARD\_1750@{RF24\_SETUP\_RETR\_ARD\_1750}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_1750}{RF24\_SETUP\_RETR\_ARD\_1750}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+1750~(0x60) /$\ast$ 1750 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a2f916dace9f590a781576ca7e979c892}\label{nordiac__driver_8h_a2f916dace9f590a781576ca7e979c892}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_2000@{RF24\_SETUP\_RETR\_ARD\_2000}}
+\index{RF24\_SETUP\_RETR\_ARD\_2000@{RF24\_SETUP\_RETR\_ARD\_2000}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_2000}{RF24\_SETUP\_RETR\_ARD\_2000}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+2000~(0x70) /$\ast$ 2000 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a44f9f71e442b230b54877b10dd330297}\label{nordiac__driver_8h_a44f9f71e442b230b54877b10dd330297}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_2250@{RF24\_SETUP\_RETR\_ARD\_2250}}
+\index{RF24\_SETUP\_RETR\_ARD\_2250@{RF24\_SETUP\_RETR\_ARD\_2250}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_2250}{RF24\_SETUP\_RETR\_ARD\_2250}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+2250~(0x80) /$\ast$ 2250 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab26ae630b1c3b3fa18a02b1d1356f401}\label{nordiac__driver_8h_ab26ae630b1c3b3fa18a02b1d1356f401}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_250@{RF24\_SETUP\_RETR\_ARD\_250}}
+\index{RF24\_SETUP\_RETR\_ARD\_250@{RF24\_SETUP\_RETR\_ARD\_250}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_250}{RF24\_SETUP\_RETR\_ARD\_250}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+250~(0x00) /$\ast$ 250 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a794ec944f3e6ac5759bd05f065bf457a}\label{nordiac__driver_8h_a794ec944f3e6ac5759bd05f065bf457a}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_2500@{RF24\_SETUP\_RETR\_ARD\_2500}}
+\index{RF24\_SETUP\_RETR\_ARD\_2500@{RF24\_SETUP\_RETR\_ARD\_2500}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_2500}{RF24\_SETUP\_RETR\_ARD\_2500}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+2500~(0x90) /$\ast$ 2500 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_acd05725cdd5d9e65c471e5969cd3a7ee}\label{nordiac__driver_8h_acd05725cdd5d9e65c471e5969cd3a7ee}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_2750@{RF24\_SETUP\_RETR\_ARD\_2750}}
+\index{RF24\_SETUP\_RETR\_ARD\_2750@{RF24\_SETUP\_RETR\_ARD\_2750}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_2750}{RF24\_SETUP\_RETR\_ARD\_2750}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+2750~(0x\+A0) /$\ast$ 2750 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a0d2afc9f03264870333f776b1805b9a2}\label{nordiac__driver_8h_a0d2afc9f03264870333f776b1805b9a2}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_3000@{RF24\_SETUP\_RETR\_ARD\_3000}}
+\index{RF24\_SETUP\_RETR\_ARD\_3000@{RF24\_SETUP\_RETR\_ARD\_3000}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_3000}{RF24\_SETUP\_RETR\_ARD\_3000}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+3000~(0x\+B0) /$\ast$ 3000 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a7e49c54330cc68533fc0b56e202a041e}\label{nordiac__driver_8h_a7e49c54330cc68533fc0b56e202a041e}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_3250@{RF24\_SETUP\_RETR\_ARD\_3250}}
+\index{RF24\_SETUP\_RETR\_ARD\_3250@{RF24\_SETUP\_RETR\_ARD\_3250}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_3250}{RF24\_SETUP\_RETR\_ARD\_3250}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+3250~(0x\+C0) /$\ast$ 3250 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a148c93ed86213092aa7b5addff744af6}\label{nordiac__driver_8h_a148c93ed86213092aa7b5addff744af6}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_3500@{RF24\_SETUP\_RETR\_ARD\_3500}}
+\index{RF24\_SETUP\_RETR\_ARD\_3500@{RF24\_SETUP\_RETR\_ARD\_3500}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_3500}{RF24\_SETUP\_RETR\_ARD\_3500}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+3500~(0x\+D0) /$\ast$ 3500 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a8487e17fcf94c068328d4dd446d10093}\label{nordiac__driver_8h_a8487e17fcf94c068328d4dd446d10093}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_3750@{RF24\_SETUP\_RETR\_ARD\_3750}}
+\index{RF24\_SETUP\_RETR\_ARD\_3750@{RF24\_SETUP\_RETR\_ARD\_3750}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_3750}{RF24\_SETUP\_RETR\_ARD\_3750}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+3750~(0x\+E0) /$\ast$ 3750 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ae533bf3cfbfec6d83978d2c342df3e5d}\label{nordiac__driver_8h_ae533bf3cfbfec6d83978d2c342df3e5d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_4000@{RF24\_SETUP\_RETR\_ARD\_4000}}
+\index{RF24\_SETUP\_RETR\_ARD\_4000@{RF24\_SETUP\_RETR\_ARD\_4000}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_4000}{RF24\_SETUP\_RETR\_ARD\_4000}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+4000~(0x\+F0) /$\ast$ 4400 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ad6312f1edce0e254514d5ab9f534bda1}\label{nordiac__driver_8h_ad6312f1edce0e254514d5ab9f534bda1}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_500@{RF24\_SETUP\_RETR\_ARD\_500}}
+\index{RF24\_SETUP\_RETR\_ARD\_500@{RF24\_SETUP\_RETR\_ARD\_500}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_500}{RF24\_SETUP\_RETR\_ARD\_500}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+500~(0x10) /$\ast$ 500 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a0dda06bddbc6a252922cf29d29841888}\label{nordiac__driver_8h_a0dda06bddbc6a252922cf29d29841888}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_ARD\_750@{RF24\_SETUP\_RETR\_ARD\_750}}
+\index{RF24\_SETUP\_RETR\_ARD\_750@{RF24\_SETUP\_RETR\_ARD\_750}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_ARD\_750}{RF24\_SETUP\_RETR\_ARD\_750}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+A\+R\+D\+\_\+750~(0x20) /$\ast$ 750 us retry delay $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a60d297f5dec92120798634a312f7e0ec}\label{nordiac__driver_8h_a60d297f5dec92120798634a312f7e0ec}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_SETUP\_RETR\_DEFAULT\_VAL@{RF24\_SETUP\_RETR\_DEFAULT\_VAL}}
+\index{RF24\_SETUP\_RETR\_DEFAULT\_VAL@{RF24\_SETUP\_RETR\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_SETUP\_RETR\_DEFAULT\_VAL}{RF24\_SETUP\_RETR\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+E\+T\+U\+P\+\_\+\+R\+E\+T\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x03)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ae8209e56cddd6eaeaab783325c534f3c}\label{nordiac__driver_8h_ae8209e56cddd6eaeaab783325c534f3c}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS@{RF24\_STATUS}}
+\index{RF24\_STATUS@{RF24\_STATUS}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS}{RF24\_STATUS}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+US~(0x07)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a89008e8b64642e86975d31dfb12ea2e0}\label{nordiac__driver_8h_a89008e8b64642e86975d31dfb12ea2e0}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_DEFAULT\_VAL@{RF24\_STATUS\_DEFAULT\_VAL}}
+\index{RF24\_STATUS\_DEFAULT\_VAL@{RF24\_STATUS\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_DEFAULT\_VAL}{RF24\_STATUS\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x0\+E)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a1829985c1712ba7832f76f9e8550632b}\label{nordiac__driver_8h_a1829985c1712ba7832f76f9e8550632b}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_MAX\_RT@{RF24\_STATUS\_MAX\_RT}}
+\index{RF24\_STATUS\_MAX\_RT@{RF24\_STATUS\_MAX\_RT}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_MAX\_RT}{RF24\_STATUS\_MAX\_RT}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+X\+\_\+\+RT~(0x10)   /$\ast$ bit xxx1 xxxx\+: maximum number of T\+X retransmit interrupts $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ac257ed5330c2135cf4c15fbd51999788}\label{nordiac__driver_8h_ac257ed5330c2135cf4c15fbd51999788}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_RESERVED@{RF24\_STATUS\_RESERVED}}
+\index{RF24\_STATUS\_RESERVED@{RF24\_STATUS\_RESERVED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_RESERVED}{RF24\_STATUS\_RESERVED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+S\+E\+R\+V\+ED~(0x80)   /$\ast$ bit 1xxx xxxx\+: This bit is reserved $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab75b90c42fc47bff64c33ac0751871b2}\label{nordiac__driver_8h_ab75b90c42fc47bff64c33ac0751871b2}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_RX\_DR@{RF24\_STATUS\_RX\_DR}}
+\index{RF24\_STATUS\_RX\_DR@{RF24\_STATUS\_RX\_DR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_RX\_DR}{RF24\_STATUS\_RX\_DR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+DR~(0x40)   /$\ast$ bit x1xx xxxx\+: Data ready R\+X F\+I\+F\+O interrupt. Asserted when new data arrives R\+X F\+I\+F\+O $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a8960ffba4bcaee18c29502aabca9c5ba}\label{nordiac__driver_8h_a8960ffba4bcaee18c29502aabca9c5ba}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_RX\_P\_NO@{RF24\_STATUS\_RX\_P\_NO}}
+\index{RF24\_STATUS\_RX\_P\_NO@{RF24\_STATUS\_RX\_P\_NO}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_RX\_P\_NO}{RF24\_STATUS\_RX\_P\_NO}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+NO~(0x0\+E)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a8eed8878c7b78130dd4f0285377ca1ef}\label{nordiac__driver_8h_a8eed8878c7b78130dd4f0285377ca1ef}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_RX\_P\_NO\_0@{RF24\_STATUS\_RX\_P\_NO\_0}}
+\index{RF24\_STATUS\_RX\_P\_NO\_0@{RF24\_STATUS\_RX\_P\_NO\_0}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_RX\_P\_NO\_0}{RF24\_STATUS\_RX\_P\_NO\_0}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+0~(0x00)   /$\ast$ bit xxxx 111x\+: pipe number for payload $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a5b4613356aa8796e5f31346ce73f7a99}\label{nordiac__driver_8h_a5b4613356aa8796e5f31346ce73f7a99}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_RX\_P\_NO\_1@{RF24\_STATUS\_RX\_P\_NO\_1}}
+\index{RF24\_STATUS\_RX\_P\_NO\_1@{RF24\_STATUS\_RX\_P\_NO\_1}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_RX\_P\_NO\_1}{RF24\_STATUS\_RX\_P\_NO\_1}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+1~(0x02)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a9717419057369fea43a264a60bb3b517}\label{nordiac__driver_8h_a9717419057369fea43a264a60bb3b517}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_RX\_P\_NO\_2@{RF24\_STATUS\_RX\_P\_NO\_2}}
+\index{RF24\_STATUS\_RX\_P\_NO\_2@{RF24\_STATUS\_RX\_P\_NO\_2}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_RX\_P\_NO\_2}{RF24\_STATUS\_RX\_P\_NO\_2}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+2~(0x04)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ac964bcf42fbb442d08c88c1229a7209d}\label{nordiac__driver_8h_ac964bcf42fbb442d08c88c1229a7209d}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_RX\_P\_NO\_3@{RF24\_STATUS\_RX\_P\_NO\_3}}
+\index{RF24\_STATUS\_RX\_P\_NO\_3@{RF24\_STATUS\_RX\_P\_NO\_3}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_RX\_P\_NO\_3}{RF24\_STATUS\_RX\_P\_NO\_3}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+3~(0x06)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a10a157c41a49c77816dca5d738964b67}\label{nordiac__driver_8h_a10a157c41a49c77816dca5d738964b67}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_RX\_P\_NO\_4@{RF24\_STATUS\_RX\_P\_NO\_4}}
+\index{RF24\_STATUS\_RX\_P\_NO\_4@{RF24\_STATUS\_RX\_P\_NO\_4}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_RX\_P\_NO\_4}{RF24\_STATUS\_RX\_P\_NO\_4}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+4~(0x08)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a4be5b28b936d9b14a64828c5259f418f}\label{nordiac__driver_8h_a4be5b28b936d9b14a64828c5259f418f}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_RX\_P\_NO\_5@{RF24\_STATUS\_RX\_P\_NO\_5}}
+\index{RF24\_STATUS\_RX\_P\_NO\_5@{RF24\_STATUS\_RX\_P\_NO\_5}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_RX\_P\_NO\_5}{RF24\_STATUS\_RX\_P\_NO\_5}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+5~(0x0\+A)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab48f55595da7629b56cd73787ffe1015}\label{nordiac__driver_8h_ab48f55595da7629b56cd73787ffe1015}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_RX\_P\_NO\_RX\_FIFO\_NOT\_EMPTY@{RF24\_STATUS\_RX\_P\_NO\_RX\_FIFO\_NOT\_EMPTY}}
+\index{RF24\_STATUS\_RX\_P\_NO\_RX\_FIFO\_NOT\_EMPTY@{RF24\_STATUS\_RX\_P\_NO\_RX\_FIFO\_NOT\_EMPTY}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_RX\_P\_NO\_RX\_FIFO\_NOT\_EMPTY}{RF24\_STATUS\_RX\_P\_NO\_RX\_FIFO\_NOT\_EMPTY}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+\+R\+X\+\_\+\+F\+I\+F\+O\+\_\+\+N\+O\+T\+\_\+\+E\+M\+P\+TY~(0x0\+E)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aefa69e4bd18db947eef0b05674632a07}\label{nordiac__driver_8h_aefa69e4bd18db947eef0b05674632a07}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_RX\_P\_NO\_UNUSED@{RF24\_STATUS\_RX\_P\_NO\_UNUSED}}
+\index{RF24\_STATUS\_RX\_P\_NO\_UNUSED@{RF24\_STATUS\_RX\_P\_NO\_UNUSED}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_RX\_P\_NO\_UNUSED}{RF24\_STATUS\_RX\_P\_NO\_UNUSED}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+X\+\_\+\+P\+\_\+\+N\+O\+\_\+\+U\+N\+U\+S\+ED~(0x0\+C)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a365a7c7dab58a75bdbbe0b46e36438a0}\label{nordiac__driver_8h_a365a7c7dab58a75bdbbe0b46e36438a0}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_TX\_DS@{RF24\_STATUS\_TX\_DS}}
+\index{RF24\_STATUS\_TX\_DS@{RF24\_STATUS\_TX\_DS}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_TX\_DS}{RF24\_STATUS\_TX\_DS}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+X\+\_\+\+DS~(0x20)   /$\ast$ bit xx1x xxxx\+: Data sent T\+X F\+I\+F\+O interrupt. Asserted when packet transmitted on T\+X. $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a0245e0d921676696d02d1cf06a3f6863}\label{nordiac__driver_8h_a0245e0d921676696d02d1cf06a3f6863}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_STATUS\_TX\_FULL@{RF24\_STATUS\_TX\_FULL}}
+\index{RF24\_STATUS\_TX\_FULL@{RF24\_STATUS\_TX\_FULL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_STATUS\_TX\_FULL}{RF24\_STATUS\_TX\_FULL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+X\+\_\+\+F\+U\+LL~(0x01)   /$\ast$ bit xxxx xxx1\+: if bit set, then T\+X F\+I\+F\+O is full $\ast$/}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a69cce2df6eaa0387cf5ea43be3c3b11a}\label{nordiac__driver_8h_a69cce2df6eaa0387cf5ea43be3c3b11a}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_TX\_ADDR@{RF24\_TX\_ADDR}}
+\index{RF24\_TX\_ADDR@{RF24\_TX\_ADDR}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_TX\_ADDR}{RF24\_TX\_ADDR}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+DR~(0x10)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aebfdf791b1573b66214bf80a7eb074b6}\label{nordiac__driver_8h_aebfdf791b1573b66214bf80a7eb074b6}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_TX\_ADDR\_B0\_DEFAULT\_VAL@{RF24\_TX\_ADDR\_B0\_DEFAULT\_VAL}}
+\index{RF24\_TX\_ADDR\_B0\_DEFAULT\_VAL@{RF24\_TX\_ADDR\_B0\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_TX\_ADDR\_B0\_DEFAULT\_VAL}{RF24\_TX\_ADDR\_B0\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+D\+R\+\_\+\+B0\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+E7)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a6a40bbd4fdf8a1467d0cb0dc10d496a3}\label{nordiac__driver_8h_a6a40bbd4fdf8a1467d0cb0dc10d496a3}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_TX\_ADDR\_B1\_DEFAULT\_VAL@{RF24\_TX\_ADDR\_B1\_DEFAULT\_VAL}}
+\index{RF24\_TX\_ADDR\_B1\_DEFAULT\_VAL@{RF24\_TX\_ADDR\_B1\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_TX\_ADDR\_B1\_DEFAULT\_VAL}{RF24\_TX\_ADDR\_B1\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+D\+R\+\_\+\+B1\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+E7)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a5196c05504d4efd74c10d236d8fbe835}\label{nordiac__driver_8h_a5196c05504d4efd74c10d236d8fbe835}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_TX\_ADDR\_B2\_DEFAULT\_VAL@{RF24\_TX\_ADDR\_B2\_DEFAULT\_VAL}}
+\index{RF24\_TX\_ADDR\_B2\_DEFAULT\_VAL@{RF24\_TX\_ADDR\_B2\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_TX\_ADDR\_B2\_DEFAULT\_VAL}{RF24\_TX\_ADDR\_B2\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+D\+R\+\_\+\+B2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+E7)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aed9660bf1a227e937e4582dbe363af26}\label{nordiac__driver_8h_aed9660bf1a227e937e4582dbe363af26}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_TX\_ADDR\_B3\_DEFAULT\_VAL@{RF24\_TX\_ADDR\_B3\_DEFAULT\_VAL}}
+\index{RF24\_TX\_ADDR\_B3\_DEFAULT\_VAL@{RF24\_TX\_ADDR\_B3\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_TX\_ADDR\_B3\_DEFAULT\_VAL}{RF24\_TX\_ADDR\_B3\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+D\+R\+\_\+\+B3\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+E7)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a8be85d438e378e622d43f62377b9af07}\label{nordiac__driver_8h_a8be85d438e378e622d43f62377b9af07}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_TX\_ADDR\_B4\_DEFAULT\_VAL@{RF24\_TX\_ADDR\_B4\_DEFAULT\_VAL}}
+\index{RF24\_TX\_ADDR\_B4\_DEFAULT\_VAL@{RF24\_TX\_ADDR\_B4\_DEFAULT\_VAL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_TX\_ADDR\_B4\_DEFAULT\_VAL}{RF24\_TX\_ADDR\_B4\_DEFAULT\_VAL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+T\+X\+\_\+\+A\+D\+D\+R\+\_\+\+B4\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+V\+AL~(0x\+E7)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a5d4d7a1a08460f811058e992dcbdadd7}\label{nordiac__driver_8h_a5d4d7a1a08460f811058e992dcbdadd7}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_TX\_DS@{RF24\_TX\_DS}}
+\index{RF24\_TX\_DS@{RF24\_TX\_DS}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_TX\_DS}{RF24\_TX\_DS}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+T\+X\+\_\+\+DS~(5)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a8658aa3036e895ddb34ac6602d5e0f45}\label{nordiac__driver_8h_a8658aa3036e895ddb34ac6602d5e0f45}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_TX\_EMPTY@{RF24\_TX\_EMPTY}}
+\index{RF24\_TX\_EMPTY@{RF24\_TX\_EMPTY}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_TX\_EMPTY}{RF24\_TX\_EMPTY}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+T\+X\+\_\+\+E\+M\+P\+TY~(4)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_ab478e6d2cbb84e044eec742962389ec3}\label{nordiac__driver_8h_ab478e6d2cbb84e044eec742962389ec3}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_TX\_FULL@{RF24\_TX\_FULL}}
+\index{RF24\_TX\_FULL@{RF24\_TX\_FULL}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_TX\_FULL}{RF24\_TX\_FULL}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+T\+X\+\_\+\+F\+U\+LL~(0)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_aa4fdcbfe96acb2ec584d80321de500b2}\label{nordiac__driver_8h_aa4fdcbfe96acb2ec584d80321de500b2}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_TX\_REUSE@{RF24\_TX\_REUSE}}
+\index{RF24\_TX\_REUSE@{RF24\_TX\_REUSE}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_TX\_REUSE}{RF24\_TX\_REUSE}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+T\+X\+\_\+\+R\+E\+U\+SE~(6)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_af68da92dd0c41879cc0a2b3673d9e68e}\label{nordiac__driver_8h_af68da92dd0c41879cc0a2b3673d9e68e}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_W\_REGISTER@{RF24\_W\_REGISTER}}
+\index{RF24\_W\_REGISTER@{RF24\_W\_REGISTER}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_W\_REGISTER}{RF24\_W\_REGISTER}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+W\+\_\+\+R\+E\+G\+I\+S\+T\+ER~(0x20)}
+
+\mbox{\Hypertarget{nordiac__driver_8h_a264382afeb57f241e73141fd5f9d05e4}\label{nordiac__driver_8h_a264382afeb57f241e73141fd5f9d05e4}} 
+\index{nordiac\_driver.h@{nordiac\_driver.h}!RF24\_W\_TX\_PAYLOAD@{RF24\_W\_TX\_PAYLOAD}}
+\index{RF24\_W\_TX\_PAYLOAD@{RF24\_W\_TX\_PAYLOAD}!nordiac\_driver.h@{nordiac\_driver.h}}
+\subsubsection{\texorpdfstring{RF24\_W\_TX\_PAYLOAD}{RF24\_W\_TX\_PAYLOAD}}
+{\footnotesize\ttfamily \#define R\+F24\+\_\+\+W\+\_\+\+T\+X\+\_\+\+P\+A\+Y\+L\+O\+AD~(0x\+A0)}
+

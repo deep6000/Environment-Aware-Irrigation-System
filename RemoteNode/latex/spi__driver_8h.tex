@@ -1,0 +1,259 @@
+\hypertarget{spi__driver_8h}{}\section{inc/spi\+\_\+driver.h File Reference}
+\label{spi__driver_8h}\index{inc/spi\_driver.h@{inc/spi\_driver.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}inc/hw\+\_\+memmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/pin\+\_\+map.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/sysctl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/gpio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/ssi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/debug.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{spi__driver_8h_a00c97747b3b363dcc2d09fc6e2f4df95}{S\+P\+I\+\_\+\+C\+L\+O\+C\+K\+\_\+1\+M\+HZ}}~(1000000)
+\item 
+\#define \mbox{\hyperlink{spi__driver_8h_af43811d2aa5bd6aacb2201cb08d13674}{S\+P\+I\+\_\+\+C\+L\+O\+C\+K\+\_\+2\+M\+HZ}}~(2000000)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}} \{ \mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64a7add1e0588a075d9385b10fcbb2010f4}{S\+P\+I0}}, 
+\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64add83ddb396fbcb33f2d61248e5c4a185}{S\+P\+I1}}, 
+\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64a382fe69d09c301ce8af3660713dfe8a2}{S\+P\+I2}}, 
+\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64a0be4d8f54586fb3fd0be3ec2920432e2}{S\+P\+I3}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{spi__driver_8h_a18eaa177ed1ce81372b409e1d37b3860}{Initalize\+S\+PI}} (\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}} S\+P\+I\+\_\+\+N\+UM, uint32\+\_\+t clock)
+\begin{DoxyCompactList}\small\item\em Initalize S\+PI driver. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{spi__driver_8h_a20f33d45d8fac134fccf48c936bc5485}{S\+P\+I\+Read\+Byte}} (\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}} spi)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Read a byte S\+PI 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{spi__driver_8h_a60877aff1f3156174c8640e261aa0768}{S\+P\+I\+Read\+Byte\+Non\+Blocking}} (\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}} spi)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Read a byte S\+PI bus without blocking 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{spi__driver_8h_a36b3032dda5ae730871662fcfe989619}{S\+P\+I\+Write\+Byte}} (\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}} spi, uint8\+\_\+t byte)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Write a byte S\+PI bus 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{spi__driver_8h_af2c24844a74cdcc3be47eafdb24d6b0f}{S\+P\+I\+Write\+Byte\+Non\+Blocking}} (\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}} spi, uint8\+\_\+t byte)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Write a byte S\+PI bus without blocking 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{spi__driver_8h_a18d6c6e794f63a2dba22f946ef7a27e2}{S\+P\+I\+Write\+Payload}} (\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}} spi, uint8\+\_\+t $\ast$p, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Write payload of length specified. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{spi__driver_8h_a4c03319edd179a22d26dfac22469f8d9}{S\+P\+I\+Read\+Payload}} (\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}} spi, uint8\+\_\+t $\ast$p, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em read payload of length specified \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{spi__driver_8h_a3df2888665ecddebacb4c203d3c52bd9}{S\+PI}} \mbox{[}4\mbox{]}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{spi__driver_8h_a593ef92716ccc8d7c41e4e0c992aa71f}{S\+P\+I\+\_\+\+S\+Y\+S\+C\+TL}} \mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{spi__driver_8h_a00c97747b3b363dcc2d09fc6e2f4df95}\label{spi__driver_8h_a00c97747b3b363dcc2d09fc6e2f4df95}} 
+\index{spi\_driver.h@{spi\_driver.h}!SPI\_CLOCK\_1MHZ@{SPI\_CLOCK\_1MHZ}}
+\index{SPI\_CLOCK\_1MHZ@{SPI\_CLOCK\_1MHZ}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{SPI\_CLOCK\_1MHZ}{SPI\_CLOCK\_1MHZ}}
+{\footnotesize\ttfamily \#define S\+P\+I\+\_\+\+C\+L\+O\+C\+K\+\_\+1\+M\+HZ~(1000000)}
+
+\mbox{\Hypertarget{spi__driver_8h_af43811d2aa5bd6aacb2201cb08d13674}\label{spi__driver_8h_af43811d2aa5bd6aacb2201cb08d13674}} 
+\index{spi\_driver.h@{spi\_driver.h}!SPI\_CLOCK\_2MHZ@{SPI\_CLOCK\_2MHZ}}
+\index{SPI\_CLOCK\_2MHZ@{SPI\_CLOCK\_2MHZ}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{SPI\_CLOCK\_2MHZ}{SPI\_CLOCK\_2MHZ}}
+{\footnotesize\ttfamily \#define S\+P\+I\+\_\+\+C\+L\+O\+C\+K\+\_\+2\+M\+HZ~(2000000)}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}\label{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}} 
+\index{spi\_driver.h@{spi\_driver.h}!spi\_t@{spi\_t}}
+\index{spi\_t@{spi\_t}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{spi\_t}{spi\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI0@{SPI0}!spi\_driver.h@{spi\_driver.h}}\index{spi\_driver.h@{spi\_driver.h}!SPI0@{SPI0}}}\mbox{\Hypertarget{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64a7add1e0588a075d9385b10fcbb2010f4}\label{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64a7add1e0588a075d9385b10fcbb2010f4}} 
+S\+P\+I0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI1@{SPI1}!spi\_driver.h@{spi\_driver.h}}\index{spi\_driver.h@{spi\_driver.h}!SPI1@{SPI1}}}\mbox{\Hypertarget{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64add83ddb396fbcb33f2d61248e5c4a185}\label{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64add83ddb396fbcb33f2d61248e5c4a185}} 
+S\+P\+I1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI2@{SPI2}!spi\_driver.h@{spi\_driver.h}}\index{spi\_driver.h@{spi\_driver.h}!SPI2@{SPI2}}}\mbox{\Hypertarget{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64a382fe69d09c301ce8af3660713dfe8a2}\label{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64a382fe69d09c301ce8af3660713dfe8a2}} 
+S\+P\+I2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI3@{SPI3}!spi\_driver.h@{spi\_driver.h}}\index{spi\_driver.h@{spi\_driver.h}!SPI3@{SPI3}}}\mbox{\Hypertarget{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64a0be4d8f54586fb3fd0be3ec2920432e2}\label{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64a0be4d8f54586fb3fd0be3ec2920432e2}} 
+S\+P\+I3&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{spi__driver_8h_a18eaa177ed1ce81372b409e1d37b3860}\label{spi__driver_8h_a18eaa177ed1ce81372b409e1d37b3860}} 
+\index{spi\_driver.h@{spi\_driver.h}!InitalizeSPI@{InitalizeSPI}}
+\index{InitalizeSPI@{InitalizeSPI}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{InitalizeSPI()}{InitalizeSPI()}}
+{\footnotesize\ttfamily void Initalize\+S\+PI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}}}]{S\+P\+I\+\_\+\+N\+UM,  }\item[{uint32\+\_\+t}]{clock }\end{DoxyParamCaption})}
+
+
+
+Initalize S\+PI driver. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+P\+I\+\_\+\+N\+UM} & \\
+\hline
+{\em clock} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{spi__driver_8h_a20f33d45d8fac134fccf48c936bc5485}\label{spi__driver_8h_a20f33d45d8fac134fccf48c936bc5485}} 
+\index{spi\_driver.h@{spi\_driver.h}!SPIReadByte@{SPIReadByte}}
+\index{SPIReadByte@{SPIReadByte}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{SPIReadByte()}{SPIReadByte()}}
+{\footnotesize\ttfamily uint8\+\_\+t S\+P\+I\+Read\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}}}]{spi }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Read a byte S\+PI 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & spi\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{spi__driver_8h_a60877aff1f3156174c8640e261aa0768}\label{spi__driver_8h_a60877aff1f3156174c8640e261aa0768}} 
+\index{spi\_driver.h@{spi\_driver.h}!SPIReadByteNonBlocking@{SPIReadByteNonBlocking}}
+\index{SPIReadByteNonBlocking@{SPIReadByteNonBlocking}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{SPIReadByteNonBlocking()}{SPIReadByteNonBlocking()}}
+{\footnotesize\ttfamily uint8\+\_\+t S\+P\+I\+Read\+Byte\+Non\+Blocking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}}}]{spi }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Read a byte S\+PI bus without blocking 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & spi\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{spi__driver_8h_a4c03319edd179a22d26dfac22469f8d9}\label{spi__driver_8h_a4c03319edd179a22d26dfac22469f8d9}} 
+\index{spi\_driver.h@{spi\_driver.h}!SPIReadPayload@{SPIReadPayload}}
+\index{SPIReadPayload@{SPIReadPayload}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{SPIReadPayload()}{SPIReadPayload()}}
+{\footnotesize\ttfamily void S\+P\+I\+Read\+Payload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}}}]{spi,  }\item[{uint8\+\_\+t $\ast$}]{p,  }\item[{uint8\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+read payload of length specified 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spi} & \\
+\hline
+{\em p} & \\
+\hline
+{\em length} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{spi__driver_8h_a36b3032dda5ae730871662fcfe989619}\label{spi__driver_8h_a36b3032dda5ae730871662fcfe989619}} 
+\index{spi\_driver.h@{spi\_driver.h}!SPIWriteByte@{SPIWriteByte}}
+\index{SPIWriteByte@{SPIWriteByte}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{SPIWriteByte()}{SPIWriteByte()}}
+{\footnotesize\ttfamily void S\+P\+I\+Write\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}}}]{spi,  }\item[{uint8\+\_\+t}]{byte }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Write a byte S\+PI bus 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & spi\+\_\+t \\
+\hline
+{\em -\/} & byte uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{spi__driver_8h_af2c24844a74cdcc3be47eafdb24d6b0f}\label{spi__driver_8h_af2c24844a74cdcc3be47eafdb24d6b0f}} 
+\index{spi\_driver.h@{spi\_driver.h}!SPIWriteByteNonBlocking@{SPIWriteByteNonBlocking}}
+\index{SPIWriteByteNonBlocking@{SPIWriteByteNonBlocking}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{SPIWriteByteNonBlocking()}{SPIWriteByteNonBlocking()}}
+{\footnotesize\ttfamily void S\+P\+I\+Write\+Byte\+Non\+Blocking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}}}]{spi,  }\item[{uint8\+\_\+t}]{byte }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Write a byte S\+PI bus without blocking 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & spi\+\_\+t \\
+\hline
+{\em -\/} & byte uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{spi__driver_8h_a18d6c6e794f63a2dba22f946ef7a27e2}\label{spi__driver_8h_a18d6c6e794f63a2dba22f946ef7a27e2}} 
+\index{spi\_driver.h@{spi\_driver.h}!SPIWritePayload@{SPIWritePayload}}
+\index{SPIWritePayload@{SPIWritePayload}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{SPIWritePayload()}{SPIWritePayload()}}
+{\footnotesize\ttfamily void S\+P\+I\+Write\+Payload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{spi__driver_8h_a4c4c3893bd4169998937dd7199875d64}{spi\+\_\+t}}}]{spi,  }\item[{uint8\+\_\+t $\ast$}]{p,  }\item[{uint8\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Write payload of length specified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spi} & \\
+\hline
+{\em p} & \\
+\hline
+{\em length} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{spi__driver_8h_a3df2888665ecddebacb4c203d3c52bd9}\label{spi__driver_8h_a3df2888665ecddebacb4c203d3c52bd9}} 
+\index{spi\_driver.h@{spi\_driver.h}!SPI@{SPI}}
+\index{SPI@{SPI}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{SPI}{SPI}}
+{\footnotesize\ttfamily const uint32\+\_\+t S\+PI\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{spi__driver_8h_a593ef92716ccc8d7c41e4e0c992aa71f}\label{spi__driver_8h_a593ef92716ccc8d7c41e4e0c992aa71f}} 
+\index{spi\_driver.h@{spi\_driver.h}!SPI\_SYSCTL@{SPI\_SYSCTL}}
+\index{SPI\_SYSCTL@{SPI\_SYSCTL}!spi\_driver.h@{spi\_driver.h}}
+\subsubsection{\texorpdfstring{SPI\_SYSCTL}{SPI\_SYSCTL}}
+{\footnotesize\ttfamily const uint32\+\_\+t S\+P\+I\+\_\+\+S\+Y\+S\+C\+TL\mbox{[}4\mbox{]}}
+

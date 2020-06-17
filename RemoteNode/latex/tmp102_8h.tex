@@ -1,0 +1,126 @@
+\hypertarget{tmp102_8h}{}\section{inc/tmp102.h File Reference}
+\label{tmp102_8h}\index{inc/tmp102.h@{inc/tmp102.h}}
+{\ttfamily \#include \char`\"{}i2c\+\_\+driver.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tmp102_8h_acbe4e342a8e46a20d8c3556dcae3e430}{T\+M\+P\+\_\+\+S\+L\+A\+V\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~(0\+X48)
+\item 
+\#define \mbox{\hyperlink{tmp102_8h_a2a01c9a81d98beda8ada51d99c435629}{T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{tmp102_8h_a4eab53d011c245b5afa6bbbaf8c41919}{T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{tmp102_8h_a70f79405d0ef245be06ef6218c20287e}{T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+L\+OW}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{tmp102_8h_a85bb5b5bd07d38867fed140456ff5f1f}{T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+H\+I\+GH}}~(0x03)
+\item 
+\#define \mbox{\hyperlink{tmp102_8h_a2a01c9a81d98beda8ada51d99c435629}{T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{tmp102_8h_a4eab53d011c245b5afa6bbbaf8c41919}{T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{tmp102_8h_a70f79405d0ef245be06ef6218c20287e}{T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+L\+OW}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{tmp102_8h_a85bb5b5bd07d38867fed140456ff5f1f}{T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+H\+I\+GH}}~(0x03)
+\item 
+\#define \mbox{\hyperlink{tmp102_8h_a4248066830ebb53e9a93eb4dd285839a}{T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}}~(22)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{tmp102_8h_a7bc8fec1dc1e024c1270c3c798f12ea4}{get\+Temperature}} ()
+\item 
+float \mbox{\hyperlink{tmp102_8h_abe3de0cd7189fb9a1f44b0ed0450fb60}{regval\+\_\+to\+\_\+\+Temperature}} (uint16\+\_\+t regval)
+\begin{DoxyCompactList}\small\item\em convert register val to digital \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{tmp102_8h_a4248066830ebb53e9a93eb4dd285839a}\label{tmp102_8h_a4248066830ebb53e9a93eb4dd285839a}} 
+\index{tmp102.h@{tmp102.h}!TEMPERATURE\_THRESHOLD@{TEMPERATURE\_THRESHOLD}}
+\index{TEMPERATURE\_THRESHOLD@{TEMPERATURE\_THRESHOLD}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{TEMPERATURE\_THRESHOLD}{TEMPERATURE\_THRESHOLD}}
+{\footnotesize\ttfamily \#define T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD~(22)}
+
+\mbox{\Hypertarget{tmp102_8h_a4eab53d011c245b5afa6bbbaf8c41919}\label{tmp102_8h_a4eab53d011c245b5afa6bbbaf8c41919}} 
+\index{tmp102.h@{tmp102.h}!TMP\_REG\_CONFIGURATION@{TMP\_REG\_CONFIGURATION}}
+\index{TMP\_REG\_CONFIGURATION@{TMP\_REG\_CONFIGURATION}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{TMP\_REG\_CONFIGURATION}{TMP\_REG\_CONFIGURATION}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON~(0x01)}
+
+\mbox{\Hypertarget{tmp102_8h_a4eab53d011c245b5afa6bbbaf8c41919}\label{tmp102_8h_a4eab53d011c245b5afa6bbbaf8c41919}} 
+\index{tmp102.h@{tmp102.h}!TMP\_REG\_CONFIGURATION@{TMP\_REG\_CONFIGURATION}}
+\index{TMP\_REG\_CONFIGURATION@{TMP\_REG\_CONFIGURATION}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{TMP\_REG\_CONFIGURATION}{TMP\_REG\_CONFIGURATION}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON~(0x01)}
+
+\mbox{\Hypertarget{tmp102_8h_a2a01c9a81d98beda8ada51d99c435629}\label{tmp102_8h_a2a01c9a81d98beda8ada51d99c435629}} 
+\index{tmp102.h@{tmp102.h}!TMP\_REG\_TEMPERATURE@{TMP\_REG\_TEMPERATURE}}
+\index{TMP\_REG\_TEMPERATURE@{TMP\_REG\_TEMPERATURE}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{TMP\_REG\_TEMPERATURE}{TMP\_REG\_TEMPERATURE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE~(0x00)}
+
+T\+M\+P102 Reg address \mbox{\Hypertarget{tmp102_8h_a2a01c9a81d98beda8ada51d99c435629}\label{tmp102_8h_a2a01c9a81d98beda8ada51d99c435629}} 
+\index{tmp102.h@{tmp102.h}!TMP\_REG\_TEMPERATURE@{TMP\_REG\_TEMPERATURE}}
+\index{TMP\_REG\_TEMPERATURE@{TMP\_REG\_TEMPERATURE}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{TMP\_REG\_TEMPERATURE}{TMP\_REG\_TEMPERATURE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE~(0x00)}
+
+T\+M\+P102 Reg address \mbox{\Hypertarget{tmp102_8h_a85bb5b5bd07d38867fed140456ff5f1f}\label{tmp102_8h_a85bb5b5bd07d38867fed140456ff5f1f}} 
+\index{tmp102.h@{tmp102.h}!TMP\_REG\_THIGH@{TMP\_REG\_THIGH}}
+\index{TMP\_REG\_THIGH@{TMP\_REG\_THIGH}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{TMP\_REG\_THIGH}{TMP\_REG\_THIGH}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+H\+I\+GH~(0x03)}
+
+\mbox{\Hypertarget{tmp102_8h_a85bb5b5bd07d38867fed140456ff5f1f}\label{tmp102_8h_a85bb5b5bd07d38867fed140456ff5f1f}} 
+\index{tmp102.h@{tmp102.h}!TMP\_REG\_THIGH@{TMP\_REG\_THIGH}}
+\index{TMP\_REG\_THIGH@{TMP\_REG\_THIGH}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{TMP\_REG\_THIGH}{TMP\_REG\_THIGH}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+H\+I\+GH~(0x03)}
+
+\mbox{\Hypertarget{tmp102_8h_a70f79405d0ef245be06ef6218c20287e}\label{tmp102_8h_a70f79405d0ef245be06ef6218c20287e}} 
+\index{tmp102.h@{tmp102.h}!TMP\_REG\_TLOW@{TMP\_REG\_TLOW}}
+\index{TMP\_REG\_TLOW@{TMP\_REG\_TLOW}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{TMP\_REG\_TLOW}{TMP\_REG\_TLOW}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+L\+OW~(0x02)}
+
+\mbox{\Hypertarget{tmp102_8h_a70f79405d0ef245be06ef6218c20287e}\label{tmp102_8h_a70f79405d0ef245be06ef6218c20287e}} 
+\index{tmp102.h@{tmp102.h}!TMP\_REG\_TLOW@{TMP\_REG\_TLOW}}
+\index{TMP\_REG\_TLOW@{TMP\_REG\_TLOW}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{TMP\_REG\_TLOW}{TMP\_REG\_TLOW}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define T\+M\+P\+\_\+\+R\+E\+G\+\_\+\+T\+L\+OW~(0x02)}
+
+\mbox{\Hypertarget{tmp102_8h_acbe4e342a8e46a20d8c3556dcae3e430}\label{tmp102_8h_acbe4e342a8e46a20d8c3556dcae3e430}} 
+\index{tmp102.h@{tmp102.h}!TMP\_SLAVE\_ADDRESS@{TMP\_SLAVE\_ADDRESS}}
+\index{TMP\_SLAVE\_ADDRESS@{TMP\_SLAVE\_ADDRESS}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{TMP\_SLAVE\_ADDRESS}{TMP\_SLAVE\_ADDRESS}}
+{\footnotesize\ttfamily \#define T\+M\+P\+\_\+\+S\+L\+A\+V\+E\+\_\+\+A\+D\+D\+R\+E\+SS~(0\+X48)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tmp102_8h_a7bc8fec1dc1e024c1270c3c798f12ea4}\label{tmp102_8h_a7bc8fec1dc1e024c1270c3c798f12ea4}} 
+\index{tmp102.h@{tmp102.h}!getTemperature@{getTemperature}}
+\index{getTemperature@{getTemperature}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{getTemperature()}{getTemperature()}}
+{\footnotesize\ttfamily float get\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{tmp102_8h_abe3de0cd7189fb9a1f44b0ed0450fb60}\label{tmp102_8h_abe3de0cd7189fb9a1f44b0ed0450fb60}} 
+\index{tmp102.h@{tmp102.h}!regval\_to\_Temperature@{regval\_to\_Temperature}}
+\index{regval\_to\_Temperature@{regval\_to\_Temperature}!tmp102.h@{tmp102.h}}
+\subsubsection{\texorpdfstring{regval\_to\_Temperature()}{regval\_to\_Temperature()}}
+{\footnotesize\ttfamily float regval\+\_\+to\+\_\+\+Temperature (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{regval }\end{DoxyParamCaption})}
+
+
+
+convert register val to digital 
+
+
+\begin{DoxyParams}{Parameters}
+{\em regval} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

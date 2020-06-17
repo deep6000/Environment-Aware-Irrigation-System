@@ -1,0 +1,82 @@
+\hypertarget{i2c__driver_8c}{}\section{src/i2c\+\_\+driver.c File Reference}
+\label{i2c__driver_8c}\index{src/i2c\_driver.c@{src/i2c\_driver.c}}
+{\ttfamily \#include \char`\"{}i2c\+\_\+driver.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{i2c__driver_8c_a7850bf6af1b04e3b4371d9fa8337c154}{Initalize\+I2C}} (uint32\+\_\+t clock)
+\begin{DoxyCompactList}\small\item\em Initialize I2c peripherals. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{i2c__driver_8c_aa8ec6761de6ed735ba3fc9f5a2d5e0cd}{I2\+C\+Send\+Byte}} (uint8\+\_\+t target\+\_\+address, uint8\+\_\+t register\+\_\+address, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Send 1 byte to i2c bus. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{i2c__driver_8c_ac9558fcfd22e788d1954c6f055f673af}{I2\+C\+Get\+Byte}} (uint8\+\_\+t target\+\_\+address, uint8\+\_\+t register\+\_\+address)
+\item 
+\mbox{\hyperlink{common_8h_aa461e5e5d0e31d5e42d8ad70cdd268ee}{sensor\+\_\+status}} \mbox{\hyperlink{i2c__driver_8c_a017c30c5537150e5781f45f9f7d147e4}{I2\+C\+Get2\+Bytes}} (uint8\+\_\+t target\+\_\+address, uint8\+\_\+t register\+\_\+address, uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em get 2 bytes of data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{i2c__driver_8c_a017c30c5537150e5781f45f9f7d147e4}\label{i2c__driver_8c_a017c30c5537150e5781f45f9f7d147e4}} 
+\index{i2c\_driver.c@{i2c\_driver.c}!I2CGet2Bytes@{I2CGet2Bytes}}
+\index{I2CGet2Bytes@{I2CGet2Bytes}!i2c\_driver.c@{i2c\_driver.c}}
+\subsubsection{\texorpdfstring{I2CGet2Bytes()}{I2CGet2Bytes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_aa461e5e5d0e31d5e42d8ad70cdd268ee}{sensor\+\_\+status}} I2\+C\+Get2\+Bytes (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{target\+\_\+address,  }\item[{uint8\+\_\+t}]{register\+\_\+address,  }\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+get 2 bytes of data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+\_\+address} & \\
+\hline
+{\em register\+\_\+address} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+U\+C\+C\+E\+SS OR F\+A\+I\+L\+U\+RE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{i2c__driver_8c_ac9558fcfd22e788d1954c6f055f673af}\label{i2c__driver_8c_ac9558fcfd22e788d1954c6f055f673af}} 
+\index{i2c\_driver.c@{i2c\_driver.c}!I2CGetByte@{I2CGetByte}}
+\index{I2CGetByte@{I2CGetByte}!i2c\_driver.c@{i2c\_driver.c}}
+\subsubsection{\texorpdfstring{I2CGetByte()}{I2CGetByte()}}
+{\footnotesize\ttfamily uint8\+\_\+t I2\+C\+Get\+Byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{target\+\_\+address,  }\item[{uint8\+\_\+t}]{register\+\_\+address }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{i2c__driver_8c_aa8ec6761de6ed735ba3fc9f5a2d5e0cd}\label{i2c__driver_8c_aa8ec6761de6ed735ba3fc9f5a2d5e0cd}} 
+\index{i2c\_driver.c@{i2c\_driver.c}!I2CSendByte@{I2CSendByte}}
+\index{I2CSendByte@{I2CSendByte}!i2c\_driver.c@{i2c\_driver.c}}
+\subsubsection{\texorpdfstring{I2CSendByte()}{I2CSendByte()}}
+{\footnotesize\ttfamily void I2\+C\+Send\+Byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{target\+\_\+address,  }\item[{uint8\+\_\+t}]{register\+\_\+address,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Send 1 byte to i2c bus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+\_\+address} & \\
+\hline
+{\em register\+\_\+address} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{i2c__driver_8c_a7850bf6af1b04e3b4371d9fa8337c154}\label{i2c__driver_8c_a7850bf6af1b04e3b4371d9fa8337c154}} 
+\index{i2c\_driver.c@{i2c\_driver.c}!InitalizeI2C@{InitalizeI2C}}
+\index{InitalizeI2C@{InitalizeI2C}!i2c\_driver.c@{i2c\_driver.c}}
+\subsubsection{\texorpdfstring{InitalizeI2C()}{InitalizeI2C()}}
+{\footnotesize\ttfamily void Initalize\+I2C (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{clock }\end{DoxyParamCaption})}
+
+
+
+Initialize I2c peripherals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clock} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

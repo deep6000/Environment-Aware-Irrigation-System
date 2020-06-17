@@ -1,0 +1,76 @@
+\hypertarget{moisture__task_8c}{}\section{src/moisture\+\_\+task.c File Reference}
+\label{moisture__task_8c}\index{src/moisture\_task.c@{src/moisture\_task.c}}
+{\ttfamily \#include \char`\"{}tasks\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}moisture\+\_\+task.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{moisture__task_8c_af1fc096ead2b2f90f6678b4e8558c718}{Moisture\+Task}} (void $\ast$pv\+Parameters)
+\begin{DoxyCompactList}\small\item\em Moisture Task handling moisture data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{moisture__task_8c_acb1ee59939d1e8c8afebee611e12f4df}{Moisture\+Timer\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Moisture Timer Handler. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{moisture__task_8c_ae458652452ec3493702dad859fdbb41f}{Process\+Moisture}} (uint32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Process A\+DC values of Mositure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{moisture__task_8c_ab75c99133b8296f6f414b37c481b16f9}{latest\+\_\+moisture}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{moisture__task_8c_af1fc096ead2b2f90f6678b4e8558c718}\label{moisture__task_8c_af1fc096ead2b2f90f6678b4e8558c718}} 
+\index{moisture\_task.c@{moisture\_task.c}!MoistureTask@{MoistureTask}}
+\index{MoistureTask@{MoistureTask}!moisture\_task.c@{moisture\_task.c}}
+\subsubsection{\texorpdfstring{MoistureTask()}{MoistureTask()}}
+{\footnotesize\ttfamily void Moisture\+Task (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv\+Parameters }\end{DoxyParamCaption})}
+
+
+
+Moisture Task handling moisture data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pv\+Parameters} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{moisture__task_8c_acb1ee59939d1e8c8afebee611e12f4df}\label{moisture__task_8c_acb1ee59939d1e8c8afebee611e12f4df}} 
+\index{moisture\_task.c@{moisture\_task.c}!MoistureTimerHandler@{MoistureTimerHandler}}
+\index{MoistureTimerHandler@{MoistureTimerHandler}!moisture\_task.c@{moisture\_task.c}}
+\subsubsection{\texorpdfstring{MoistureTimerHandler()}{MoistureTimerHandler()}}
+{\footnotesize\ttfamily void Moisture\+Timer\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moisture Timer Handler. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{moisture__task_8c_ae458652452ec3493702dad859fdbb41f}\label{moisture__task_8c_ae458652452ec3493702dad859fdbb41f}} 
+\index{moisture\_task.c@{moisture\_task.c}!ProcessMoisture@{ProcessMoisture}}
+\index{ProcessMoisture@{ProcessMoisture}!moisture\_task.c@{moisture\_task.c}}
+\subsubsection{\texorpdfstring{ProcessMoisture()}{ProcessMoisture()}}
+{\footnotesize\ttfamily uint32\+\_\+t Process\+Moisture (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Process A\+DC values of Mositure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value processed 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{moisture__task_8c_ab75c99133b8296f6f414b37c481b16f9}\label{moisture__task_8c_ab75c99133b8296f6f414b37c481b16f9}} 
+\index{moisture\_task.c@{moisture\_task.c}!latest\_moisture@{latest\_moisture}}
+\index{latest\_moisture@{latest\_moisture}!moisture\_task.c@{moisture\_task.c}}
+\subsubsection{\texorpdfstring{latest\_moisture}{latest\_moisture}}
+{\footnotesize\ttfamily uint32\+\_\+t latest\+\_\+moisture}
+

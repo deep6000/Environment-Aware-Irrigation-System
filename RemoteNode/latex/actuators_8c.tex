@@ -1,0 +1,116 @@
+\hypertarget{actuators_8c}{}\section{src/actuators.c File Reference}
+\label{actuators_8c}\index{src/actuators.c@{src/actuators.c}}
+{\ttfamily \#include \char`\"{}actuators.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}queue\+\_\+driver.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{actuators_8c_ad287ebd2fb115e7640b842ee4b517266}{Initialize\+Actuators}} ()
+\begin{DoxyCompactList}\small\item\em Intialize Acuators G\+P\+I\+Os. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{actuators_8c_a44f18383e59a4a7c8123a7c0252a1f39}{Alert\+Task}} (void $\ast$pv\+Parameters)
+\begin{DoxyCompactList}\small\item\em Alert Task responsible for handling actuators. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{actuators_8c_a0477a3e90245efd6812d6d800eeea3fd}{Motor\+State}} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Process turning on/off Motor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{actuators_8c_a74741eb47e6aebf7661c81f34fa29def}{Buzzer\+State}} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Buzzerstate On/\+Off based on value. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{actuators_8c_a8197ef5c8b37715f77bf42703d45b097}{Process\+Motor}} (uint8\+\_\+t motorstate)
+\begin{DoxyCompactList}\small\item\em Process turning on/off motor. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{actuators_8c_a80b3a44ca54c86bbdf1313c64f5deab3}{Process\+Buzzer}} (uint8\+\_\+t buzzerstate)
+\begin{DoxyCompactList}\small\item\em Process turning on/off Buzzer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{actuators_8c_a44f18383e59a4a7c8123a7c0252a1f39}\label{actuators_8c_a44f18383e59a4a7c8123a7c0252a1f39}} 
+\index{actuators.c@{actuators.c}!AlertTask@{AlertTask}}
+\index{AlertTask@{AlertTask}!actuators.c@{actuators.c}}
+\subsubsection{\texorpdfstring{AlertTask()}{AlertTask()}}
+{\footnotesize\ttfamily void Alert\+Task (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv\+Parameters }\end{DoxyParamCaption})}
+
+
+
+Alert Task responsible for handling actuators. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pv\+Parameters} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{actuators_8c_a74741eb47e6aebf7661c81f34fa29def}\label{actuators_8c_a74741eb47e6aebf7661c81f34fa29def}} 
+\index{actuators.c@{actuators.c}!BuzzerState@{BuzzerState}}
+\index{BuzzerState@{BuzzerState}!actuators.c@{actuators.c}}
+\subsubsection{\texorpdfstring{BuzzerState()}{BuzzerState()}}
+{\footnotesize\ttfamily void Buzzer\+State (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+
+
+Buzzerstate On/\+Off based on value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{actuators_8c_ad287ebd2fb115e7640b842ee4b517266}\label{actuators_8c_ad287ebd2fb115e7640b842ee4b517266}} 
+\index{actuators.c@{actuators.c}!InitializeActuators@{InitializeActuators}}
+\index{InitializeActuators@{InitializeActuators}!actuators.c@{actuators.c}}
+\subsubsection{\texorpdfstring{InitializeActuators()}{InitializeActuators()}}
+{\footnotesize\ttfamily void Initialize\+Actuators (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Intialize Acuators G\+P\+I\+Os. 
+
+\mbox{\Hypertarget{actuators_8c_a0477a3e90245efd6812d6d800eeea3fd}\label{actuators_8c_a0477a3e90245efd6812d6d800eeea3fd}} 
+\index{actuators.c@{actuators.c}!MotorState@{MotorState}}
+\index{MotorState@{MotorState}!actuators.c@{actuators.c}}
+\subsubsection{\texorpdfstring{MotorState()}{MotorState()}}
+{\footnotesize\ttfamily void Motor\+State (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+
+
+Process turning on/off Motor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em motorstate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+On or off 
+\end{DoxyReturn}
+\mbox{\Hypertarget{actuators_8c_a80b3a44ca54c86bbdf1313c64f5deab3}\label{actuators_8c_a80b3a44ca54c86bbdf1313c64f5deab3}} 
+\index{actuators.c@{actuators.c}!ProcessBuzzer@{ProcessBuzzer}}
+\index{ProcessBuzzer@{ProcessBuzzer}!actuators.c@{actuators.c}}
+\subsubsection{\texorpdfstring{ProcessBuzzer()}{ProcessBuzzer()}}
+{\footnotesize\ttfamily uint8\+\_\+t Process\+Buzzer (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{buzzerstate }\end{DoxyParamCaption})}
+
+
+
+Process turning on/off Buzzer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buzzerstate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+On or off 
+\end{DoxyReturn}
+\mbox{\Hypertarget{actuators_8c_a8197ef5c8b37715f77bf42703d45b097}\label{actuators_8c_a8197ef5c8b37715f77bf42703d45b097}} 
+\index{actuators.c@{actuators.c}!ProcessMotor@{ProcessMotor}}
+\index{ProcessMotor@{ProcessMotor}!actuators.c@{actuators.c}}
+\subsubsection{\texorpdfstring{ProcessMotor()}{ProcessMotor()}}
+{\footnotesize\ttfamily uint8\+\_\+t Process\+Motor (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{motorstate }\end{DoxyParamCaption})}
+
+
+
+Process turning on/off motor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em motorstate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+On or off 
+\end{DoxyReturn}

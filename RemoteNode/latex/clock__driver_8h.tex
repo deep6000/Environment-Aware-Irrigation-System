@@ -1,0 +1,55 @@
+\hypertarget{clock__driver_8h}{}\section{inc/clock\+\_\+driver.h File Reference}
+\label{clock__driver_8h}\index{inc/clock\_driver.h@{inc/clock\_driver.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}driverlib/rom.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/rom\+\_\+map.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/sysctl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}drivers/pinout.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/hibernate.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/debug.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{clock__driver_8h_a95982eccb57c2ae35f8ba3d8f0b05653}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+CK}}~120000000U
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{clock__driver_8h_af4d2eb0078d6dd902e22096440aeb915}{System\+Clock\+Init}} ()
+\item 
+void \mbox{\hyperlink{clock__driver_8h_a3ae692e55667169ac5ee5ebf7739cbee}{Initalize\+R\+TC}} (uint32\+\_\+t clock)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{clock__driver_8h_ab80673981f7371d99580253430c6cdf6}{Get\+Time\+Ms}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{clock__driver_8h_a95982eccb57c2ae35f8ba3d8f0b05653}\label{clock__driver_8h_a95982eccb57c2ae35f8ba3d8f0b05653}} 
+\index{clock\_driver.h@{clock\_driver.h}!SYSTEM\_CLOCK@{SYSTEM\_CLOCK}}
+\index{SYSTEM\_CLOCK@{SYSTEM\_CLOCK}!clock\_driver.h@{clock\_driver.h}}
+\subsubsection{\texorpdfstring{SYSTEM\_CLOCK}{SYSTEM\_CLOCK}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+CK~120000000U}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{clock__driver_8h_ab80673981f7371d99580253430c6cdf6}\label{clock__driver_8h_ab80673981f7371d99580253430c6cdf6}} 
+\index{clock\_driver.h@{clock\_driver.h}!GetTimeMs@{GetTimeMs}}
+\index{GetTimeMs@{GetTimeMs}!clock\_driver.h@{clock\_driver.h}}
+\subsubsection{\texorpdfstring{GetTimeMs()}{GetTimeMs()}}
+{\footnotesize\ttfamily uint32\+\_\+t Get\+Time\+Ms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clock__driver_8h_a3ae692e55667169ac5ee5ebf7739cbee}\label{clock__driver_8h_a3ae692e55667169ac5ee5ebf7739cbee}} 
+\index{clock\_driver.h@{clock\_driver.h}!InitalizeRTC@{InitalizeRTC}}
+\index{InitalizeRTC@{InitalizeRTC}!clock\_driver.h@{clock\_driver.h}}
+\subsubsection{\texorpdfstring{InitalizeRTC()}{InitalizeRTC()}}
+{\footnotesize\ttfamily void Initalize\+R\+TC (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{clock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{clock__driver_8h_af4d2eb0078d6dd902e22096440aeb915}\label{clock__driver_8h_af4d2eb0078d6dd902e22096440aeb915}} 
+\index{clock\_driver.h@{clock\_driver.h}!SystemClockInit@{SystemClockInit}}
+\index{SystemClockInit@{SystemClockInit}!clock\_driver.h@{clock\_driver.h}}
+\subsubsection{\texorpdfstring{SystemClockInit()}{SystemClockInit()}}
+{\footnotesize\ttfamily uint32\+\_\+t System\+Clock\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

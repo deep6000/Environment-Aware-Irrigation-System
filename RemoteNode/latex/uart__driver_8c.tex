@@ -1,0 +1,122 @@
+\hypertarget{uart__driver_8c}{}\section{src/uart\+\_\+driver.c File Reference}
+\label{uart__driver_8c}\index{src/uart\_driver.c@{src/uart\_driver.c}}
+{\ttfamily \#include \char`\"{}tasks\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}uart\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}driverlib/interrupt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}inc/hw\+\_\+ints.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/debug.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/gpio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/pin\+\_\+map.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/rom.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/rom\+\_\+map.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/sysctl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/uart.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{uart__driver_8c_aa2d9cc37ec8db73ecffcc4a0954454a9}{Intialize\+U\+A\+RT}} (\mbox{\hyperlink{uart__driver_8h_a20e842c5395e5d749202a95cec97867e}{uart\+\_\+t}} U\+A\+R\+T\+\_\+\+N\+UM, uint32\+\_\+t clock)
+\begin{DoxyCompactList}\small\item\em Initialize uart port gpios and clocks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart__driver_8c_aea388d227f6208c250212ad414bf9436}{U\+A\+R\+T\+Send}} (\mbox{\hyperlink{uart__driver_8h_a20e842c5395e5d749202a95cec97867e}{uart\+\_\+t}} U\+A\+R\+T\+\_\+\+N\+UM, uint8\+\_\+t $\ast$buffer, uint32\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Send packet to uart. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{uart__driver_8c_a4ed9f3d40e15dfe6fa359b6d9577f17c}{U\+A\+R\+T\+Receive}} (\mbox{\hyperlink{uart__driver_8h_a20e842c5395e5d749202a95cec97867e}{uart\+\_\+t}} U\+A\+R\+T\+\_\+\+N\+UM, uint8\+\_\+t $\ast$buffer, int count)
+\begin{DoxyCompactList}\small\item\em receive a paket from uart3 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart__driver_8c_a30f0a220ea9394a3f83e7bbfba2de08a}{U\+A\+R\+T3\+Int\+Handler}} (void)
+\item 
+void \mbox{\hyperlink{uart__driver_8c_a2d4a537012aed004dd52d798fcc7498c}{U\+A\+R\+T2\+Int\+Handler}} (void)
+\item 
+void \mbox{\hyperlink{uart__driver_8c_aa7bf51558086958f92293597aa92bd21}{U\+A\+R\+T7\+\_\+handler}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{uart__driver_8c_ae0f5b5d0bb476be2ca63863e5670e0d5}{U\+A\+R\+T\+\_\+\+T\+Y\+PE}} \mbox{[}4\mbox{]} = \{U\+A\+R\+T0\+\_\+\+B\+A\+SE, U\+A\+R\+T1\+\_\+\+B\+A\+SE, U\+A\+R\+T2\+\_\+\+B\+A\+SE, U\+A\+R\+T3\+\_\+\+B\+A\+SE\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{uart__driver_8c_aa2d9cc37ec8db73ecffcc4a0954454a9}\label{uart__driver_8c_aa2d9cc37ec8db73ecffcc4a0954454a9}} 
+\index{uart\_driver.c@{uart\_driver.c}!IntializeUART@{IntializeUART}}
+\index{IntializeUART@{IntializeUART}!uart\_driver.c@{uart\_driver.c}}
+\subsubsection{\texorpdfstring{IntializeUART()}{IntializeUART()}}
+{\footnotesize\ttfamily void Intialize\+U\+A\+RT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{uart__driver_8h_a20e842c5395e5d749202a95cec97867e}{uart\+\_\+t}}}]{U\+A\+R\+T\+\_\+\+N\+UM,  }\item[{uint32\+\_\+t}]{clock }\end{DoxyParamCaption})}
+
+
+
+Initialize uart port gpios and clocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\+A\+R\+T\+\_\+\+N\+UM} & \\
+\hline
+{\em BR} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{uart__driver_8c_a2d4a537012aed004dd52d798fcc7498c}\label{uart__driver_8c_a2d4a537012aed004dd52d798fcc7498c}} 
+\index{uart\_driver.c@{uart\_driver.c}!UART2IntHandler@{UART2IntHandler}}
+\index{UART2IntHandler@{UART2IntHandler}!uart\_driver.c@{uart\_driver.c}}
+\subsubsection{\texorpdfstring{UART2IntHandler()}{UART2IntHandler()}}
+{\footnotesize\ttfamily void U\+A\+R\+T2\+Int\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart__driver_8c_a30f0a220ea9394a3f83e7bbfba2de08a}\label{uart__driver_8c_a30f0a220ea9394a3f83e7bbfba2de08a}} 
+\index{uart\_driver.c@{uart\_driver.c}!UART3IntHandler@{UART3IntHandler}}
+\index{UART3IntHandler@{UART3IntHandler}!uart\_driver.c@{uart\_driver.c}}
+\subsubsection{\texorpdfstring{UART3IntHandler()}{UART3IntHandler()}}
+{\footnotesize\ttfamily void U\+A\+R\+T3\+Int\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart__driver_8c_aa7bf51558086958f92293597aa92bd21}\label{uart__driver_8c_aa7bf51558086958f92293597aa92bd21}} 
+\index{uart\_driver.c@{uart\_driver.c}!UART7\_handler@{UART7\_handler}}
+\index{UART7\_handler@{UART7\_handler}!uart\_driver.c@{uart\_driver.c}}
+\subsubsection{\texorpdfstring{UART7\_handler()}{UART7\_handler()}}
+{\footnotesize\ttfamily void U\+A\+R\+T7\+\_\+handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart__driver_8c_a4ed9f3d40e15dfe6fa359b6d9577f17c}\label{uart__driver_8c_a4ed9f3d40e15dfe6fa359b6d9577f17c}} 
+\index{uart\_driver.c@{uart\_driver.c}!UARTReceive@{UARTReceive}}
+\index{UARTReceive@{UARTReceive}!uart\_driver.c@{uart\_driver.c}}
+\subsubsection{\texorpdfstring{UARTReceive()}{UARTReceive()}}
+{\footnotesize\ttfamily uint8\+\_\+t U\+A\+R\+T\+Receive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{uart__driver_8h_a20e842c5395e5d749202a95cec97867e}{uart\+\_\+t}}}]{U\+A\+R\+T\+\_\+\+N\+UM,  }\item[{uint8\+\_\+t $\ast$}]{buffer,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+receive a paket from uart3 
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\+A\+R\+T\+\_\+\+N\+UM} & \\
+\hline
+{\em buffer} & \\
+\hline
+{\em count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{uart__driver_8c_aea388d227f6208c250212ad414bf9436}\label{uart__driver_8c_aea388d227f6208c250212ad414bf9436}} 
+\index{uart\_driver.c@{uart\_driver.c}!UARTSend@{UARTSend}}
+\index{UARTSend@{UARTSend}!uart\_driver.c@{uart\_driver.c}}
+\subsubsection{\texorpdfstring{UARTSend()}{UARTSend()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{uart__driver_8h_a20e842c5395e5d749202a95cec97867e}{uart\+\_\+t}}}]{U\+A\+R\+T\+\_\+\+N\+UM,  }\item[{uint8\+\_\+t $\ast$}]{buffer,  }\item[{uint32\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Send packet to uart. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\+A\+R\+T\+\_\+\+N\+UM} & \\
+\hline
+{\em buffer} & \\
+\hline
+{\em count} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{uart__driver_8c_ae0f5b5d0bb476be2ca63863e5670e0d5}\label{uart__driver_8c_ae0f5b5d0bb476be2ca63863e5670e0d5}} 
+\index{uart\_driver.c@{uart\_driver.c}!UART\_TYPE@{UART\_TYPE}}
+\index{UART\_TYPE@{UART\_TYPE}!uart\_driver.c@{uart\_driver.c}}
+\subsubsection{\texorpdfstring{UART\_TYPE}{UART\_TYPE}}
+{\footnotesize\ttfamily uint32\+\_\+t U\+A\+R\+T\+\_\+\+T\+Y\+PE\mbox{[}4\mbox{]} = \{U\+A\+R\+T0\+\_\+\+B\+A\+SE, U\+A\+R\+T1\+\_\+\+B\+A\+SE, U\+A\+R\+T2\+\_\+\+B\+A\+SE, U\+A\+R\+T3\+\_\+\+B\+A\+SE\}}
+

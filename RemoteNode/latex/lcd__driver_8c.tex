@@ -1,0 +1,114 @@
+\hypertarget{lcd__driver_8c}{}\section{src/lcd\+\_\+driver.c File Reference}
+\label{lcd__driver_8c}\index{src/lcd\_driver.c@{src/lcd\_driver.c}}
+{\ttfamily \#include \char`\"{}lcd\+\_\+driver.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}driverlib/gpio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}inc/hw\+\_\+memmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/pin\+\_\+map.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/sysctl.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{lcd__driver_8c_a0cde574cfed137247015748d95bd43f0}{Initialize\+L\+CD}} ()
+\begin{DoxyCompactList}\small\item\em Initialize L\+CD gpio pins. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd__driver_8c_a99ef3ecdee03facfa0b8582baef836d2}{L\+C\+D\+Write\+Char}} (char character)
+\item 
+void \mbox{\hyperlink{lcd__driver_8c_aee7391236ecad4d03d3d5d1248c1bbd9}{L\+C\+D\+Write\+Command}} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Write command to L\+CD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd__driver_8c_a23578ed686f72a95a95f24e3ddfb1411}{L\+C\+D\+Write\+Str}} (char $\ast$data, int line)
+\begin{DoxyCompactList}\small\item\em Write string to L\+CD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd__driver_8c_aaf06889a2ec37e049d4161f388a6bc96}{Turn\+On\+L\+CD}} ()
+\begin{DoxyCompactList}\small\item\em Turn on Display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd__driver_8c_abc94dbda4b8df7468d2703f754ac7bc2}{L\+C\+D\+Clear\+Display}} ()
+\begin{DoxyCompactList}\small\item\em Clear L\+Cd dislay. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{lcd__driver_8c_a0cde574cfed137247015748d95bd43f0}\label{lcd__driver_8c_a0cde574cfed137247015748d95bd43f0}} 
+\index{lcd\_driver.c@{lcd\_driver.c}!InitializeLCD@{InitializeLCD}}
+\index{InitializeLCD@{InitializeLCD}!lcd\_driver.c@{lcd\_driver.c}}
+\subsubsection{\texorpdfstring{InitializeLCD()}{InitializeLCD()}}
+{\footnotesize\ttfamily void Initialize\+L\+CD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize L\+CD gpio pins. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lcd__driver_8c_abc94dbda4b8df7468d2703f754ac7bc2}\label{lcd__driver_8c_abc94dbda4b8df7468d2703f754ac7bc2}} 
+\index{lcd\_driver.c@{lcd\_driver.c}!LCDClearDisplay@{LCDClearDisplay}}
+\index{LCDClearDisplay@{LCDClearDisplay}!lcd\_driver.c@{lcd\_driver.c}}
+\subsubsection{\texorpdfstring{LCDClearDisplay()}{LCDClearDisplay()}}
+{\footnotesize\ttfamily void L\+C\+D\+Clear\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear L\+Cd dislay. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lcd__driver_8c_a99ef3ecdee03facfa0b8582baef836d2}\label{lcd__driver_8c_a99ef3ecdee03facfa0b8582baef836d2}} 
+\index{lcd\_driver.c@{lcd\_driver.c}!LCDWriteChar@{LCDWriteChar}}
+\index{LCDWriteChar@{LCDWriteChar}!lcd\_driver.c@{lcd\_driver.c}}
+\subsubsection{\texorpdfstring{LCDWriteChar()}{LCDWriteChar()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Char (\begin{DoxyParamCaption}\item[{char}]{character }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lcd__driver_8c_aee7391236ecad4d03d3d5d1248c1bbd9}\label{lcd__driver_8c_aee7391236ecad4d03d3d5d1248c1bbd9}} 
+\index{lcd\_driver.c@{lcd\_driver.c}!LCDWriteCommand@{LCDWriteCommand}}
+\index{LCDWriteCommand@{LCDWriteCommand}!lcd\_driver.c@{lcd\_driver.c}}
+\subsubsection{\texorpdfstring{LCDWriteCommand()}{LCDWriteCommand()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command }\end{DoxyParamCaption})}
+
+
+
+Write command to L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lcd__driver_8c_a23578ed686f72a95a95f24e3ddfb1411}\label{lcd__driver_8c_a23578ed686f72a95a95f24e3ddfb1411}} 
+\index{lcd\_driver.c@{lcd\_driver.c}!LCDWriteStr@{LCDWriteStr}}
+\index{LCDWriteStr@{LCDWriteStr}!lcd\_driver.c@{lcd\_driver.c}}
+\subsubsection{\texorpdfstring{LCDWriteStr()}{LCDWriteStr()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Str (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{int}]{line }\end{DoxyParamCaption})}
+
+
+
+Write string to L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+{\em line} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lcd__driver_8c_aaf06889a2ec37e049d4161f388a6bc96}\label{lcd__driver_8c_aaf06889a2ec37e049d4161f388a6bc96}} 
+\index{lcd\_driver.c@{lcd\_driver.c}!TurnOnLCD@{TurnOnLCD}}
+\index{TurnOnLCD@{TurnOnLCD}!lcd\_driver.c@{lcd\_driver.c}}
+\subsubsection{\texorpdfstring{TurnOnLCD()}{TurnOnLCD()}}
+{\footnotesize\ttfamily void Turn\+On\+L\+CD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Turn on Display. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
