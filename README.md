@@ -1,4 +1,4 @@
-# Automatic-Plant-Irrigation-System
+# Environment-Aware-Irrigation-System
 
 Project Requirements
 1)	The Remote node senses the humidity in air, moisture in soil, temperature and light during day as well as night and communicates it to control Node. Control Node takes decision based on the values and communicates to remote node the amount of water to be irrigated.
