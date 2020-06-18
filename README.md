@@ -7,6 +7,15 @@ Project Requirements
 4)	The system displays temperature moisture or humidity on 7 segment display based on the user requirements.
 5)	The buzzer is activated if moisture in soil rises the threshold value indicating fault condition.
 
+# FUNCTIONAL BLOCK DIAGRAM
+![alt text](https://github.com/deep6000/Environment-Aware-Irrigation-System/blob/master/Documents/BlockDiagram.png)
+
+# CONTROL NODE
+![alt text](https://github.com/deep6000/Environment-Aware-Irrigation-System/blob/master/Documents/ControlNode.png)
+
+# REMOTE NODE
+![alt text](https://github.com/deep6000/Environment-Aware-Irrigation-System/blob/master/Documents/SensorNode.png)
+
 # Remote Node (TIVA C series)
 Application Tasks
 >	Main Task
